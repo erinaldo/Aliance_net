@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FF45D0E0-E347-438F-8DAA-4587F3CF0847}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Help</RootNamespace>
+    <AssemblyName>Help</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.Entity">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAnexosHelpDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAnexosHelpDesk.Designer.cs">
+      <DependentUpon>FAnexosHelpDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBoletosAliance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBoletosAliance.Designer.cs">
+      <DependentUpon>FBoletosAliance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCentralHelpDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCentralHelpDesk.Designer.cs">
+      <DependentUpon>FCentralHelpDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEvoluirTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEvoluirTicket.Designer.cs">
+      <DependentUpon>FEvoluirTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoginHelpCNPJ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoginHelpCNPJ.Designer.cs">
+      <DependentUpon>FLoginHelpCNPJ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoginHelpDesk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoginHelpDesk.Designer.cs">
+      <DependentUpon>FLoginHelpDesk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTicket.Designer.cs">
+      <DependentUpon>FTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="TFHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TFHelp.designer.cs">
+      <DependentUpon>TFHelp.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FAnexosHelpDesk.resx">
+      <DependentUpon>FAnexosHelpDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBoletosAliance.resx">
+      <DependentUpon>FBoletosAliance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCentralHelpDesk.resx">
+      <DependentUpon>FCentralHelpDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEvoluirTicket.resx">
+      <DependentUpon>FEvoluirTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoginHelpCNPJ.resx">
+      <DependentUpon>FLoginHelpCNPJ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoginHelpDesk.resx">
+      <DependentUpon>FLoginHelpDesk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTicket.resx">
+      <DependentUpon>FTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TFHelp.resx">
+      <DependentUpon>TFHelp.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09c8ab18-bf30-4579-8945-3eefb3e2c134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.Config" />
+    <None Include="Properties\DataSources\CamadaDados.Help.Anexo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help.Evolucao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help.HistEvolucao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help.Ticket.datasource" />
+    <None Include="Properties\DataSources\TB_BIN_ANEXOEVOLUCAO.datasource" />
+    <None Include="Properties\DataSources\TB_BIN_EVOLUCAOTICKET.datasource" />
+    <None Include="Properties\DataSources\TB_BIN_TICKET.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\CamadaDados.Help_Desk.Cadastros.TList_ClienteParceiro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help_Desk.Cadastros.TList_Operador.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help_Desk.Cadastros.TList_Parceiro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help_Desk.Cadastros.TList_Setor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Help_Desk.Cadastros.TList_UserCliente.datasource" />
+    <None Include="Properties\DataSources\Help.WS_HelpDesk.TB_BIN_EvolucaoTicket.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Bloqueto.blListaTitulo.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

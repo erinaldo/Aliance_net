@@ -1,0 +1,900 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="ValidarLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Senha" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ValidarLoginResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="ValidarLoginResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarSetor">
+        <s:complexType />
+      </s:element>
+      <s:element name="BuscarSetorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarSetorResult" type="tns:ArrayOfTB_BIN_Setor" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTB_BIN_Setor">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_Setor" nillable="true" type="tns:TB_BIN_Setor" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_Setor">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_setor" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_setor" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarCategoria">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_setor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarCategoriaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarCategoriaResult" type="tns:ArrayOfTB_BIN_Categoria" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTB_BIN_Categoria">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_Categoria" nillable="true" type="tns:TB_BIN_Categoria" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_Categoria">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_categoria" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_categoria" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarEtapa">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_etapa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ds_etapa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="St_abertura" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="St_concluir" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="St_encerrar" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEtapaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEtapaResult" type="tns:ArrayOfTB_BIN_Etapa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTB_BIN_Etapa">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_Etapa" nillable="true" type="tns:TB_BIN_Etapa" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_Etapa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_etapa" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_etapa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_abertura" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_concluir" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_encerrar" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_interno" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Ds_assunto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="St_prioridade" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Tp_data" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Dt_ini" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Dt_fin" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LoginCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="St_registro" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarTicketResult" type="tns:ArrayOfTB_BIN_Ticket" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfTB_BIN_Ticket">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_Ticket" nillable="true" type="tns:TB_BIN_Ticket" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_Ticket">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_ticket" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_setor" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_setor" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_categoria" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_categoria" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginCliente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginOperador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_prioridade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Prioridade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_assunto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_abertura" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_concluido" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_encerramento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_registro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="lEvolucao" type="tns:ArrayOfTB_BIN_EvolucaoTicket" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTB_BIN_EvolucaoTicket">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_EvolucaoTicket" nillable="true" type="tns:TB_BIN_EvolucaoTicket" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_EvolucaoTicket">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_ticket" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_evolucao" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="LoginOperador" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_etapa" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_etapa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_evolucao" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_evolucao" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="lAnexo" type="tns:ArrayOfTB_BIN_AnexoEvolucao" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="ArrayOfTB_BIN_AnexoEvolucao">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="TB_BIN_AnexoEvolucao" nillable="true" type="tns:TB_BIN_AnexoEvolucao" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="TB_BIN_AnexoEvolucao">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Id_ticket" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_evolucao" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_anexo" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_anexo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Img" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_ext" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarEstapaEvoluir">
+        <s:complexType />
+      </s:element>
+      <s:element name="BuscarEstapaEvoluirResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEstapaEvoluirResult" type="tns:ArrayOfTB_BIN_Etapa" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEvolucaoTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_ticket" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarEvolucaoTicketResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarEvolucaoTicketResult" type="tns:ArrayOfTB_BIN_EvolucaoTicket" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarAnexoEvolucao">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Id_ticket" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_evolucao" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarAnexoEvolucaoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarAnexoEvolucaoResult" type="tns:ArrayOfTB_BIN_AnexoEvolucao" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginOperador">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginCliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_setor" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="LoginOperadorResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="LoginOperadorResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AbrirTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="val" type="tns:TB_BIN_Ticket" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AbrirTicketResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="EvoluirTicket">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="val" type="tns:TB_BIN_EvolucaoTicket" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="EvoluirTicketResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="CalcularSerial">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cnpj_cliente" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Dt_servidor" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="diasvalidade" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalcularSerialResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalcularSerialResult" type="tns:TChaveLic" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="TChaveLic">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Status" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Chave" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qt_diasvalidade" type="s:double" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_licenca" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nr_seqlic" type="s:int" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="BuscarBoletos">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cnpj_cliente" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="BuscarBoletosResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="BuscarBoletosResult" type="tns:ArrayOfBlTitulo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfBlTitulo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="blTitulo" nillable="true" type="tns:blTitulo" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="blTitulo">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_empresa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_sacado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nr_lancto" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Cd_parcela" nillable="true" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Id_cobranca" nillable="true" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_contager" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_contager" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome_banco" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_portador" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Logo_banco" type="s:base64Binary" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ano" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status_remessa" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_motivo" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cedente" type="tns:blCedente" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sacado" type="tns:blPessoa" />
+          <s:element minOccurs="0" maxOccurs="1" name="Avalista" type="tns:blPessoa" />
+          <s:element minOccurs="0" maxOccurs="1" name="EndAvalista" type="tns:blEndereco" />
+          <s:element minOccurs="0" maxOccurs="1" name="Local_pagamento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nosso_numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroDocumento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Carteira" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Modalidade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_cobranca" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Aceite_documento" type="tns:TAceiteDocumento" />
+          <s:element minOccurs="1" maxOccurs="1" name="Especie_documento" type="tns:TEspecieDocumento" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_documento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_documentostring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_vencimento" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_vencimentostring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_ocorrencia" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_credito" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_creditostring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_creditotaxa" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_creditotaxastr" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_protesto" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_protestostring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_baixa" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_baixastring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Dt_emissaobloqueto" nillable="true" type="s:dateTime" />
+          <s:element minOccurs="0" maxOccurs="1" name="Dt_emissaobloquetostring" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_documento" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_multacalc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_jurocalc" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_despesa_cobranca" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_abatimento" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_desconto" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_morajuros" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_iof" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Vl_outras_despesas" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="vl_outros_creditos" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Instrucoes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Sg_moeda_padrao" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_registro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Status_registro" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pc_jurodia" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_jurodia" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pc_desconto" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_desconto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nr_diasdesconto" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="Pc_multa" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_multa" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nr_diasmulta" type="s:decimal" />
+          <s:element minOccurs="1" maxOccurs="1" name="St_descontar" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_bancocorrespondente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_bancocorrespondente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Conveniocobranca" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nr_agenciacorrespondente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nr_contacorrespondente" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Carteiracorrespondente" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="St_protestarauto" type="s:boolean" />
+          <s:element minOccurs="1" maxOccurs="1" name="Nr_diasprotestar" type="s:decimal" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cd_ocorrencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_ocorrencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Ds_motivoocorrencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="St_protestado" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="St_protestadobool" type="s:boolean" />
+          <s:element minOccurs="0" maxOccurs="1" name="DS_Instrucoes" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Tp_layoutbloqueto" type="s:string" />
+          <s:element minOccurs="1" maxOccurs="1" name="Qt_atualizatitulo" type="s:decimal" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="blCedente">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:blPessoa">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="CodigoCedente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DigitoCodigoCedente" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Postocedente" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="blPessoa">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="TipoInscricao" type="tns:TTipoInscricao" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroCPFCNPJ" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Nome" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Endereco" type="tns:blEndereco" />
+          <s:element minOccurs="0" maxOccurs="1" name="ContaBancaria" type="tns:blContaBancaria" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TTipoInscricao">
+        <s:restriction base="s:string">
+          <s:enumeration value="tiPessoaFisica" />
+          <s:enumeration value="tiPessoaJuridica" />
+          <s:enumeration value="tiOutro" />
+        </s:restriction>
+      </s:simpleType>
+      <s:complexType name="blEndereco">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Rua" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Numero" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Complemento" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Bairro" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Cidade" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="EMail" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Estado" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="CEP" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="blContaBancaria">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Banco" type="tns:blBanco" />
+          <s:element minOccurs="0" maxOccurs="1" name="CodigoAgencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DigitoAgencia" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NumeroConta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="DigitoConta" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="NomeCliente" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="blBanco">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="Codigo" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:simpleType name="TAceiteDocumento">
+        <s:restriction base="s:string">
+          <s:enumeration value="adSim" />
+          <s:enumeration value="adNao" />
+        </s:restriction>
+      </s:simpleType>
+      <s:simpleType name="TEspecieDocumento">
+        <s:restriction base="s:string">
+          <s:enumeration value="edAluguel" />
+          <s:enumeration value="edApoliceSeguro" />
+          <s:enumeration value="edCheque" />
+          <s:enumeration value="edContrato" />
+          <s:enumeration value="edContribuicaoConfederativa" />
+          <s:enumeration value="edCosseguros" />
+          <s:enumeration value="edDividaAtivaEstado" />
+          <s:enumeration value="edDividaAtivaMunicipio" />
+          <s:enumeration value="edDividaAtivaUniao" />
+          <s:enumeration value="edDuplicataMercantil" />
+          <s:enumeration value="edDuplicataMercantialIndicacao" />
+          <s:enumeration value="edDuplicataRural" />
+          <s:enumeration value="edDuplicataServico" />
+          <s:enumeration value="edDuplicataServicoIndicacao" />
+          <s:enumeration value="edFatura" />
+          <s:enumeration value="edLetraCambio" />
+          <s:enumeration value="edMensalidadeEscolar" />
+          <s:enumeration value="edNotaCreditoComercial" />
+          <s:enumeration value="edNotaCreditoExportacao" />
+          <s:enumeration value="edNotaCreditoIndustrial" />
+          <s:enumeration value="edNotaCreditoRural" />
+          <s:enumeration value="edNotaDebito" />
+          <s:enumeration value="edNotaPromissoria" />
+          <s:enumeration value="edNotaPromissoriaRural" />
+          <s:enumeration value="edNotaSeguro" />
+          <s:enumeration value="edOutros" />
+          <s:enumeration value="edParcelaConsorcio" />
+          <s:enumeration value="edRecibo" />
+          <s:enumeration value="edTriplicataMercantil" />
+          <s:enumeration value="edTriplicataServico" />
+          <s:enumeration value="edWarrant" />
+        </s:restriction>
+      </s:simpleType>
+      <s:element name="AtualizarBoleto">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Cd_empresa" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Nr_lancto" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Cd_parcela" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Id_cobranca" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AtualizarBoletoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AtualizarBoletoResult" type="tns:blTitulo" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="ValidarLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:ValidarLogin" />
+  </wsdl:message>
+  <wsdl:message name="ValidarLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:ValidarLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarSetorSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarSetor" />
+  </wsdl:message>
+  <wsdl:message name="BuscarSetorSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarSetorResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarCategoriaSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarCategoria" />
+  </wsdl:message>
+  <wsdl:message name="BuscarCategoriaSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarCategoriaResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEtapaSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEtapa" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEtapaSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEtapaResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarTicket" />
+  </wsdl:message>
+  <wsdl:message name="BuscarTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEstapaEvoluirSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEstapaEvoluir" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEstapaEvoluirSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEstapaEvoluirResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEvolucaoTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarEvolucaoTicket" />
+  </wsdl:message>
+  <wsdl:message name="BuscarEvolucaoTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarEvolucaoTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarAnexoEvolucaoSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarAnexoEvolucao" />
+  </wsdl:message>
+  <wsdl:message name="BuscarAnexoEvolucaoSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarAnexoEvolucaoResponse" />
+  </wsdl:message>
+  <wsdl:message name="LoginOperadorSoapIn">
+    <wsdl:part name="parameters" element="tns:LoginOperador" />
+  </wsdl:message>
+  <wsdl:message name="LoginOperadorSoapOut">
+    <wsdl:part name="parameters" element="tns:LoginOperadorResponse" />
+  </wsdl:message>
+  <wsdl:message name="AbrirTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:AbrirTicket" />
+  </wsdl:message>
+  <wsdl:message name="AbrirTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:AbrirTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="EvoluirTicketSoapIn">
+    <wsdl:part name="parameters" element="tns:EvoluirTicket" />
+  </wsdl:message>
+  <wsdl:message name="EvoluirTicketSoapOut">
+    <wsdl:part name="parameters" element="tns:EvoluirTicketResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalcularSerialSoapIn">
+    <wsdl:part name="parameters" element="tns:CalcularSerial" />
+  </wsdl:message>
+  <wsdl:message name="CalcularSerialSoapOut">
+    <wsdl:part name="parameters" element="tns:CalcularSerialResponse" />
+  </wsdl:message>
+  <wsdl:message name="BuscarBoletosSoapIn">
+    <wsdl:part name="parameters" element="tns:BuscarBoletos" />
+  </wsdl:message>
+  <wsdl:message name="BuscarBoletosSoapOut">
+    <wsdl:part name="parameters" element="tns:BuscarBoletosResponse" />
+  </wsdl:message>
+  <wsdl:message name="AtualizarBoletoSoapIn">
+    <wsdl:part name="parameters" element="tns:AtualizarBoleto" />
+  </wsdl:message>
+  <wsdl:message name="AtualizarBoletoSoapOut">
+    <wsdl:part name="parameters" element="tns:AtualizarBoletoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WS_HelpDeskSoap">
+    <wsdl:operation name="ValidarLogin">
+      <wsdl:input message="tns:ValidarLoginSoapIn" />
+      <wsdl:output message="tns:ValidarLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSetor">
+      <wsdl:input message="tns:BuscarSetorSoapIn" />
+      <wsdl:output message="tns:BuscarSetorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCategoria">
+      <wsdl:input message="tns:BuscarCategoriaSoapIn" />
+      <wsdl:output message="tns:BuscarCategoriaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEtapa">
+      <wsdl:input message="tns:BuscarEtapaSoapIn" />
+      <wsdl:output message="tns:BuscarEtapaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTicket">
+      <wsdl:input message="tns:BuscarTicketSoapIn" />
+      <wsdl:output message="tns:BuscarTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstapaEvoluir">
+      <wsdl:input message="tns:BuscarEstapaEvoluirSoapIn" />
+      <wsdl:output message="tns:BuscarEstapaEvoluirSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvolucaoTicket">
+      <wsdl:input message="tns:BuscarEvolucaoTicketSoapIn" />
+      <wsdl:output message="tns:BuscarEvolucaoTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAnexoEvolucao">
+      <wsdl:input message="tns:BuscarAnexoEvolucaoSoapIn" />
+      <wsdl:output message="tns:BuscarAnexoEvolucaoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="LoginOperador">
+      <wsdl:input message="tns:LoginOperadorSoapIn" />
+      <wsdl:output message="tns:LoginOperadorSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AbrirTicket">
+      <wsdl:input message="tns:AbrirTicketSoapIn" />
+      <wsdl:output message="tns:AbrirTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="EvoluirTicket">
+      <wsdl:input message="tns:EvoluirTicketSoapIn" />
+      <wsdl:output message="tns:EvoluirTicketSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalcularSerial">
+      <wsdl:input message="tns:CalcularSerialSoapIn" />
+      <wsdl:output message="tns:CalcularSerialSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="BuscarBoletos">
+      <wsdl:input message="tns:BuscarBoletosSoapIn" />
+      <wsdl:output message="tns:BuscarBoletosSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarBoleto">
+      <wsdl:input message="tns:AtualizarBoletoSoapIn" />
+      <wsdl:output message="tns:AtualizarBoletoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WS_HelpDeskSoap" type="tns:WS_HelpDeskSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarLogin">
+      <soap:operation soapAction="http://tempuri.org/ValidarLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSetor">
+      <soap:operation soapAction="http://tempuri.org/BuscarSetor" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCategoria">
+      <soap:operation soapAction="http://tempuri.org/BuscarCategoria" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEtapa">
+      <soap:operation soapAction="http://tempuri.org/BuscarEtapa" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTicket">
+      <soap:operation soapAction="http://tempuri.org/BuscarTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstapaEvoluir">
+      <soap:operation soapAction="http://tempuri.org/BuscarEstapaEvoluir" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvolucaoTicket">
+      <soap:operation soapAction="http://tempuri.org/BuscarEvolucaoTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAnexoEvolucao">
+      <soap:operation soapAction="http://tempuri.org/BuscarAnexoEvolucao" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginOperador">
+      <soap:operation soapAction="http://tempuri.org/LoginOperador" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbrirTicket">
+      <soap:operation soapAction="http://tempuri.org/AbrirTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EvoluirTicket">
+      <soap:operation soapAction="http://tempuri.org/EvoluirTicket" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularSerial">
+      <soap:operation soapAction="http://tempuri.org/CalcularSerial" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarBoletos">
+      <soap:operation soapAction="http://tempuri.org/BuscarBoletos" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarBoleto">
+      <soap:operation soapAction="http://tempuri.org/AtualizarBoleto" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="WS_HelpDeskSoap12" type="tns:WS_HelpDeskSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="ValidarLogin">
+      <soap12:operation soapAction="http://tempuri.org/ValidarLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarSetor">
+      <soap12:operation soapAction="http://tempuri.org/BuscarSetor" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarCategoria">
+      <soap12:operation soapAction="http://tempuri.org/BuscarCategoria" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEtapa">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEtapa" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarTicket">
+      <soap12:operation soapAction="http://tempuri.org/BuscarTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEstapaEvoluir">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEstapaEvoluir" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarEvolucaoTicket">
+      <soap12:operation soapAction="http://tempuri.org/BuscarEvolucaoTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarAnexoEvolucao">
+      <soap12:operation soapAction="http://tempuri.org/BuscarAnexoEvolucao" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="LoginOperador">
+      <soap12:operation soapAction="http://tempuri.org/LoginOperador" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AbrirTicket">
+      <soap12:operation soapAction="http://tempuri.org/AbrirTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="EvoluirTicket">
+      <soap12:operation soapAction="http://tempuri.org/EvoluirTicket" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalcularSerial">
+      <soap12:operation soapAction="http://tempuri.org/CalcularSerial" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="BuscarBoletos">
+      <soap12:operation soapAction="http://tempuri.org/BuscarBoletos" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AtualizarBoleto">
+      <soap12:operation soapAction="http://tempuri.org/AtualizarBoleto" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WS_HelpDesk">
+    <wsdl:port name="WS_HelpDeskSoap" binding="tns:WS_HelpDeskSoap">
+      <soap:address location="http://191.32.22.159/ws_helpdesk/WS_HelpDesk.asmx" />
+    </wsdl:port>
+    <wsdl:port name="WS_HelpDeskSoap12" binding="tns:WS_HelpDeskSoap12">
+      <soap12:address location="http://191.32.22.159/ws_helpdesk/WS_HelpDesk.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

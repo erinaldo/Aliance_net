@@ -1,0 +1,355 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A5BC81C1-BE21-4D67-A42E-A051640E36D4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Consulta</RootNamespace>
+    <AssemblyName>Consulta</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastro\FCadVisaoBI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadVisaoBI.Designer.cs">
+      <DependentUpon>FCadVisaoBI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCad_AcessoVisa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCad_AcessoVisa.Designer.cs">
+      <DependentUpon>FCad_AcessoVisa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCad_Operador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCad_Operador.Designer.cs">
+      <DependentUpon>FCad_Operador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCad_ParamClasse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCad_ParamClasse.Designer.cs">
+      <DependentUpon>FCad_ParamClasse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCfgVendasUF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCfgVendasUF.Designer.cs">
+      <DependentUpon>FCfgVendasUF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCad_Report.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCad_Report.Designer.cs">
+      <DependentUpon>FCad_Report.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_CentralRelatorios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_CentralRelatorios.Designer.cs">
+      <DependentUpon>FLan_CentralRelatorios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCad_TipoAmarracao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCad_TipoAmarracao.Designer.cs">
+      <DependentUpon>FCad_TipoAmarracao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefaultData_Consulta.cs" />
+    <Compile Include="FCad_SQL.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCad_SQL.Designer.cs">
+      <DependentUpon>FCad_SQL.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDownload_Relatorio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDownload_Relatorio.Designer.cs">
+      <DependentUpon>FDownload_Relatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEscolha_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEscolha_Menu.Designer.cs">
+      <DependentUpon>FEscolha_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanConsulta.Designer.cs">
+      <DependentUpon>FLanConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Homologacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Homologacao.Designer.cs">
+      <DependentUpon>FLan_Homologacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FParametrosConsulta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FParametrosConsulta.Designer.cs">
+      <DependentUpon>FParametrosConsulta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSqlEditor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSqlEditor.designer.cs">
+      <DependentUpon>FSqlEditor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Query_Report.cs" />
+    <Compile Include="Settings.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{e9d31189-9f38-4114-9c18-c3e1a1331cca}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastro\FCadVisaoBI.resx">
+      <DependentUpon>FCadVisaoBI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_AcessoVisa.resx">
+      <DependentUpon>FCad_AcessoVisa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_Operador.es.resx">
+      <DependentUpon>FCad_Operador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_Operador.resx">
+      <DependentUpon>FCad_Operador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_ParamClasse.es.resx">
+      <DependentUpon>FCad_ParamClasse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_ParamClasse.resx">
+      <DependentUpon>FCad_ParamClasse.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_TipoAmarracao.es.resx">
+      <DependentUpon>FCad_TipoAmarracao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCfgVendasUF.resx">
+      <DependentUpon>FCfgVendasUF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCad_Report.resx">
+      <DependentUpon>FCad_Report.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCad_SQL.es.resx">
+      <DependentUpon>FCad_SQL.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDownload_Relatorio.es.resx">
+      <DependentUpon>FDownload_Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEscolha_Menu.es.resx">
+      <DependentUpon>FEscolha_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanConsulta.es.resx">
+      <DependentUpon>FLanConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_CentralRelatorios.resx">
+      <DependentUpon>FLan_CentralRelatorios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Homologacao.es.resx">
+      <DependentUpon>FLan_Homologacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCad_TipoAmarracao.resx">
+      <DependentUpon>FCad_TipoAmarracao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCad_SQL.resx">
+      <DependentUpon>FCad_SQL.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDownload_Relatorio.resx">
+      <DependentUpon>FDownload_Relatorio.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEscolha_Menu.resx">
+      <DependentUpon>FEscolha_Menu.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanConsulta.resx">
+      <DependentUpon>FLanConsulta.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Homologacao.resx">
+      <DependentUpon>FLan_Homologacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FParametrosConsulta.resx">
+      <DependentUpon>FParametrosConsulta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSqlEditor.es.resx">
+      <DependentUpon>FSqlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSqlEditor.resx">
+      <DependentUpon>FSqlEditor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Consulta2.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Operador1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_ParamClasse.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Report.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Report_X_Consulta.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_TipoAmarracao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_UsuarioConsulta.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Usuario_X_Tabela1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_Cad_Usuario_X_Tabela11.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Consulta.Cadastro.TList_CfgVendasUF.datasource" />
+    <None Include="Properties\DataSources\FormRelPadrao.WS_RDCSoap.TRegistro_Cad_RDC.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>PublicSettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Resources\ico_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

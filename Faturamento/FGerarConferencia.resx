@@ -1,0 +1,818 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="barraMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BB_Gravar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BB_Gravar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_Gravar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAALOSURBVFhH5ZdBaxNBFMf7HcR+jkIES6Ggh4JIoYdq6Uk9
+        KBQstAfroS2IioIQQUXRHEJR0IPVgoKieFEsgQYiBEMoEg8FaRAPgl9g5Df4X95udt3MJngx8JjN7rz/
+        +82bN7M7IyN/fgcOjrp/aYrrWwWeX3noTl15E9m566/dMMxqEkPxIghu8OBd41vMfvz85YZhSV1B9ADc
+        2Wq7By93vXG93/0+MAAaaEmbNhPg2uPPrvy05S4/arr1asN93dv3AIgUMXzRQAtNtImRC3Dh/o67WKl7
+        5yKBrQ8aaKH5V4DpxaqnU6qUAcQQKWLyRUvTQAxiUXexGrAApAviZND2l46/128rALTQBCIXgDRBvHSv
+        FgEQsIhpAGihqSnIzQCdz9/ajkbbbLWDAeQDBFp9A0BJ0SzcfB8DQFBW/9TMvRZAq9P1WmhqhaVm4OiZ
+        u35+6MSc4YQzQgQsYviSAbTsKugLgO0TAATs6EOuVaxoUQeqAQbbswpsBuh8YvWV35aBGMTQQCsIgHRB
+        jeMwDC07BbkZoGAgpnox5nCQFi0VIXWWCaD9WluntmT+D2LS0SpIBRifLUcvDBygVhbIQBFTBtHRFDDI
+        XAAbnDfX2eVLhYzlRg3ZVQAAg+1ZBTYDAmDUBH/+4q378LEWZPjge3xp00OQDU1BLoBSx+cYIhtPnnmI
+        UJs7vegBsMIAiACAkUqNiFHpPmCCtK0A6Es2gzKAAwEtAEIaEa0AslqbgSAAVXwSwAYH5nZlI4Kw1wIK
+        AhibWovSpLehBSCABeCae2lmAVgJ9FUGeC2nFiHLggfas4GgCDUFBEpuy1kAyoYyYLfiVAB7OAFCmwat
+        rYFk0fULALg+yWjJdmwfSB7PgNDmcWzmpE/z+tUbQYYPvgSTnr60ek5G9pymhzhihyePRHZoYtJlWalU
+        ij3Dz541pZc5+jSIYRxWsw6/scPpf/3nN1xyZbtM1JMNAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BB_Gravar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BB_Gravar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BB_Gravar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="BB_Gravar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 40</value>
+  </data>
+  <data name="BB_Gravar.Text" xml:space="preserve">
+    <value> (F4)
+ Gravar</value>
+  </data>
+  <data name="BB_Gravar.ToolTipText" xml:space="preserve">
+    <value>Gravar Registro</value>
+  </data>
+  <data name="BB_Cancelar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BB_Cancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_Cancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAPGSURBVFhHpZc/a1RREMWXDZgulancKiCokMJEQSUuWIha
+        iP+wSTCVBBFtRFEsLEWsbWJh63fwQ4ifwEqrFMIWCirvOr95d27m3fcfF4a3+/btPWdmzpl7dzIZ+Vqs
+        T4OP7yeWgo+Ryw17/O/GNFgUrx+E4sObMt69OIy3T8Kv5zvhy2wpxbDVO55KoLK4AnJ9tRuKR1tl3D9T
+        xs56GXvzUDy7HSD58/Gt/yNSnF8OxcvtEpisn14uow38zvFQEDdnZWxv6O8PbpxWIqOqoeCUF3AyysDD
+        3mY18xz8ymooLKQqi3sXh5NI4JTbgH3mEKINVIVrjD8Pr5ZtMOD5SigIkhGCkPi0eqS7Ep3gAENKgL9t
+        zRqDvmvFqIiBCwG0VFxf6yahD/Fjyt6WuRDAcm39pNefTx0NWo3dc5p9EjKVEF18na+Fj8vT+hpKoK/n
+        QgyrdZGAHEQQn7oCYIKK0B65V2uFgsfy9gpOFjC/dykbkINrJ0tdGLi0gc/cr1QhZe/VTjsI73NTu5Aw
+        n/eRWNw9q/3X4PfYU6JOwFRvPseGdo8scqtJj4eQQBOqBwPnvSfAXE+WMvBoNXpNubWXfsiY1YRYn73I
+        VFtB5oCzlgROej8VMSoBU74Q0CEj3uYBylshwYTLfT7A4+jBwNUhJCgtqRLwsz163fqLqtXjZAABP2RQ
+        OB6XXrcNGiUgFUjgjPgaAb+xuArUSJiqo70QcNicdJIwApo54ExPqaZWgBLr3PdqbyBg/tYsUHQcMgpu
+        Ppd24P980CQCBs4Yl0pWCdiWithaCECCxRAeJCrgtKbF54mA7SG4q0KAG85qZGkibPK5kjB/+yHjrOaH
+        jRJA/WQOlsTvCyuHFahZTQTT5/FEAlA/ZJzVflw6piBctf+A025pBa3XFlhv9QE7TFBO+cwQ6Zt0OvOp
+        nvO5qZ2rgkPQwLG8VCOBJwKUx/tcMmOBvj08DZqYecVq0nP9jPjs/AgB63/NYmThfS6LkuFgEnYm9Gr3
+        mQOel9+TUKZGwLZRWRRB9ZGwXmvGXu12tLOTtIi2Un5PIN/DdZeECDNfVI8mGg8TcRG+o+dKwjL3BKTC
+        TNVGAvmgSRPOhgxCci2hInkkwVnPY9Zhfz+VvisBzcMPmspJJrda3Ndtf0//CaLP05+XeMqq2K7vjJ5I
+        mCgbfJ6rPQ2ZvOdSNXbc1rK3kYEEB0jNrMXnaWOxCefBaYMIrrPnfZWgX+lsZyVvsxqlB5TvBXhUyYcQ
+        gQzBHpHOeO5wwmw30NHl7iPgv2fx/clEg/d5jFmLZ/8BmDKZHFiONRgAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BB_Cancelar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="BB_Cancelar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="BB_Cancelar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="BB_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 40</value>
+  </data>
+  <data name="BB_Cancelar.Text" xml:space="preserve">
+    <value>(F6)
+ Cancelar</value>
+  </data>
+  <data name="BB_Cancelar.ToolTipText" xml:space="preserve">
+    <value>Cancelar Operação</value>
+  </data>
+  <data name="barraMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="barraMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 43</value>
+  </data>
+  <data name="barraMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Name" xml:space="preserve">
+    <value>barraMenu</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="tlpCentral.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
+    <value>Inset</value>
+  </data>
+  <data name="tlpCentral.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <metadata name="St_gerarConferencia.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="St_gerarConferencia.HeaderText" xml:space="preserve">
+    <value>Gerar Conferência</value>
+  </data>
+  <data name="St_gerarConferencia.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="idpedidoitemDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Id. Item</value>
+  </data>
+  <data name="idpedidoitemDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="cdprodutoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Cd.Produto</value>
+  </data>
+  <data name="cdprodutoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dsprodutoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>DS.Produto</value>
+  </data>
+  <data name="dsprodutoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Quantidade</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="sgunidadeestDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>UN</value>
+  </data>
+  <data name="sgunidadeestDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="vlunitarioDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>VL.Unit</value>
+  </data>
+  <data name="vlunitarioDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="sgunidadevalorDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>UN</value>
+  </data>
+  <data name="sgunidadevalorDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>48</value>
+  </data>
+  <data name="vlsubtotalDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>VL.SubTotal</value>
+  </data>
+  <data name="vlsubtotalDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="vlfreteitemDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Vl.FreteItem</value>
+  </data>
+  <data name="vlfreteitemDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>88</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn65.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn65.HeaderText" xml:space="preserve">
+    <value>VL. Total do Item</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn65.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn64.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn64.HeaderText" xml:space="preserve">
+    <value>Vl. Juro Financeiro</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn64.Width" type="System.Int32, mscorlib">
+    <value>109</value>
+  </data>
+  <data name="vlsubtotalsemjurosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl.Total.SemJuros</value>
+  </data>
+  <data name="vlsubtotalsemjurosDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="vldescDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Vl.Desconto</value>
+  </data>
+  <data name="vldescDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="vlcomissaoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>VL.Comissão</value>
+  </data>
+  <data name="vlcomissaoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="qtdestoqueDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Saldo Estoque</value>
+  </data>
+  <data name="qtdestoqueDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="pcdescDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>%desc</value>
+  </data>
+  <data name="pcdescDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <metadata name="dataGridViewTextBoxColumn55.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="dataGridViewTextBoxColumn55.HeaderText" xml:space="preserve">
+    <value>Marca</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn55.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="pcjurofinDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>%Pc.juro.fin</value>
+  </data>
+  <data name="pcjurofinDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="cdEmpresaDataGridViewTextBoxColumn4.HeaderText" xml:space="preserve">
+    <value>Cd.Empresa</value>
+  </data>
+  <data name="cdEmpresaDataGridViewTextBoxColumn4.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="dsobservacaoitemDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="dsobservacaoitemDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <metadata name="BS_Itens.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>122, 17</value>
+  </metadata>
+  <data name="dataGridDefault1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="dataGridDefault1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="dataGridDefault1.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="dataGridDefault1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 395</value>
+  </data>
+  <data name="dataGridDefault1.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;dataGridDefault1.Name" xml:space="preserve">
+    <value>dataGridDefault1</value>
+  </data>
+  <data name="&gt;&gt;dataGridDefault1.Type" xml:space="preserve">
+    <value>Componentes.DataGridDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dataGridDefault1.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;dataGridDefault1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="bindingNavigator1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>218, 17</value>
+  </metadata>
+  <data name="bindingNavigatorCountItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 22</value>
+  </data>
+  <data name="bindingNavigatorCountItem.Text" xml:space="preserve">
+    <value>de {0}</value>
+  </data>
+  <data name="bindingNavigatorCountItem.ToolTipText" xml:space="preserve">
+    <value>Total de Registros</value>
+  </data>
+  <data name="bindingNavigator1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAStJREFUOE9jYBg0
+        oHDW8/9NC57/z5z4+D8uR4W3P8Apx5A789n/VUfe/8elKL77wf/ghmu4DciY8vT/wn0fsCqK73n4f+n+
+        ///9qy/gNiCh58n/aVveYyiKaL8P1pw56/9/r9ITuA2I7Hr0v3f1BxRFoa33wJpb1wFt7/z73yX/AG4D
+        Apsf/q+b/w6uKLjl7v9Fe///7wBqzpjz879d3c//9hnbcRvgUXX/f/60NyiK7Ipv/0+f8/u/f9e3/zqF
+        7/5bJKzHbYB96d3/2ZNfYyjSTzn/36ToxX+VrE//jSOX4TbAIu/O/9T+11gVGSSd+C+b9vW/bvA83AYY
+        Zt3+H9byEqci/dTL/zV8p+E2QCftxn+/6od4Fal4TMBtgFPulf8gBXgVDZqMh+wQAPB2wKsSwCgmAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem.Text" xml:space="preserve">
+    <value>Primeiro Registro</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAL1JREFUOE9jYBgy
+        ILz9wX+yHRvf/eB/cMM18gyI73n4f+n+///9qy+QbkBE+32w5sxZ//97lZ4gzYDQ1ntgza3rgLZ3/v3v
+        kn+AeAOCW+7+X7T3//8OoOaMOT//29X9/G+fsZ14A0ChbVd8+3/6nN///bu+/dcpfPffImE9aQaADNFP
+        Of/fpOjFf5WsT/+NI5eRbgDIEIOkE/9l077+1w2eR54BYJekXv6v4TuNfANAhqh4TKDMALKTMc01AgDQ
+        FGCYkuTLEQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem.Text" xml:space="preserve">
+    <value>Registro Anterior</value>
+  </data>
+  <data name="bindingNavigatorSeparator.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.AccessibleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 21</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigatorPositionItem.ToolTipText" xml:space="preserve">
+    <value>Registro Corrente</value>
+  </data>
+  <data name="bindingNavigatorSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAKtJREFUOE9jYBh0
+        oHDW8/8UOSp35rP/Cd33yDckY8rT//P2//6f0HWHPEMSep78n73v1//OrX//u5VeJt2QyK5H/6ds+/W/
+        ZOnf/wnT//63yT1LmiGBzQ//t659D9ZsXPLlv3T0tf/GkcuIN8Sj6v7/krnv4JoVXXqI1wyKPvvSu/8D
+        W56BbSZZM8gAi7w7/20KrpCnGWSAYdZt8jWDDNBJu0GanylKtoNCMwCgfl+gC2KedgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem.Text" xml:space="preserve">
+    <value>Proximo Registro</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATBJREFUOE9jYBhU
+        oHDW8/+4HASSa1rw/H/mxMc41TDkznz2P6H7HlYFILlVR97/D29/gNuAjClP/8/b//t/QtcdDEUguYX7
+        PvwPbriG24CEnif/Z+/79b9z69//bqWXURSC5KZtef/fv/oCbgMiux79n7Lt1/+SpX//J0z/+98m9yxc
+        MUiud/WH/16lJ3AbENj88H/r2vdgzcYlX/5LR1/7bxy5DKwBJFc3/91/l/wDuA3wqLr/v2TuO7hmRZce
+        uGKQXP60N//tM7bjNsC+9O7/wJZnYJuRNYNcAJLLnvz6v0XCetwGWOTd+W9TcAVDM8gAkFxq/2u4l7Cm
+        F8Os21g1gxSD5MJaXv7XDZ6H2wU6aTdwSoLk/Kof/tfwnYbbAHz5yin3yn8VjwlgPKjyHwMAvtG/s0Vm
+        x8MAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem.Text" xml:space="preserve">
+    <value>Ultimo Registro</value>
+  </data>
+  <data name="bindingNavigator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 395</value>
+  </data>
+  <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>808, 25</value>
+  </data>
+  <data name="bindingNavigator1.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="bindingNavigator1.Text" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Name" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingNavigator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="pDados.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="pDados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="pDados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>812, 424</value>
+  </data>
+  <data name="pDados.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pDados.Name" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;pDados.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;pDados.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="&gt;&gt;pDados.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpCentral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 43</value>
+  </data>
+  <data name="tlpCentral.RowCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="tlpCentral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>822, 434</value>
+  </data>
+  <data name="tlpCentral.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Name" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tlpCentral.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pDados" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,50,Percent,50" /&gt;&lt;Rows Styles="Percent,50,Percent,50" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>822, 477</value>
+  </data>
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Itens do Pedido para Gerar Conferência</value>
+  </data>
+  <data name="&gt;&gt;BB_Gravar.Name" xml:space="preserve">
+    <value>BB_Gravar</value>
+  </data>
+  <data name="&gt;&gt;BB_Gravar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Name" xml:space="preserve">
+    <value>BB_Cancelar</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;St_gerarConferencia.Name" xml:space="preserve">
+    <value>St_gerarConferencia</value>
+  </data>
+  <data name="&gt;&gt;St_gerarConferencia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idpedidoitemDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>idpedidoitemDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;idpedidoitemDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdprodutoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>cdprodutoDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;cdprodutoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dsprodutoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dsprodutoDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;dsprodutoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>quantidadeDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;quantidadeDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sgunidadeestDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>sgunidadeestDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;sgunidadeestDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlunitarioDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>vlunitarioDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;vlunitarioDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;sgunidadevalorDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>sgunidadevalorDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;sgunidadevalorDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlsubtotalDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>vlsubtotalDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;vlsubtotalDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlfreteitemDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>vlfreteitemDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;vlfreteitemDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn65.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn65</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn65.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn64.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn64</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn64.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlsubtotalsemjurosDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>vlsubtotalsemjurosDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;vlsubtotalsemjurosDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vldescDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>vldescDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;vldescDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlcomissaoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>vlcomissaoDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;vlcomissaoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;qtdestoqueDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>qtdestoqueDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;qtdestoqueDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pcdescDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>pcdescDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;pcdescDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn55.Name" xml:space="preserve">
+    <value>dataGridViewTextBoxColumn55</value>
+  </data>
+  <data name="&gt;&gt;dataGridViewTextBoxColumn55.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pcjurofinDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>pcjurofinDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;pcjurofinDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdEmpresaDataGridViewTextBoxColumn4.Name" xml:space="preserve">
+    <value>cdEmpresaDataGridViewTextBoxColumn4</value>
+  </data>
+  <data name="&gt;&gt;cdEmpresaDataGridViewTextBoxColumn4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoitemDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dsobservacaoitemDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoitemDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BS_Itens.Name" xml:space="preserve">
+    <value>BS_Itens</value>
+  </data>
+  <data name="&gt;&gt;BS_Itens.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem.Name" xml:space="preserve">
+    <value>bindingNavigatorCountItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveFirstItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMovePreviousItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem.Name" xml:space="preserve">
+    <value>bindingNavigatorPositionItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator1.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveNextItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveLastItem</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TFGerarConferencia</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+</root>

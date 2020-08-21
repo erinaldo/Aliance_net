@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="dataGridViewTextBoxColumn343.HeaderText" xml:space="preserve">
+    <value>Cd. Producto</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridViewTextBoxColumn343.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn344.HeaderText" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn344.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn345.HeaderText" xml:space="preserve">
+    <value>Unid. Cant.</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn345.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn346.HeaderText" xml:space="preserve">
+    <value>Sigla Cant.</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn346.Width" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn347.HeaderText" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn348.Width" type="System.Int32, mscorlib">
+    <value>83</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn349.HeaderText" xml:space="preserve">
+    <value>Unidad Vl.</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn349.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn350.Width" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn366.HeaderText" xml:space="preserve">
+    <value>Cd. Lugar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn366.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn367.HeaderText" xml:space="preserve">
+    <value>Lugar Almacenaje</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn367.Width" type="System.Int32, mscorlib">
+    <value>117</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn368.HeaderText" xml:space="preserve">
+    <value>Servicio</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn370.HeaderText" xml:space="preserve">
+    <value>Observación Item</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn370.Width" type="System.Int32, mscorlib">
+    <value>115</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblItensNf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblItensNf.Text" xml:space="preserve">
+    <value>ITENS DE LA FACTURA</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn338.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn313.Width" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn314.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn315.Width" type="System.Int32, mscorlib">
+    <value>56</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn316.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn317.Width" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn318.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn319.Width" type="System.Int32, mscorlib">
+    <value>81</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn320.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn321.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn322.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn323.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn325.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn326.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn327.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn328.Width" type="System.Int32, mscorlib">
+    <value>138</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn329.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn334.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn341.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn342.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="lblNf.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="lblNf.Text" xml:space="preserve">
+    <value>FACTURAS</value>
+  </data>
+  <data name="tpNf.Text" xml:space="preserve">
+    <value>FACTURA</value>
+  </data>
+  <data name="cdprodutoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cód. Producto</value>
+  </data>
+  <data name="dsprodutoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="dsprodutoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="dslocalDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Lugar</value>
+  </data>
+  <data name="dslocalDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="quantidadeDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="sgunidadevalorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Unidad</value>
+  </data>
+  <data name="sgunidadevalorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="vlfreteitemDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>VL. Flete</value>
+  </data>
+  <data name="vlfreteitemDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="statusregistroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Estatus Registro </value>
+  </data>
+  <data name="statusregistroDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="label2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>ITENS DEL PEDIDO</value>
+  </data>
+  <data name="Status_Pedido.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="Status_Pedido.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="nrPedidoOrigemDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nrº Pedido Origen</value>
+  </data>
+  <data name="nrPedidoOrigemDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="dTPedidoStringDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="TP_Movimento_Extendido.HeaderText" xml:space="preserve">
+    <value>Movimiento</value>
+  </data>
+  <data name="dSEnderecoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="dSEnderecoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="dSCidadeDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="dSCFGPedidoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Configuración Pedido</value>
+  </data>
+  <data name="dSCFGPedidoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="dSCondPgtoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Condición de Pago</value>
+  </data>
+  <data name="dSCondPgtoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="label1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn244.HeaderText" xml:space="preserve">
+    <value>Lanzamiento</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn244.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn245.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn245.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn247.HeaderText" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn247.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn249.HeaderText" xml:space="preserve">
+    <value>Lugar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn249.Width" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn250.HeaderText" xml:space="preserve">
+    <value>Movimiento</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn250.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn252.HeaderText" xml:space="preserve">
+    <value>Salida</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn252.Width" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn254.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn255.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="TP_Lancto_String.HeaderText" xml:space="preserve">
+    <value>Tipo Lanzamiento</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn257.HeaderText" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn257.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="tpFaturamento.Text" xml:space="preserve">
+    <value>FACTURACIÓN</value>
+  </data>
+  <data name="Status.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="Status.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn371.HeaderText" xml:space="preserve">
+    <value>Nº Lanzto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn371.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn374.HeaderText" xml:space="preserve">
+    <value>Nombre Clifor</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn374.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn375.HeaderText" xml:space="preserve">
+    <value>Fc. Emisión</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn375.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn377.HeaderText" xml:space="preserve">
+    <value>Moneda</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn377.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn378.HeaderText" xml:space="preserve">
+    <value>Vl. Documento Padrón</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn379.HeaderText" xml:space="preserve">
+    <value>Tipo Movimiento</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn379.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn382.HeaderText" xml:space="preserve">
+    <value>Cd. CondPago</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn382.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn383.HeaderText" xml:space="preserve">
+    <value>Condición de Pago</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn383.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn387.HeaderText" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn387.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn273.HeaderText" xml:space="preserve">
+    <value>ST Recaudo</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn273.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn275.HeaderText" xml:space="preserve">
+    <value>Fc. Vencimiento</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn275.Width" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn277.HeaderText" xml:space="preserve">
+    <value>Vl. Actual</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn277.Width" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn278.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn278.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn290.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn290.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn279.HeaderText" xml:space="preserve">
+    <value>Id. Liquidación</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn279.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn280.HeaderText" xml:space="preserve">
+    <value>Fc. Liquidación</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn280.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn281.HeaderText" xml:space="preserve">
+    <value>Cd. CuentaGer</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn281.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn282.HeaderText" xml:space="preserve">
+    <value>Cd. LanztoCaja</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn282.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn283.HeaderText" xml:space="preserve">
+    <value>Cd. LanztoCaja Interés</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn283.Width" type="System.Int32, mscorlib">
+    <value>127</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn284.HeaderText" xml:space="preserve">
+    <value>Cd. LanztoCaja Desc.</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn284.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn285.HeaderText" xml:space="preserve">
+    <value>Cd. LanztoCaja DCamb. Activa</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn285.Width" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn286.HeaderText" xml:space="preserve">
+    <value>Vl. DCamb. Activa</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn286.Width" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn287.HeaderText" xml:space="preserve">
+    <value>Cd. LanztoCaja DCamb. Pasiva</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn287.Width" type="System.Int32, mscorlib">
+    <value>135</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn288.HeaderText" xml:space="preserve">
+    <value>Vl. DCamb. Pasiva</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn288.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn289.HeaderText" xml:space="preserve">
+    <value>Cuenta Gerencial</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn289.Width" type="System.Int32, mscorlib">
+    <value>105</value>
+  </data>
+  <data name="tpLiquidacao.Text" xml:space="preserve">
+    <value>LIQUIDACIÓN</value>
+  </data>
+  <data name="Status_registro.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="Status_registro.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="gNr_Lancto.HeaderText" xml:space="preserve">
+    <value>Nº Lanzto</value>
+  </data>
+  <data name="gNr_Lancto.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="nossonumeroDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nuestro Numero</value>
+  </data>
+  <data name="dtemissaobloquetoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fc. Emisión</value>
+  </data>
+  <data name="dtemissaobloquetoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="cdcontagerDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. CuentaGer</value>
+  </data>
+  <data name="cdcontagerDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="cendenteDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nombre Cedente</value>
+  </data>
+  <data name="cendenteDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="sacadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Nombre Sacado</value>
+  </data>
+  <data name="carteiraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cartera</value>
+  </data>
+  <data name="carteiraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="dtvencimentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fc. Vencimiento</value>
+  </data>
+  <data name="dtvencimentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>99</value>
+  </data>
+  <data name="dtbaixaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fc. Baja</value>
+  </data>
+  <data name="dtbaixaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="vldespesacobrancaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Desp. Recaudo</value>
+  </data>
+  <data name="vldespesacobrancaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="vlabatimentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Rebaja</value>
+  </data>
+  <data name="vlabatimentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="vldescontoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Descuento</value>
+  </data>
+  <data name="vldescontoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="vlmorajurosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Interés</value>
+  </data>
+  <data name="vlmorajurosDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="vloutrasdespesasDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Otros Gastos</value>
+  </data>
+  <data name="vloutroscreditosDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Otros Créditos</value>
+  </data>
+  <data name="vloutroscreditosDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="cdLanctoCaixaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Id.Caja</value>
+  </data>
+  <data name="cdLanctoCaixaDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="Column4.HeaderText" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="Column4.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="dshistoricoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Descripción Histórico</value>
+  </data>
+  <data name="dshistoricoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="dtlanctoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="dtlanctoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="vlRECEBERDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>(+) Valor Recibido</value>
+  </data>
+  <data name="vlPAGARDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>(-) Valor Pagado</value>
+  </data>
+  <data name="vlAtualDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>(=) Vl.Actual</value>
+  </data>
+  <data name="NM_Clifor.HeaderText" xml:space="preserve">
+    <value>Nombre do Cliente/Proveedor</value>
+  </data>
+  <data name="tpDetCaixa.Text" xml:space="preserve">
+    <value>CAJA</value>
+  </data>
+  <data name="Column5.HeaderText" xml:space="preserve">
+    <value>Cuenta</value>
+  </data>
+  <data name="Column5.Width" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn260.HeaderText" xml:space="preserve">
+    <value>Id.Caja</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn260.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn262.HeaderText" xml:space="preserve">
+    <value>Descripción Histórico</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn262.Width" type="System.Int32, mscorlib">
+    <value>121</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn263.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn263.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn264.Width" type="System.Int32, mscorlib">
+    <value>80</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn265.HeaderText" xml:space="preserve">
+    <value>(+) Valor Recibido</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn266.HeaderText" xml:space="preserve">
+    <value>(-) Valor Pagado</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn267.HeaderText" xml:space="preserve">
+    <value>(=) Vl.Actual</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn269.HeaderText" xml:space="preserve">
+    <value>Nombre del Cliente/Proveedor</value>
+  </data>
+  <data name="tpTransf.Text" xml:space="preserve">
+    <value>TRANSFERENCIAS</value>
+  </data>
+  <data name="tpCaixa.Text" xml:space="preserve">
+    <value>CAJA</value>
+  </data>
+  <data name="FStatus_compensado.HeaderText" xml:space="preserve">
+    <value>Estatus</value>
+  </data>
+  <data name="FStatus_compensado.Width" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="FNomeclifor.HeaderText" xml:space="preserve">
+    <value>Nombre Clifor</value>
+  </data>
+  <data name="FNomeclifor.Width" type="System.Int32, mscorlib">
+    <value>95</value>
+  </data>
+  <data name="FNomebanco.HeaderText" xml:space="preserve">
+    <value>Nombre Banco</value>
+  </data>
+  <data name="FNomebanco.Width" type="System.Int32, mscorlib">
+    <value>103</value>
+  </data>
+  <data name="FDt_emissao.HeaderText" xml:space="preserve">
+    <value>Fc. Emisión</value>
+  </data>
+  <data name="FDt_emissao.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="FDt_vencto.HeaderText" xml:space="preserve">
+    <value>Fc. Vencimiento</value>
+  </data>
+  <data name="FDt_vencto.Width" type="System.Int32, mscorlib">
+    <value>108</value>
+  </data>
+  <data name="FDt_compensacao.HeaderText" xml:space="preserve">
+    <value>Fc. Compensación</value>
+  </data>
+  <data name="FDt_compensacao.Width" type="System.Int32, mscorlib">
+    <value>120</value>
+  </data>
+  <data name="FFone.HeaderText" xml:space="preserve">
+    <value>Tele</value>
+  </data>
+  <data name="FFone.Width" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="FObservacao.HeaderText" xml:space="preserve">
+    <value>Observación</value>
+  </data>
+  <data name="FObservacao.Width" type="System.Int32, mscorlib">
+    <value>92</value>
+  </data>
+  <data name="FSt_impresso.HeaderText" xml:space="preserve">
+    <value>Impreso</value>
+  </data>
+  <data name="FSt_impresso.Width" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="FNr_lanctocheque.HeaderText" xml:space="preserve">
+    <value>Nº Lanzto cheque</value>
+  </data>
+  <data name="FNr_lanctocheque.Width" type="System.Int32, mscorlib">
+    <value>118</value>
+  </data>
+  <data name="dtlanctostringDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="dtlanctostringDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="vladtoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>VL. Adelanto</value>
+  </data>
+  <data name="vladtoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>93</value>
+  </data>
+  <data name="Vl_Total_quitado.HeaderText" xml:space="preserve">
+    <value>Total Pagado</value>
+  </data>
+  <data name="Vl_Total_quitado.Width" type="System.Int32, mscorlib">
+    <value>96</value>
+  </data>
+  <data name="VL_adto_quitacao.HeaderText" xml:space="preserve">
+    <value>Saldo Disponble para Quitar</value>
+  </data>
+  <data name="VL_adto_quitacao.Width" type="System.Int32, mscorlib">
+    <value>124</value>
+  </data>
+  <data name="VL_Entrada.HeaderText" xml:space="preserve">
+    <value>VL. Recibir</value>
+  </data>
+  <data name="VL_Entrada.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dsadtoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Adelanto</value>
+  </data>
+  <data name="dsadtoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="DS_Endereco.HeaderText" xml:space="preserve">
+    <value>Dirección</value>
+  </data>
+  <data name="DS_Endereco.Width" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="Cidade.HeaderText" xml:space="preserve">
+    <value>Ciudad</value>
+  </data>
+  <data name="tpAdiantamentos.Text" xml:space="preserve">
+    <value>ADELANTOS</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn301.HeaderText" xml:space="preserve">
+    <value>Nº Lanzto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn301.Width" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn302.HeaderText" xml:space="preserve">
+    <value>Cd. Cuenta</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn302.Width" type="System.Int32, mscorlib">
+    <value>85</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn306.HeaderText" xml:space="preserve">
+    <value>Fecha</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn306.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn312.HeaderText" xml:space="preserve">
+    <value>Cuenta Contable</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn312.Width" type="System.Int32, mscorlib">
+    <value>102</value>
+  </data>
+  <data name="tpContabil.Text" xml:space="preserve">
+    <value>CONTABLE</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Rastrear Lanzamientos</value>
+  </data>
+</root>

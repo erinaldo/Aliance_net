@@ -1,0 +1,542 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{A0ABE48B-BE9C-4DED-A152-9F6B31374675}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Locacao</RootNamespace>
+    <AssemblyName>Locacao</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Consulta\Consulta.csproj">
+      <Project>{A5BC81C1-BE21-4D67-A42E-A051640E36D4}</Project>
+      <Name>Consulta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Estoque\Estoque.csproj">
+      <Project>{5AF3EB6F-12D2-468F-B238-FAE3EB806B16}</Project>
+      <Name>Estoque</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Faturamento\Faturamento.csproj">
+      <Project>{927B706F-5E1A-4722-B260-32E4D2217DD4}</Project>
+      <Name>Faturamento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{ff45d0e0-e347-438f-8daa-4587f3cf0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFCe\NFCe.csproj">
+      <Project>{6348e819-72da-4e58-97d1-0191e1f63b7a}</Project>
+      <Name>NFCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976A508-894E-45A8-8055-ABE829C1BFA3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDV\PDV.csproj">
+      <Project>{3C1B964B-1218-4A1F-96A3-65AE3BCBDE62}</Project>
+      <Name>PDV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{e9d31189-9f38-4114-9c18-c3e1a1331cca}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicos\Servicos.csproj">
+      <Project>{44263636-F90D-4E97-BA87-B4FC301EC944}</Project>
+      <Name>Servicos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FAtualizaPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FAtualizaPreco.Designer.cs">
+      <DependentUpon>FAtualizaPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadPrecoItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadPrecoItem.Designer.cs">
+      <DependentUpon>FCadPrecoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTabPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTabPreco.Designer.cs">
+      <DependentUpon>FCadTabPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCFGLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCFGLocacao.Designer.cs">
+      <DependentUpon>FCFGLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FPrecoItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FPrecoItem.Designer.cs">
+      <DependentUpon>FPrecoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAbastPatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbastPatrimonio.Designer.cs">
+      <DependentUpon>FAbastPatrimonio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAltEndEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAltEndEntrega.Designer.cs">
+      <DependentUpon>FAltEndEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAlterarData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlterarData.Designer.cs">
+      <DependentUpon>FAlterarData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAlterarTabPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlterarTabPreco.Designer.cs">
+      <DependentUpon>FAlterarTabPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEnderecoProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEnderecoProd.Designer.cs">
+      <DependentUpon>FEnderecoProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FExpedicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FExpedicao.Designer.cs">
+      <DependentUpon>FExpedicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFinalizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFinalizar.Designer.cs">
+      <DependentUpon>FFinalizar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHistorico.Designer.cs">
+      <DependentUpon>FHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHistoricoPatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHistoricoPatrimonio.Designer.cs">
+      <DependentUpon>FHistoricoPatrimonio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FImprimir.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImprimir.Designer.cs">
+      <DependentUpon>FImprimir.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInfoPatrimonio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInfoPatrimonio.Designer.cs">
+      <DependentUpon>FInfoPatrimonio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInformarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInformarVeiculo.Designer.cs">
+      <DependentUpon>FInformarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensFaturar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensFaturar.Designer.cs">
+      <DependentUpon>FItensFaturar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanAbastItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanAbastItens.Designer.cs">
+      <DependentUpon>FLanAbastItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLeituraEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLeituraEndereco.Designer.cs">
+      <DependentUpon>FLanLeituraEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanPainelLocTerceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanPainelLocTerceiro.Designer.cs">
+      <DependentUpon>FLanPainelLocTerceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLocacao.Designer.cs">
+      <DependentUpon>FLanLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLocTerceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLocTerceiro.Designer.cs">
+      <DependentUpon>FLanLocTerceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanRetirada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanRetirada.Designer.cs">
+      <DependentUpon>FLanRetirada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaProdutoItem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaProdutoItem.Designer.cs">
+      <DependentUpon>FListaProdutoItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocacao.Designer.cs">
+      <DependentUpon>FLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocManutencao.Designer.cs">
+      <DependentUpon>FLocManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocOrdemServico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocOrdemServico.Designer.cs">
+      <DependentUpon>FLocOrdemServico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocTerceiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocTerceiro.Designer.cs">
+      <DependentUpon>FLocTerceiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMedicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMedicao.Designer.cs">
+      <DependentUpon>FMedicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FNovaLocacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FNovaLocacao.Designer.cs">
+      <DependentUpon>FNovaLocacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOutrasDesp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOutrasDesp.Designer.cs">
+      <DependentUpon>FOutrasDesp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPainelExpedicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPainelExpedicao.Designer.cs">
+      <DependentUpon>FPainelExpedicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPainelMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPainelMotorista.Designer.cs">
+      <DependentUpon>FPainelMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FParcelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FParcelas.Designer.cs">
+      <DependentUpon>FParcelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReceberFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReceberFin.Designer.cs">
+      <DependentUpon>FReceberFin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVendaItensCargaAvulsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVendaItensCargaAvulsa.designer.cs">
+      <DependentUpon>FVendaItensCargaAvulsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\FAtualizaPreco.resx">
+      <DependentUpon>FAtualizaPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPrecoItem.resx">
+      <DependentUpon>FCadPrecoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTabPreco.resx">
+      <DependentUpon>FCadTabPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCFGLocacao.resx">
+      <DependentUpon>FCFGLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FPrecoItem.resx">
+      <DependentUpon>FPrecoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAbastPatrimonio.resx">
+      <DependentUpon>FAbastPatrimonio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAltEndEntrega.resx">
+      <DependentUpon>FAltEndEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarData.resx">
+      <DependentUpon>FAlterarData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarTabPreco.resx">
+      <DependentUpon>FAlterarTabPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEnderecoProd.resx">
+      <DependentUpon>FEnderecoProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FExpedicao.resx">
+      <DependentUpon>FExpedicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFinalizar.resx">
+      <DependentUpon>FFinalizar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHistorico.resx">
+      <DependentUpon>FHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHistoricoPatrimonio.resx">
+      <DependentUpon>FHistoricoPatrimonio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImprimir.resx">
+      <DependentUpon>FImprimir.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInfoPatrimonio.resx">
+      <DependentUpon>FInfoPatrimonio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInformarVeiculo.resx">
+      <DependentUpon>FInformarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensFaturar.resx">
+      <DependentUpon>FItensFaturar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanAbastItens.resx">
+      <DependentUpon>FLanAbastItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLeituraEndereco.resx">
+      <DependentUpon>FLanLeituraEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPainelLocTerceiro.resx">
+      <DependentUpon>FLanPainelLocTerceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLocacao.resx">
+      <DependentUpon>FLanLocacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLocTerceiro.resx">
+      <DependentUpon>FLanLocTerceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanRetirada.resx">
+      <DependentUpon>FLanRetirada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaProdutoItem.resx">
+      <DependentUpon>FListaProdutoItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocacao.resx">
+      <DependentUpon>FLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocManutencao.resx">
+      <DependentUpon>FLocManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocOrdemServico.resx">
+      <DependentUpon>FLocOrdemServico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocTerceiro.resx">
+      <DependentUpon>FLocTerceiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMedicao.resx">
+      <DependentUpon>FMedicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FNovaLocacao.resx">
+      <DependentUpon>FNovaLocacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOutrasDesp.resx">
+      <DependentUpon>FOutrasDesp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPainelExpedicao.resx">
+      <DependentUpon>FPainelExpedicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPainelMotorista.resx">
+      <DependentUpon>FPainelMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FParcelas.resx">
+      <DependentUpon>FParcelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReceberFin.resx">
+      <DependentUpon>FReceberFin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVendaItensCargaAvulsa.resx">
+      <DependentUpon>FVendaItensCargaAvulsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CamadaDados.Estoque.Cadastros.TList_CadPatrimonio.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Estoque.Cadastros.TList_ProdutoLocacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Estoque.Cadastros.TRegistro_CadPatrimonio.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.Cadastros.TList_CadPrecoItens.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.Cadastros.TList_CadTabPreco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.Cadastros.TList_CFGLocacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_AbastItens.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_ItensLocacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_ItensLocTerceiro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_Locacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_LocTerceiro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_MedicaoProdutoItens.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_OutrasDesp.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_PainelExp.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_ParcelaLocacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_ProdutoItens.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Locacao.TList_Retirada.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Servicos.TList_LanServico.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadClifor.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+</Project>

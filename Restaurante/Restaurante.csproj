@@ -1,0 +1,537 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F80533D8-8040-4464-B712-87FE77F7FAFA}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Restaurante</RootNamespace>
+    <AssemblyName>Restaurante</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject />
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados">
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastro\FCadAdicional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadAdicional.Designer.cs">
+      <DependentUpon>FCadAdicional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadCartao.Designer.cs">
+      <DependentUpon>FCadCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadCFG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadCFG.Designer.cs">
+      <DependentUpon>FCadCFG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadLocal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadLocal.Designer.cs">
+      <DependentUpon>FCadLocal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadLocalImpressora.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadLocalImpressora.Designer.cs">
+      <DependentUpon>FCadLocalImpressora.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadMesa.Designer.cs">
+      <DependentUpon>FCadMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadPista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadPista.Designer.cs">
+      <DependentUpon>FCadPista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadProduto.Designer.cs">
+      <DependentUpon>FCadProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCadSabores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCadSabores.Designer.cs">
+      <DependentUpon>FCadSabores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCartoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCartoes.designer.cs">
+      <DependentUpon>FCartoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FClifor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FClifor.Designer.cs">
+      <DependentUpon>FClifor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FCliforDetalhado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FCliforDetalhado.Designer.cs">
+      <DependentUpon>FCliforDetalhado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FProduto.Designer.cs">
+      <DependentUpon>FProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FProtocoloBalanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FProtocoloBalanca.Designer.cs">
+      <DependentUpon>FProtocoloBalanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastro\FTesteBalanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastro\FTesteBalanca.Designer.cs">
+      <DependentUpon>FTesteBalanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAbrirCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbrirCartao.Designer.cs">
+      <DependentUpon>FAbrirCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAddSabores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAddSabores.Designer.cs">
+      <DependentUpon>FAddSabores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAdicionais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAdicionais.Designer.cs">
+      <DependentUpon>FAdicionais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCartoesMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCartoesMesa.Designer.cs">
+      <DependentUpon>FCartoesMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFecharDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFecharDelivery.Designer.cs">
+      <DependentUpon>FFecharDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FApontarEntrega.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FApontarEntrega.Designer.cs">
+      <DependentUpon>FApontarEntrega.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaCartao.Designer.cs">
+      <DependentUpon>FConsultaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaClifor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaClifor.Designer.cs">
+      <DependentUpon>FConsultaClifor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDelivery.Designer.cs">
+      <DependentUpon>FDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFechaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFechaCartao.Designer.cs">
+      <DependentUpon>FFechaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FHoraBoliche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FHoraBoliche.Designer.cs">
+      <DependentUpon>FHoraBoliche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMovBoliche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMovBoliche.Designer.cs">
+      <DependentUpon>FLanMovBoliche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanPreVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanPreVenda.Designer.cs">
+      <DependentUpon>FLanPreVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMovBoliche.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMovBoliche.Designer.cs">
+      <DependentUpon>FMovBoliche.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPainelRestaurante.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPainelRestaurante.Designer.cs">
+      <DependentUpon>FPainelRestaurante.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frameauxiliar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frameauxiliar.Designer.cs">
+      <DependentUpon>frameauxiliar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FResBalanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FResBalanca.Designer.cs">
+      <DependentUpon>FResBalanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FStatusCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FStatusCartao.Designer.cs">
+      <DependentUpon>FStatusCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTrocaMesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTrocaMesa.Designer.cs">
+      <DependentUpon>FTrocaMesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVendaDelivery.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVendaDelivery.Designer.cs">
+      <DependentUpon>FVendaDelivery.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Impressao\DllBematech.cs" />
+    <Compile Include="Impressao\IMP_Cartao.cs" />
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastro\FCadAdicional.resx">
+      <DependentUpon>FCadAdicional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadCartao.resx">
+      <DependentUpon>FCadCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadCFG.resx">
+      <DependentUpon>FCadCFG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadLocal.resx">
+      <DependentUpon>FCadLocal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadLocalImpressora.resx">
+      <DependentUpon>FCadLocalImpressora.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadMesa.resx">
+      <DependentUpon>FCadMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadPista.resx">
+      <DependentUpon>FCadPista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadProduto.resx">
+      <DependentUpon>FCadProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCadSabores.resx">
+      <DependentUpon>FCadSabores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCartoes.resx">
+      <DependentUpon>FCartoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FClifor.resx">
+      <DependentUpon>FClifor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FCliforDetalhado.resx">
+      <DependentUpon>FCliforDetalhado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FProduto.resx">
+      <DependentUpon>FProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FProtocoloBalanca.resx">
+      <DependentUpon>FProtocoloBalanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastro\FTesteBalanca.resx">
+      <DependentUpon>FTesteBalanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAbrirCartao.resx">
+      <DependentUpon>FAbrirCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAddSabores.resx">
+      <DependentUpon>FAddSabores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAdicionais.resx">
+      <DependentUpon>FAdicionais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCartoesMesa.resx">
+      <DependentUpon>FCartoesMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFecharDelivery.resx">
+      <DependentUpon>FFecharDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FApontarEntrega.resx">
+      <DependentUpon>FApontarEntrega.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaCartao.resx">
+      <DependentUpon>FConsultaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaClifor.resx">
+      <DependentUpon>FConsultaClifor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDelivery.resx">
+      <DependentUpon>FDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFechaCartao.resx">
+      <DependentUpon>FFechaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FHoraBoliche.resx">
+      <DependentUpon>FHoraBoliche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMovBoliche.resx">
+      <DependentUpon>FLanMovBoliche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPreVenda.resx">
+      <DependentUpon>FLanPreVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMovBoliche.resx">
+      <DependentUpon>FMovBoliche.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPainelRestaurante.resx">
+      <DependentUpon>FPainelRestaurante.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frameauxiliar.resx">
+      <DependentUpon>frameauxiliar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FResBalanca.resx">
+      <DependentUpon>FResBalanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FStatusCartao.resx">
+      <DependentUpon>FStatusCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTrocaMesa.resx">
+      <DependentUpon>FTrocaMesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVendaDelivery.resx">
+      <DependentUpon>FVendaDelivery.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CamadaDados.Estoque.Cadastros.TList_CadProduto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Adicionais.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Barril.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_CFG.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Chopeira.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Clifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_KitExtrator.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Local.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_LocalImp.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Mesa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_PistaBoliche.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TList_Sabores.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TRegistro_Barril.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.Cadastro.TResumoProduto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_Cartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_Expedicao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_HoraBoliche.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_ItensReserva.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_MovBarril.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_PreVenda.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_PreVenda_Item.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Restaurante.TList_ReservaChopp.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadAdicional.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadCartao.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadCFG.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadLocal.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadLocalImpressora.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadMesa.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadPista.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadProduto.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCadSabores.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCartoes.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FClifor.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FCliforDetalhado.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FProduto.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FProtocoloBalanca.datasource" />
+    <None Include="Properties\DataSources\Restaurante.Cadastro.FTesteBalanca.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{dd35b696-7b35-4a9a-b396-2be0923263c9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304bd7f-4924-4bb8-98be-d87ac31854d5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Faturamento\Faturamento.csproj">
+      <Project>{927b706f-5e1a-4722-b260-32e4d2217dd4}</Project>
+      <Name>Faturamento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1ce51878-365c-4e6e-9bd7-cbb332b18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{e15b29d9-c046-43d8-ae41-5950da981d85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{a7b14d42-0286-4e4c-bb41-a6a59d25410b}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{c965e859-d359-4f6e-91fd-f48ad613c864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPesagemPadrao\FormPesagemPadrao.csproj">
+      <Project>{9d5cc72c-59ba-470e-b1ab-33ce161cde3b}</Project>
+      <Name>FormPesagemPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09c8ab18-bf30-4579-8945-3eefb3e2c134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{ff45d0e0-e347-438f-8daa-4587f3cf0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFCe\NFCe.csproj">
+      <Project>{6348e819-72da-4e58-97d1-0191e1f63b7a}</Project>
+      <Name>NFCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFES\NFES.csproj">
+      <Project>{bd5ba315-8530-4777-b749-d3822a4f8be9}</Project>
+      <Name>NFES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{b765028d-8b44-4002-9b45-c69fcb083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976a508-894e-45a8-8055-abe829c1bfa3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDV\PDV.csproj">
+      <Project>{3c1b964b-1218-4a1f-96a3-65ae3bcbde62}</Project>
+      <Name>PDV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostoCombustivel\PostoCombustivel.csproj">
+      <Project>{6a5a70d0-8258-42de-9b25-8d6fb7f0e497}</Project>
+      <Name>PostoCombustivel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{e9d31189-9f38-4114-9c18-c3e1a1331cca}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4d197519-bcf0-4f61-bd23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\CARTÃO.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

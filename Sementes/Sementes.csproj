@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0813916-6E26-4F63-81AC-34BDCEC25BB9}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Sementes</RootNamespace>
+    <AssemblyName>Sementes</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FCad_TipoAnalise.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_TipoAnalise.Designer.cs">
+      <DependentUpon>FCad_TipoAnalise.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAprovarLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAprovarLote.Designer.cs">
+      <DependentUpon>FAprovarLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFormulaEstornoSemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFormulaEstornoSemente.Designer.cs">
+      <DependentUpon>FFormulaEstornoSemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_LoteSemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_LoteSemente.Designer.cs">
+      <DependentUpon>FLan_LoteSemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoteSemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoteSemente.Designer.cs">
+      <DependentUpon>FLoteSemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPedidoItemSemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPedidoItemSemente.Designer.cs">
+      <DependentUpon>FPedidoItemSemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReprovarLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReprovarLote.Designer.cs">
+      <DependentUpon>FReprovarLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSaldoLoteSemente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaldoLoteSemente.Designer.cs">
+      <DependentUpon>FSaldoLoteSemente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\FCad_TipoAnalise.resx">
+      <DependentUpon>FCad_TipoAnalise.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAprovarLote.es.resx">
+      <DependentUpon>FAprovarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAprovarLote.resx">
+      <DependentUpon>FAprovarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFormulaEstornoSemente.es.resx">
+      <DependentUpon>FFormulaEstornoSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFormulaEstornoSemente.resx">
+      <DependentUpon>FFormulaEstornoSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_LoteSemente.es.resx">
+      <DependentUpon>FLan_LoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_LoteSemente.resx">
+      <DependentUpon>FLan_LoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteSemente.es.resx">
+      <DependentUpon>FLoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteSemente.resx">
+      <DependentUpon>FLoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPedidoItemSemente.es.resx">
+      <DependentUpon>FPedidoItemSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPedidoItemSemente.resx">
+      <DependentUpon>FPedidoItemSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReprovarLote.es.resx">
+      <DependentUpon>FReprovarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReprovarLote.resx">
+      <DependentUpon>FReprovarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaldoLoteSemente.es.resx">
+      <DependentUpon>FSaldoLoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaldoLoteSemente.resx">
+      <DependentUpon>FSaldoLoteSemente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.NotaFiscal.TList_RegLanFaturamento_Item.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Producao.Producao.TList_FichaTec_Acabado.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Producao.Producao.TList_FichaTec_MPrima.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Producao.Producao.TList_FormulaApontamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Sementes.Cadastros.TList_TipoAnalise.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Sementes.TList_LoteSemente.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Sementes.TList_LoteSemente_X_NFItem.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

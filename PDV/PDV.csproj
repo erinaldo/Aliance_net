@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3C1B964B-1218-4A1F-96A3-65AE3BCBDE62}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PDV</RootNamespace>
+    <AssemblyName>PDV</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BemaMp2032.cs" />
+    <Compile Include="BemaMp2064.cs" />
+    <Compile Include="FCartaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCartaFrete.designer.cs">
+      <DependentUpon>FCartaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChequePDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChequePDV.designer.cs">
+      <DependentUpon>FChequePDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FClienteCupom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FClienteCupom.Designer.cs">
+      <DependentUpon>FClienteCupom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCorrigirKM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCorrigirKM.designer.cs">
+      <DependentUpon>FCorrigirKM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDesconto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDesconto.Designer.cs">
+      <DependentUpon>FDesconto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDuplicataPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDuplicataPDV.designer.cs">
+      <DependentUpon>FDuplicataPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFecharVendaDinheiro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFecharVendaDinheiro.Designer.cs">
+      <DependentUpon>FFecharVendaDinheiro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFecharVendaPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFecharVendaPDV.Designer.cs">
+      <DependentUpon>FFecharVendaPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensDevolver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensDevolver.Designer.cs">
+      <DependentUpon>FItensDevolver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FExcluirVendaRapida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FExcluirVendaRapida.designer.cs">
+      <DependentUpon>FExcluirVendaRapida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFechaCaixaOperacional.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFechaCaixaOperacional.designer.cs">
+      <DependentUpon>FFechaCaixaOperacional.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFecharCupom.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFecharCupom.Designer.cs">
+      <DependentUpon>FFecharCupom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGerarCupomNFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGerarCupomNFe.designer.cs">
+      <DependentUpon>FGerarCupomNFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensTroca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensTroca.Designer.cs">
+      <DependentUpon>FItensTroca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCartaoPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCartaoPDV.Designer.cs">
+      <DependentUpon>FLanCartaoPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanListaCartaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanListaCartaFrete.Designer.cs">
+      <DependentUpon>FLanListaCartaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRetiradaCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRetiradaCaixa.designer.cs">
+      <DependentUpon>FRetiradaCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTrocaEspecie.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTrocaEspecie.Designer.cs">
+      <DependentUpon>FTrocaEspecie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerenciarCupom.cs" />
+    <Compile Include="GerenciarImpNaoFiscal.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FCartaFrete.resx">
+      <DependentUpon>FCartaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChequePDV.resx">
+      <DependentUpon>FChequePDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FClienteCupom.resx">
+      <DependentUpon>FClienteCupom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCorrigirKM.resx">
+      <DependentUpon>FCorrigirKM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDesconto.resx">
+      <DependentUpon>FDesconto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDuplicataPDV.resx">
+      <DependentUpon>FDuplicataPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFecharVendaDinheiro.resx">
+      <DependentUpon>FFecharVendaDinheiro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFecharVendaPDV.resx">
+      <DependentUpon>FFecharVendaPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensDevolver.resx">
+      <DependentUpon>FItensDevolver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FExcluirVendaRapida.resx">
+      <DependentUpon>FExcluirVendaRapida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFechaCaixaOperacional.resx">
+      <DependentUpon>FFechaCaixaOperacional.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFecharCupom.resx">
+      <DependentUpon>FFecharCupom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGerarCupomNFe.resx">
+      <DependentUpon>FGerarCupomNFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensTroca.resx">
+      <DependentUpon>FItensTroca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCartaoPDV.resx">
+      <DependentUpon>FLanCartaoPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanListaCartaFrete.resx">
+      <DependentUpon>FLanListaCartaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRetiradaCaixa.resx">
+      <DependentUpon>FRetiradaCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTrocaEspecie.resx">
+      <DependentUpon>FTrocaEspecie.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1ce51878-365c-4e6e-9bd7-cbb332b18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFCe\NFCe.csproj">
+      <Project>{6348e819-72da-4e58-97d1-0191e1f63b7a}</Project>
+      <Name>NFCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.PDV.TList_CupomFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.PDV.TList_CupomFiscal_Item.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.PDV.TList_TrocaEspecie.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TCD_CadMaquinaCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadMaquinaCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadPortador.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_Cad_BandeiraCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_RegLanTitulo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.PostoCombustivel.TList_CartaFrete.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

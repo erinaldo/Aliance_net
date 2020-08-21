@@ -1,0 +1,343 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5C892CB9-08E4-4311-80D3-FE43ABBC76D0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Balanca</RootNamespace>
+    <AssemblyName>Balanca</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FCadCFGFinPsAvulsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGFinPsAvulsa.Designer.cs">
+      <DependentUpon>FCadCFGFinPsAvulsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpDesdobroEspecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpDesdobroEspecial.Designer.cs">
+      <DependentUpon>FCadTpDesdobroEspecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpPesagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpPesagem.Designer.cs">
+      <DependentUpon>FCadTpPesagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Classificacao\FCla_Cereais_Origem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Classificacao\FCla_Cereais_Origem.Designer.cs">
+      <DependentUpon>FCla_Cereais_Origem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanFotosPesagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanFotosPesagem.Designer.cs">
+      <DependentUpon>FLanFotosPesagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMonitorBalanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMonitorBalanca.Designer.cs">
+      <DependentUpon>FLanMonitorBalanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanPesagemAvulsa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanPesagemAvulsa.Designer.cs">
+      <DependentUpon>FLanPesagemAvulsa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanPesagemDiversas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanPesagemDiversas.Designer.cs">
+      <DependentUpon>FLanPesagemDiversas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanPesagemGraos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanPesagemGraos.Designer.cs">
+      <DependentUpon>FLanPesagemGraos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Transbordo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Transbordo.designer.cs">
+      <DependentUpon>FLan_Transbordo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLeituraSerial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLeituraSerial.Designer.cs">
+      <DependentUpon>FLeituraSerial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPsDiversasAplicar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPsDiversasAplicar.Designer.cs">
+      <DependentUpon>FPsDiversasAplicar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\FCadCFGFinPsAvulsa.es.resx">
+      <DependentUpon>FCadCFGFinPsAvulsa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGFinPsAvulsa.resx">
+      <DependentUpon>FCadCFGFinPsAvulsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpDesdobroEspecial.resx">
+      <DependentUpon>FCadTpDesdobroEspecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpPesagem.es.resx">
+      <DependentUpon>FCadTpPesagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpPesagem.resx">
+      <DependentUpon>FCadTpPesagem.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classificacao\FCla_Cereais_Origem.es.resx">
+      <DependentUpon>FCla_Cereais_Origem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Classificacao\FCla_Cereais_Origem.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FCla_Cereais_Origem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanFotosPesagem.resx">
+      <DependentUpon>FLanFotosPesagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMonitorBalanca.resx">
+      <DependentUpon>FLanMonitorBalanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPesagemAvulsa.es.resx">
+      <DependentUpon>FLanPesagemAvulsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPesagemAvulsa.resx">
+      <DependentUpon>FLanPesagemAvulsa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPesagemDiversas.resx">
+      <DependentUpon>FLanPesagemDiversas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPesagemGraos.es.resx">
+      <DependentUpon>FLanPesagemGraos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanPesagemGraos.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FLanPesagemGraos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Transbordo.es.resx">
+      <DependentUpon>FLan_Transbordo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Transbordo.resx">
+      <DependentUpon>FLan_Transbordo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLeituraSerial.resx">
+      <DependentUpon>FLeituraSerial.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPsDiversasAplicar.resx">
+      <DependentUpon>FPsDiversasAplicar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.Cadastros.TList_CadTpPesagem.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.Cadastros.TList_CFGFinPsAvulsa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.Cadastros.TList_CFGSeqPesagem.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.Cadastros.TList_TpDesdobroEspecial.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_DesdobroEspecial.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_FotosPesagem.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_LanTransbordo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_PesagemAvulsa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_PesagemDiversas.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_ProdutoDerivado.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_RegLanClassificacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_RegLanPesagemClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_RegLanPesagemGraos.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Balanca.TList_RegLanPesagemProduto1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.NFE.TList_EventoNFe.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fazenda.Lancamento.TList_LanPesFazenda.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commoditties\Commoditties.csproj">
+      <Project>{292D6426-61F4-4271-8C8F-B20730482F44}</Project>
+      <Name>Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Faturamento\Faturamento.csproj">
+      <Project>{927B706F-5E1A-4722-B260-32E4D2217DD4}</Project>
+      <Name>Faturamento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPesagemPadrao\FormPesagemPadrao.csproj">
+      <Project>{9D5CC72C-59BA-470E-B1AB-33CE161CDE3B}</Project>
+      <Name>FormPesagemPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeituraSerial\LeituraSerial.csproj">
+      <Project>{50AD47FE-3798-4179-B438-456F4E8D78E1}</Project>
+      <Name>LeituraSerial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFES\NFES.csproj">
+      <Project>{BD5BA315-8530-4777-B749-D3822A4F8BE9}</Project>
+      <Name>NFES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{B765028D-8B44-4002-9B45-C69FCB083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCamLibrary\WebCamLibrary.csproj">
+      <Project>{172F13F8-7B9F-4CC2-ADB4-27C8B1E966DC}</Project>
+      <Name>WebCamLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Relatorios\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E15B29D9-C046-43D8-AE41-5950DA981D85}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>FormBusca</RootNamespace>
+    <AssemblyName>FormBusca</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FBuscaCentroResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscaCentroResult.Designer.cs">
+      <DependentUpon>FBuscaCentroResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscaCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscaCentroResultado.Designer.cs">
+      <DependentUpon>FBuscaCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscaProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscaProduto.Designer.cs">
+      <DependentUpon>FBuscaProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarContasContabeis.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarContasContabeis.Designer.cs">
+      <DependentUpon>FBuscarContasContabeis.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarContasReferenciais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarContasReferenciais.Designer.cs">
+      <DependentUpon>FBuscarContasReferenciais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCustoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCustoProduto.Designer.cs">
+      <DependentUpon>FCustoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPlanoContas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPlanoContas.Designer.cs">
+      <DependentUpon>FPlanoContas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="UtilPesquisa.cs" />
+    <Compile Include="FBusca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBusca.Designer.cs">
+      <DependentUpon>FBusca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FBusca.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FBusca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscaCentroResult.resx">
+      <DependentUpon>FBuscaCentroResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscaCentroResultado.resx">
+      <DependentUpon>FBuscaCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscaProduto.resx">
+      <DependentUpon>FBuscaProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscarContasContabeis.resx">
+      <DependentUpon>FBuscarContasContabeis.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscarContasReferenciais.resx">
+      <DependentUpon>FBuscarContasReferenciais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCustoProduto.resx">
+      <DependentUpon>FCustoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPlanoContas.resx">
+      <DependentUpon>FPlanoContas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Contabil.Cadastro.TList_PlanoReferencial.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Estoque.Cadastros.TList_CadProduto.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{8d857208-7dcc-4a70-814b-f82c6e51706a}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{3b6e0082-0a8f-408b-a3b6-5b215deb985f}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904f7739-675d-471d-96b2-563412836da3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4d197519-bcf0-4f61-bd23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

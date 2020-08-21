@@ -1,0 +1,1293 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D554AFE6-DD57-42F4-A454-C9B863935A9A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CTe</RootNamespace>
+    <AssemblyName>CTe</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultaChave\ConsultaChave.cs" />
+    <Compile Include="EnviaArq\EnviaArq.cs" />
+    <Compile Include="Evento\EventoCTe.cs" />
+    <Compile Include="GerarArq\GerarArq.cs" />
+    <Compile Include="Inutilizar\LanInutilizarCte.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RetRecepcao\RetRecepcao.cs" />
+    <Compile Include="StatusServico\StatusServico.cs" />
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mg.fazenda.cte.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.ms.cte.producao.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.mt.sefaz.cte.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.homologacao.Status\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.cte.Status\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.Consulta\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.homologacao.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.homologacao.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.homologacao.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.homologacao.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.homologacao.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.rs.sefaz.cte.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Recepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.homologacao.RetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.homologacao.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.Inutilizacao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.SVCRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.SVCRetRecepcao\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.sp.fazenda.nfe.SVCStatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/CteConsulta%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.Consulta\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/CteConsulta%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/CteInutilizacao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/CteInutilizacao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/CteRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.Recepcao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/CteRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/CteRetRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/CteRetRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/CteStatusServico%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.StatusServico\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/CteStatusServico%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.mg.gov.br/cte/services/RecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mg.fazenda.cte.Evento\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.mg.gov.br/cte/services/RecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mg_fazenda_cte_Evento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteConsulta%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.Consulta\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteConsulta%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteInutilizacao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteInutilizacao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.Recepcao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.Evento\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteRetRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteRetRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.fazenda.pr.gov.br/cte/CteStatusServico%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.Status\</RelPath>
+      <UpdateFromURL>https://cte.fazenda.pr.gov.br/cte/CteStatusServico%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_Status_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews/services/CteConsulta%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.Consulta\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews/services/CteConsulta%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews/services/CteInutilizacao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews/services/CteInutilizacao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.Recepcao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews/services/CteRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews/services/CteRetRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews/services/CteRetRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews/services/CteStatusServico%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.StatusServico\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews/services/CteStatusServico%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.mt.sefaz.cte.Evento\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.mt.gov.br/ctews2/services/CteRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_mt_sefaz_cte_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/cteconsulta/cteconsulta.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.Consulta\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/cteconsulta/cteconsulta.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.Recepcao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.Evento\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/cteretrecepcao/CteRetRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/cteretrecepcao/CteRetRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://cte.sefaz.rs.gov.br/ws/ctestatusservico/ctestatusservico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.StatusServico\</RelPath>
+      <UpdateFromURL>https://cte.sefaz.rs.gov.br/ws/ctestatusservico/ctestatusservico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteConsulta%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.Consulta\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteConsulta%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteInutilizacao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteInutilizacao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.Recepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.Evento\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteRetRecepcao%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteRetRecepcao%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.fazenda.pr.gov.br/cte/CteStatusServico%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.cte.homologacao.Status\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.fazenda.pr.gov.br/cte/CteStatusServico%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_pr_fazenda_cte_homologacao_Status_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.sefaz.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.homologacao.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.sefaz.rs.gov.br/ws/cteinutilizacao/cteinutilizacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_homologacao_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.sefaz.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.homologacao.Recepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.sefaz.rs.gov.br/ws/cterecepcao/CteRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_homologacao_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.sefaz.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.homologacao.Evento\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.sefaz.rs.gov.br/ws/cterecepcaoevento/cterecepcaoevento.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_homologacao_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.sefaz.rs.gov.br/ws/cteretrecepcao/CteRetRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.homologacao.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.sefaz.rs.gov.br/ws/cteretrecepcao/CteRetRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_homologacao_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.cte.sefaz.rs.gov.br/ws/ctestatusservico/ctestatusservico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.rs.sefaz.cte.homologacao.StatusServico\</RelPath>
+      <UpdateFromURL>https://homologacao.cte.sefaz.rs.gov.br/ws/ctestatusservico/ctestatusservico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_rs_sefaz_cte_homologacao_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.homologacao.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_homologacao_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.homologacao.Recepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_homologacao_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.homologacao.Evento\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_homologacao_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRetRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.homologacao.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteRetRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_homologacao_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteStatusServico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.homologacao.StatusServico\</RelPath>
+      <UpdateFromURL>https://homologacao.nfe.fazenda.sp.gov.br/cteWEB/services/cteStatusServico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_homologacao_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.sp.gov.br/cteWEB/services/cteInutilizacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.SVCRecepcao\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_SVCRecepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.Evento\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.sp.gov.br/cteweb/services/cteRecepcaoEvento.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRetRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.SVCRetRecepcao\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.sp.gov.br/cteWEB/services/CteRetRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_SVCRetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfe.fazenda.sp.gov.br/cteWEB/services/CteStatusServico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.sp.fazenda.nfe.SVCStatusServico\</RelPath>
+      <UpdateFromURL>https://nfe.fazenda.sp.gov.br/cteWEB/services/CteStatusServico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_sp_fazenda_nfe_SVCStatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteConsulta.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.Consulta\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteConsulta.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_Consulta_CteConsulta</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteInutilizacao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.Inutilizacao\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteInutilizacao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_Inutilizacao_CteInutilizacao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.Recepcao\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_Recepcao_CteRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteRecepcaoEvento.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.Evento\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteRecepcaoEvento.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_Evento_CteRecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteRetRecepcao.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.RetRecepcao\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteRetRecepcao.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_RetRecepcao_CteRetRecepcao</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://producao.cte.ms.gov.br/cteWEB/CteStatusServico.asmx">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.ms.cte.producao.StatusServico\</RelPath>
+      <UpdateFromURL>https://producao.cte.ms.gov.br/cteWEB/CteStatusServico.asmx</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>CTe_br_gov_ms_cte_producao_StatusServico_CteStatusServico</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.Consulta\CteConsulta.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.Evento\CteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Consulta\CteConsulta.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Evento\CteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Inutilizacao\CteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Status\CteStatusServico.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.homologacao.Status\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.Inutilizacao\CteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.cte.Status\CteStatusServico.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.cte.Status\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRecepcao\CteRecepcao.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRecepcao\CteRecepcao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRetRecepcao\CteRetRecepcao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCRetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCStatusServico\CteStatusServico.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.mt.sefaz.cte.Consulta\CteConsulta.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mt.sefaz.cte.Evento\CteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mt.sefaz.cte.Inutilizacao\CteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mt.sefaz.cte.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mt.sefaz.cte.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mt.sefaz.cte.StatusServico\CteStatusServico.wsdl" />
+    <None Include="Web References\br.gov.mt.sefaz.cte.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCStatusServico\CteStatusServico.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.SVCStatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.ms.cte.producao.Recepcao\CteRecepcao.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.ms.cte.producao.RetRecepcao\CteRetRecepcao.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.ms.cte.producao.Consulta\CteConsulta.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.Inutilizacao\CteInutilizacao.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.Inutilizacao\CteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.ms.cte.producao.Consulta\CteConsulta.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.ms.cte.producao.StatusServico\CteStatusServico.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.StatusServico\CteStatusServico.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.mg.fazenda.cte.Consulta\CteConsulta.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mg.fazenda.cte.Evento\RecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mg.fazenda.cte.Inutilizacao\CteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mg.fazenda.cte.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mg.fazenda.cte.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.mg.fazenda.cte.StatusServico\CteStatusServico.wsdl" />
+    <None Include="Web References\br.gov.mg.fazenda.cte.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.ms.cte.producao.Evento\CteRecepcaoEvento.disco" />
+    <None Include="Web References\br.gov.ms.cte.producao.Evento\CteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.ms.cte.producao.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Recepcao\CteRecepcao.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Recepcao\CteRecepcao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Inutilizacao\cteinutilizacao.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.RetRecepcao\CteRetRecepcao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Inutilizacao\cteinutilizacao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Consulta\cteconsulta.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.Consulta\cteconsulta.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.Consulta\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.rs.sefaz.cte.StatusServico\ctestatusservico.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Evento\cterecepcaoevento.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.StatusServico\ctestatusservico.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.Evento\cterecepcaoevento.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Evento\cteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Inutilizacao\cteInutilizacao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Inutilizacao\cteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Evento\cteRecepcaoEvento.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Recepcao\cteRecepcao.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Recepcao\cteRecepcao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.RetRecepcao\cteRetRecepcao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.RetRecepcao\cteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Inutilizacao\cteInutilizacao.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Inutilizacao\cteInutilizacao.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.StatusServico\cteStatusServico.wsdl" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.StatusServico\cteStatusServico.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Recepcao\CteRecepcao.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Evento\cteRecepcaoEvento.disco" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Evento\cteRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.sp.fazenda.nfe.homologacao.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Recepcao\CteRecepcao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Recepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.RetRecepcao\CteRetRecepcao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.RetRecepcao\CteRetRecepcao.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.RetRecepcao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Inutilizacao\cteinutilizacao.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Inutilizacao\cteinutilizacao.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Inutilizacao\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.StatusServico\ctestatusservico.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.StatusServico\ctestatusservico.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Evento\cterecepcaoevento.disco" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Evento\cterecepcaoevento.wsdl" />
+    <None Include="Web References\br.gov.rs.sefaz.cte.homologacao.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

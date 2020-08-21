@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="logo_tecnoaliance" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>resources\logo_tecnoaliance.jpg;System.Drawing.Bitmap, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="ModeloCheque" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;&lt;root type="PerpetuumSoft.Reporting.DOM.Document" id="1" version="2" GridStep="59.055118110236222" IsTemplate="true" CommonScript="private string FormatValorAsterisco(string valor, int casas)&amp;#xD;&amp;#xA;{&amp;#xD;&amp;#xA;  string format = &amp;quot;#&amp;quot;;&amp;#xD;&amp;#xA;            &amp;#xD;&amp;#xA;  int totalMeio = Convert.ToInt32(Math.Round(Convert.ToDecimal(((casas - (valor.ToString().Length+3)) / 2)), 0));&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  for (int i = 0; i &amp;lt; (casas - 2); i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    if (i == totalMeio)&amp;#xD;&amp;#xA;    {&amp;#xD;&amp;#xA;      format += &amp;quot;R$ &amp;quot;+valor.ToString();&amp;#xD;&amp;#xA;      i = i + ((&amp;quot;R$ &amp;quot;+valor.ToString()).Length - 1);&amp;#xD;&amp;#xA;    }&amp;#xD;&amp;#xA;    else&amp;#xD;&amp;#xA;      format += &amp;quot;*&amp;quot;;&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  return format+&amp;quot;#&amp;quot;;&amp;#xD;&amp;#xA;}&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;private string FormatValorExtenso(string valor, int blk, int casas)&amp;#xD;&amp;#xA;{&amp;#xD;&amp;#xA;  string format = valor.ToString();&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  for (int i = (format.ToString()).Length; i &amp;lt; casas; i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    format += &amp;quot;* &amp;quot;;&amp;#xD;&amp;#xA;    i = i+2;&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  format = Stuff(format, blk, casas);&amp;#xD;&amp;#xA;  &amp;#xD;&amp;#xA;  for (int i = (format.ToString()).Length; i &amp;lt; casas; i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    format += &amp;quot;* &amp;quot;;&amp;#xD;&amp;#xA;    i = i+2;&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  return format;&amp;#xD;&amp;#xA;}&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;private string Stuff(string str, int blk, int casas)&amp;#xD;&amp;#xA;{&amp;#xD;&amp;#xA;  System.Collections.Generic.List&amp;lt;string&amp;gt; linhaStr = new System.Collections.Generic.List&amp;lt;string&amp;gt;();&amp;#xD;&amp;#xA;  string linhaCurrent = &amp;quot;&amp;quot;;&amp;#xD;&amp;#xA;  string retorno = &amp;quot;&amp;quot;;&amp;#xD;&amp;#xA;  string espaco = &amp;quot;&amp;quot;;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  string[] strArray = str.Split(new string[] { &amp;quot; &amp;quot; }, StringSplitOptions.None);&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  for (int i = 0; i &amp;lt; strArray.Length; i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    if ((linhaCurrent + strArray[i]).Length &amp;gt; blk)&amp;#xD;&amp;#xA;    {&amp;#xD;&amp;#xA;      linhaStr.Add(linhaCurrent);&amp;#xD;&amp;#xA;      linhaCurrent = strArray[i];&amp;#xD;&amp;#xA;    }&amp;#xD;&amp;#xA;    else&amp;#xD;&amp;#xA;    {&amp;#xD;&amp;#xA;      linhaCurrent += espaco + strArray[i];&amp;#xD;&amp;#xA;      espaco = &amp;quot; &amp;quot;;&amp;#xD;&amp;#xA;    }&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  linhaStr.Add(linhaCurrent);&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  for (int i = 0; i &amp;lt; (linhaStr.Count-1); i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    if (linhaStr[i].Length &amp;lt; blk)&amp;#xD;&amp;#xA;    {&amp;#xD;&amp;#xA;      string[] linhaArray = linhaStr[i].Split(new string[] { &amp;quot; &amp;quot; }, StringSplitOptions.None);&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;      int espacosAdd = blk - linhaStr[i].Length;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;      int x = 0;&amp;#xD;&amp;#xA;      for (int y = 0; y &amp;lt; espacosAdd; y++)&amp;#xD;&amp;#xA;      {&amp;#xD;&amp;#xA;        if (x &amp;gt; (linhaArray.Length - 1))&amp;#xD;&amp;#xA;        {&amp;#xD;&amp;#xA;          x = 0;&amp;#xD;&amp;#xA;        }&amp;#xD;&amp;#xA;        int pos = (linhaStr[i].IndexOf(linhaArray[x]) + linhaArray[x].Length);&amp;#xD;&amp;#xA;        linhaStr[i] = linhaStr[i].Insert(pos, &amp;quot; &amp;quot;);&amp;#xD;&amp;#xA;        x++;&amp;#xD;&amp;#xA;      }&amp;#xD;&amp;#xA;    }&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  string br = &amp;quot;&amp;quot;;&amp;#xD;&amp;#xA;  for (int i = 0; i &amp;lt; linhaStr.Count; i++)&amp;#xD;&amp;#xA;  {&amp;#xD;&amp;#xA;    retorno = retorno + br + linhaStr[i];&amp;#xD;&amp;#xA;    br = &amp;quot;&amp;lt;br/&amp;gt;&amp;lt;br/&amp;gt;&amp;quot;;&amp;#xD;&amp;#xA;  }&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;  return retorno;&amp;#xD;&amp;#xA;}&amp;#xD;&amp;#xA;" Title="Cheque" Description="Template is generated by wizard" ScriptLanguage="CSharp" DoublePass="true" Name="document1"&gt;&lt;DataSources type="PerpetuumSoft.Reporting.Data.DocumentDataSourceCollection" id="2" /&gt;&lt;StyleSheet type="PerpetuumSoft.Reporting.DOM.StyleSheet" id="3"&gt;&lt;Styles type="PerpetuumSoft.Reporting.DOM.StyleCollection" id="4"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="5" Name="Normal"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="6" Color="Navy" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="7" FamilyName="Microsoft Sans Serif" Size="9.75" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="8" Name="Hightlight"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="9" Color="Navy" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="10" Color="AliceBlue" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="11" FamilyName="Microsoft Sans Serif" Size="9.75" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="12" Name="HeaderFooter1"&gt;&lt;Border type="PerpetuumSoft.Framework.Drawing.Border" id="13" BottomLine="1 Solid 0, 0, 160" /&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="14" Color="Navy" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="15" FamilyName="Microsoft Sans Serif" Size="12" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="16" Name="HeaderFooter2"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="17" Color="Navy" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="18" FamilyName="Microsoft Sans Serif" Size="11.25" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="19" Name="HeaderFooter3"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="20" Color="Navy" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="21" Color="AliceBlue" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="22" FamilyName="Microsoft Sans Serif" Size="9.75" Italic="On" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="23" Name="ReportTitle"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.LinearGradientFill" id="24" Angle="45" StartColor="MediumBlue" EndColor="LightBlue" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="25" FamilyName="Microsoft Sans Serif" Size="26.25" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="26" Name="HeaderTitle"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="27" FamilyName="Microsoft Sans Serif" Size="12" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="28" Name="PageHeaderBack"&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.LinearGradientFill" id="29" Angle="270" StartColor="CornflowerBlue" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="30" FamilyName="Microsoft Sans Serif" Size="12" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="31" Name="PageNumber"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="32" Color="Navy" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="33" FamilyName="Microsoft Sans Serif" Size="8.25" Bold="On" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="34" Name="PageFooterBack"&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.LinearGradientFill" id="35" Angle="90" StartColor="CornflowerBlue" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="36" FamilyName="Microsoft Sans Serif" Size="12" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="37" Name="LeftSide"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="38" FamilyName="Microsoft Sans Serif" Size="12" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="39" Name="Colorir"&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="40" Color="Gainsboro" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="41" FamilyName="Microsoft Sans Serif" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Style" id="42" Name="NaoFormatado"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="43" FamilyName="Microsoft Sans Serif" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;/Item&gt;&lt;/Styles&gt;&lt;/StyleSheet&gt;&lt;Parameters type="PerpetuumSoft.Reporting.DOM.ParameterCollection" id="44"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="45" Name="TERMINAL" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="46" Name="USUARIO" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="47" Name="RODAPE_RELATORIO" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="48" ParameterType="System.Byte[]" Name="IMAGEM_RELATORIO" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="49" Name="ESTILO_RELATORIO" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Parameter" id="50" Name="VALOREXTENSO" /&gt;&lt;/Parameters&gt;&lt;Pages type="PerpetuumSoft.Reporting.DOM.PageCollection" id="51"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Page" id="52" Location="0;0" Margins="0; 0; 0; 0" StyleName="Normal" PaperKind="Custom" Name="page1" Size="2078.7401574803152;897.63779527559052" CustomSize="2078.7401574803152;897.63779527559052"&gt;&lt;Controls type="PerpetuumSoft.Reporting.DOM.ReportControlCollection" id="53"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.DataBand" id="54" DataSource="DTS" ColumnsGap="0" Location="0;0" ShowBottom="false" Name="dataBand1" Size="2078.7401574803152;895.0552978515625" ShowCaption="false"&gt;&lt;Sort type="PerpetuumSoft.Reporting.DOM.DataBandSortCollection" id="55" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="56" /&gt;&lt;Totals type="PerpetuumSoft.Reporting.DOM.DataBandTotalCollection" id="57" /&gt;&lt;Controls type="PerpetuumSoft.Reporting.DOM.ReportControlCollection" id="58"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.Detail" id="59" Location="0;-3.3850888030428905E-06" Name="detalhe2" Size="2078.7401574803152;892.7481689453125" ShowCaption="false"&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="60" /&gt;&lt;Controls type="PerpetuumSoft.Reporting.DOM.ReportControlCollection" id="61"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="62" Location="94.488128662109375;144.31471252441406" Margins="11.8110236220472; 21.259842519685; 0; 0" Text="VALOR EXTENSO" TextAlign="TopLeft" Name="ValorExtenso" Size="1948.81884765625;158.43289184570313"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="63" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="64" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="65"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="66" Expression="new PerpetuumSoft.Framework.Drawing.Vector(0.8F, 1.222F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="67" Expression="&amp;quot;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;amp;nbsp;&amp;quot;+FormatValorExtenso(GetData(&amp;quot;DTS.VALOREXTENSO&amp;quot;).ToString().Trim().ToUpper().Replace(&amp;quot;,&amp;quot;,&amp;quot;&amp;quot;).Replace(&amp;quot;.&amp;quot;,&amp;quot;&amp;quot;), 68,195)+&amp;quot;   &amp;quot;" PropertyName="Text" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="68" Location="141.73222351074219;319.17288208007812" Text="NOME DO CLIFOR" TextAlign="MiddleLeft" Name="NomeClifor" Size="1771.653564453125;47.794670104980469"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="69" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="70" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="71"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="72" Expression="GetData(&amp;quot;DTS.Nm_clifor_nominal&amp;quot;).ToString().Trim().ToUpper().Equals(&amp;quot;&amp;quot;) ? &amp;quot;&amp;quot; :&amp;#xD;&amp;#xA;FormatValorExtenso(GetData(&amp;quot;DTS.Nm_clifor_nominal&amp;quot;).ToString().Trim().ToUpper(),70,70)" PropertyName="Text" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="73" Expression="new PerpetuumSoft.Framework.Drawing.Vector(1.2F, 2.702F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="74" Location="1575.4803466796875;59.055107116699219" Text="VALOR TITULO" TextAlign="MiddleLeft" Name="ValorNumerico" Size="470.1337890625;47.244094848632812"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="75" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="76" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="77"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="78" Expression="FormatValorAsterisco(Convert.ToDecimal(GetData(&amp;quot;DTS.Vl_titulo&amp;quot;)).ToString(&amp;quot;N2&amp;quot;, new System.Globalization.CultureInfo(&amp;quot;pt-BR&amp;quot;, true)),18)" PropertyName="Text" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="79" Expression="new PerpetuumSoft.Framework.Drawing.Vector(13.417F, 0.5F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="80" Location="888.68463134765625;381.63604736328125" Text="CIDADE" TextAlign="MiddleRight" Name="Cidade" Size="354.33071899414062;45.212230682373047"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="81" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="82" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="83"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="84" Expression="new PerpetuumSoft.Framework.Drawing.Vector(7.524F, 3.231F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="85" Expression="GetData(&amp;quot;BIMEMPRESA.Endereco.DS_Cidade&amp;quot;).ToString().Trim()" PropertyName="Text" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="86" Location="1278.4483642578125;381.63604736328125" Text="DIA" TextAlign="MiddleLeft" GenerateScript="Dia.Text = Convert.ToString(Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_emissao&amp;quot;)).Day);" Name="Dia" Size="94.488189697265625;45.212230682373047"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="87" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="88" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="89"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="90" Expression="new PerpetuumSoft.Framework.Drawing.Vector(10.824F, 3.231F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="91" Location="1464.5667724609375;381.63604736328125" Text="MES" TextAlign="MiddleLeft" GenerateScript="Mes.Text = Convert.ToString(Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_emissao&amp;quot;)).Month);&amp;#xD;&amp;#xA;if(Mes.Text == &amp;quot;1&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;JANEIRO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;2&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;FEVEREIRO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;3&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;MARÇO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;4&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;ABRIL&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;5&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;MAIO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;6&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;JUNHO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;7&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;JULHO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;8&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;AGOSTO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;9&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;SETEMBRO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;10&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;OUTUBRO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;11&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;NOVEMBRO&amp;quot;;&amp;#xD;&amp;#xA;else if(Mes.Text == &amp;quot;12&amp;quot;)&amp;#xD;&amp;#xA;  Mes.Text = &amp;quot;DEZEMBRO&amp;quot;;" Name="Mes" Size="354.33071899414062;45.212230682373047"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="92" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="93" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="94"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="95" Expression="new PerpetuumSoft.Framework.Drawing.Vector(12.4F, 3.231F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="96" Location="1895.4796142578125;381.63604736328125" Text="ANO" TextAlign="MiddleLeft" GenerateScript="Ano.Text = Convert.ToString(Convert.ToDecimal(Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_emissao&amp;quot;)).Year));" Name="Ano" Size="131.95310974121094;45.212230682373047"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="97" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="98" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="99"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="100" Expression="new PerpetuumSoft.Framework.Drawing.Vector(16.048F, 3.231F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.AdvancedText" id="101" Location="1526.926513671875;823.087646484375" Text="BOM PARA" TextAlign="MiddleLeft" GenerateScript="if(Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_vencto&amp;quot;)) &amp;gt; Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_emissao&amp;quot;)))&amp;#xD;&amp;#xA;{&amp;#xD;&amp;#xA;  BomPara.Text = &amp;quot;BOM P/ &amp;quot;+Convert.ToDateTime(GetData(&amp;quot;DTS.Dt_vencto&amp;quot;)).ToString(&amp;quot;dd/MM/yyyy&amp;quot;).Trim();&amp;#xD;&amp;#xA;}&amp;#xD;&amp;#xA;else&amp;#xD;&amp;#xA;{&amp;#xD;&amp;#xA;  BomPara.Text =&amp;quot;&amp;quot;;&amp;#xD;&amp;#xA;}" Name="BomPara" Size="518.13897705078125;40.597934722900391"&gt;&lt;TextFill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="102" Color="Black" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="103" FamilyName="Courier New" Underline="Off" Strikeout="Off" Italic="Off" Bold="Off" /&gt;&lt;TextFormat type="PerpetuumSoft.Framework.Text.TextFormat" id="104" UseCultureSettings="true" FormatStyle="Date" UseGroupSeparator="true" FormatMask="dd/MM/yyyy" /&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="105"&gt;&lt;Item type="PerpetuumSoft.Reporting.DOM.ReportDataBinding" id="106" Expression="new PerpetuumSoft.Framework.Drawing.Vector(12.928F, 6.969F).ConvertUnits(Unit.Centimeter,Unit.InternalUnit)" PropertyName="Location" /&gt;&lt;/DataBindings&gt;&lt;/Item&gt;&lt;/Controls&gt;&lt;Aggregates type="PerpetuumSoft.Reporting.DOM.AggregateCollection" id="107" /&gt;&lt;/Item&gt;&lt;/Controls&gt;&lt;Aggregates type="PerpetuumSoft.Reporting.DOM.AggregateCollection" id="108" /&gt;&lt;/Item&gt;&lt;/Controls&gt;&lt;DataBindings type="PerpetuumSoft.Reporting.DOM.ReportDataBindingCollection" id="109" /&gt;&lt;/Item&gt;&lt;/Pages&gt;&lt;GraphicsSettings type="PerpetuumSoft.Reporting.DOM.GraphicsSettings" id="110" InterpolationMode="Low" /&gt;&lt;/root&gt;</value>
+  </data>
+  <data name="TecnoAliance_ICO" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>Resources\site-32x32.ico;System.Drawing.Icon, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="Portador" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;&lt;root type="PerpetuumSoft.Instrumentation.Model.Instrument" id="1" version="2" Size="468.75;640.625" GridStep="50" Focused="true" SnapToGrid="false" Name="Instrument" MeasureUnit="Pixel"&gt;&lt;Parameters type="PerpetuumSoft.Instrumentation.Model.ParameterCollection" id="2" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="3" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="4"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.RoundedRectangle" id="5" Name="RoundedRectangle1" Size="456.25;575" Style="Default" Center="237.5;343.75"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="6" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="7" Width="9" Color="148, 148, 148" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="8" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="9" Name="Rectangle1" Size="62.5;543.75" Style="Default" Center="184.375;343.75"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="10" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="11" Width="10" Color="132, 132, 132" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="12" Color="123, 123, 123" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Guide" id="13" StartPoint="190.625;606.25" Name="Guide1" EndPoint="187.5;93.75"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="14" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="15"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Scale" id="16" Name="Scale1" Maximum="10000"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="17" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="18"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Slider" id="19" Value="302.07" Name="Slider1"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="20" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="21"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.LinearLevel" id="22" Distance="5.6843418860808015E-14" Width="62.5" Name="LinearLevel1" Style="Default" Value="302.07" StartCap="Flat" MinLimit="-2" EndCap="Flat" Effect3D="Flat"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="23" Width="10" Color="132, 132, 132" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="24"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="25" Expression="Slider1.Value" PropertyName="Value" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="26" Color="153, 205, 255" /&gt;&lt;Colors type="PerpetuumSoft.Instrumentation.Model.Drawing.ColorSectionCollection" id="27" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="28" Name="Rectangle2" Size="212.5;34.375" Style="Default" Center="190.530603125;590.7689125"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="29"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="30" Expression="r(0)" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="31" Width="5" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="32" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="33" Text="302.07" Size="193.75;40.625" Style="Default" Center="190.530603125;595.7689125" Name="Label1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="34" FamilyName="Microsoft Sans Serif" Size="9.75" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="35"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="36" Expression="format(Slider1.Value,&amp;quot;0.00&amp;quot;)" PropertyName="Text" /&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="37" Expression="r(0) + [0,5]" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="38" Color="Blue" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Ticks" id="39" Divisions="5" Distance="62.5" Style="Default" Name="Ticks1" Length="62.5" SubDivisions="2" SubLength="46.875"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="40" Width="5" Style="None" /&gt;&lt;Colorizer type="PerpetuumSoft.Instrumentation.Model.Drawing.SingleColorColorizer" id="41" Color="148, 148, 148" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="42" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ScaleLabels" id="43" OddLabelsDistance="0" Divisions="5" Distance="184.375" Style="Default" Name="ScaleLabels1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="44" FamilyName="Microsoft Sans Serif" Size="12" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Format type="PerpetuumSoft.Framework.Text.TextFormat" id="45" UseCultureSettings="true" UseGroupSeparator="true" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="46" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="47" Text="DINHEIRO                                     " Size="459.375;43.75" Style="Default" Center="232.8125;25" Name="Rótulo1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="48" FamilyName="Microsoft Sans Serif" Size="8.25" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="49" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="50" Color="Black" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;Styles type="PerpetuumSoft.Instrumentation.Styles.StyleCollection" id="51"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Styles.Style" id="52" Name="Default"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="53" Width="1" Style="None" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="54" FamilyName="Microsoft Sans Serif" /&gt;&lt;/Item&gt;&lt;/Styles&gt;&lt;/root&gt;</value>
+  </data>
+  <data name="Tanque" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;&lt;root type="PerpetuumSoft.Instrumentation.Model.Instrument" id="1" version="2" Size="468.75;931.25" GridStep="50" Focused="true" SnapToGrid="false" Name="Instrument" MeasureUnit="Pixel"&gt;&lt;Parameters type="PerpetuumSoft.Instrumentation.Model.ParameterCollection" id="2" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="3" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="4"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.RoundedRectangle" id="5" Name="RoundedRectangle1" Size="456.25;862.5" Style="Default" Center="234.375;496.875"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="6" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="7" Width="9" Color="148, 148, 148" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="8" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="9" Name="Rectangle1" Size="62.5;843.75" Style="Default" Center="193.75;496.875"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="10" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="11" Width="10" Color="132, 132, 132" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="12" Color="123, 123, 123" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Guide" id="13" StartPoint="193.75;906.25" Name="Guide1" EndPoint="193.75;106.25"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="14" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="15"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Scale" id="16" Name="Scale1" Maximum="40000"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="17" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="18"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Slider" id="19" Value="2326.347" Name="Slider1"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="20" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="21"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.LinearLevel" id="22" Distance="5.6843418860808015E-14" Width="62.5" Name="LinearLevel1" Style="Default" Value="2326.347" StartCap="Flat" MinLimit="-2" EndCap="Flat" Effect3D="Flat"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="23" Width="10" Color="132, 132, 132" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="24"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="25" Expression="Slider1.Value" PropertyName="Value" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="26" Color="153, 205, 255" /&gt;&lt;Colors type="PerpetuumSoft.Instrumentation.Model.Drawing.ColorSectionCollection" id="27" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="28" Name="Rectangle2" Size="237.5;40.625" Style="Default" Center="193.75;859.72306"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="29"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="30" Expression="r(0)" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="31" Width="10" Color="148, 148, 148" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="32" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="33" Text="2326.347" Size="250;40.625" Style="Default" Center="193.75;864.72306" Name="Label1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="34" FamilyName="Microsoft Sans Serif" Size="8.25" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="35"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="36" Expression="format(Slider1.Value,&amp;quot;0.000&amp;quot;)" PropertyName="Text" /&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="37" Expression="r(0) + [0,5]" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="38" Color="DarkRed" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Ticks" id="39" Divisions="4" Distance="62.5" Style="Default" Name="Ticks1" Length="62.5" SubDivisions="10" SubLength="46.875"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="40" Width="5" Style="None" /&gt;&lt;Colorizer type="PerpetuumSoft.Instrumentation.Model.Drawing.SingleColorColorizer" id="41" Color="148, 148, 148" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="42" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ScaleLabels" id="43" OddLabelsDistance="0" Divisions="4" Distance="184.375" Style="Default" Name="ScaleLabels1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="44" FamilyName="Microsoft Sans Serif" Size="12" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Format type="PerpetuumSoft.Framework.Text.TextFormat" id="45" UseCultureSettings="true" UseGroupSeparator="true" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="46" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="47" Text="DIESEL INT B4 ADIT." Size="456.25;43.75" Style="Default" Center="234.375;28.125" Name="Rótulo1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="48" FamilyName="Microsoft Sans Serif" Size="8.25" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="49" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="50" Color="Black" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;Styles type="PerpetuumSoft.Instrumentation.Styles.StyleCollection" id="51"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Styles.Style" id="52" Name="Default"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="53" Width="1" Style="None" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="54" FamilyName="Microsoft Sans Serif" /&gt;&lt;/Item&gt;&lt;/Styles&gt;&lt;/root&gt;</value>
+  </data>
+  <data name="VendasDia" xml:space="preserve">
+    <value>&lt;?xml version="1.0" encoding="utf-8" standalone="yes"?&gt;&lt;root type="PerpetuumSoft.Instrumentation.Model.Instrument" id="1" version="2" Size="468.75;640.625" GridStep="50" Focused="true" SnapToGrid="false" Name="Instrument" MeasureUnit="Pixel"&gt;&lt;Parameters type="PerpetuumSoft.Instrumentation.Model.ParameterCollection" id="2" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="3" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="4"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.RoundedRectangle" id="5" Name="RoundedRectangle1" Size="443.75;581.25" Style="Default" Center="234.375;340.625"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="6" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="7" Width="9" Color="148, 148, 148" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="8" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="9" Name="Rectangle1" Size="62.5;556.25" Style="Default" Center="168.75;340.625"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="10" /&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="11" Width="10" Color="132, 132, 132" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="12" Color="123, 123, 123" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Guide" id="13" StartPoint="168.75;612.5" Name="Guide1" EndPoint="165.625;78.125"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="14" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="15"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Scale" id="16" Name="Scale1" Maximum="10000"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="17" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="18"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Slider" id="19" Value="320.13" Name="Slider1"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="20" /&gt;&lt;Elements type="PerpetuumSoft.Instrumentation.Model.ElementCollection" id="21"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.LinearLevel" id="22" Distance="5.6843418860808015E-14" Width="62.5" Name="LinearLevel1" Style="Default" Value="320.13" StartCap="Flat" MinLimit="-2" EndCap="Flat" Effect3D="Flat"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="23" Width="10" Color="132, 132, 132" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="24"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="25" Expression="Slider1.Value" PropertyName="Value" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="26" Color="153, 205, 255" /&gt;&lt;Colors type="PerpetuumSoft.Instrumentation.Model.Drawing.ColorSectionCollection" id="27" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Rectangle" id="28" Name="Rectangle2" Size="225;59.375" Style="Default" Center="168.64995937499998;595.393053125"&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="29"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="30" Expression="r(0)" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="31" Width="10" Color="148, 148, 148" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="32" Color="229, 229, 229" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="33" Text="320.130" Size="206.25;59.375" Style="Default" Center="168.64995937499998;600.393053125" Name="Label1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="34" FamilyName="Microsoft Sans Serif" Size="8.25" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="35"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="36" Expression="format(Slider1.Value,&amp;quot;0.000&amp;quot;)" PropertyName="Text" /&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ExpressionBinding" id="37" Expression="r(0) + [0,5]" PropertyName="Center" /&gt;&lt;/Expressions&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="38" Color="Maroon" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Ticks" id="39" Divisions="5" Distance="62.5" Style="Default" Name="Ticks1" Length="62.5" SubDivisions="2" SubLength="46.875"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="40" Width="5" Style="None" /&gt;&lt;Colorizer type="PerpetuumSoft.Instrumentation.Model.Drawing.SingleColorColorizer" id="41" Color="148, 148, 148" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="42" /&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.ScaleLabels" id="43" OddLabelsDistance="0" Divisions="5" Distance="184.375" Style="Default" Name="ScaleLabels1"&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="44" FamilyName="Microsoft Sans Serif" Size="12" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Format type="PerpetuumSoft.Framework.Text.TextFormat" id="45" UseCultureSettings="true" UseGroupSeparator="true" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="46" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;/Item&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Model.Label" id="47" Text="DIESEL INT B4 ADIT." Size="462.5;40.625" Style="Default" Center="234.375;23.4375" Name="Rótulo1"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="48" Width="1" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="49" FamilyName="Microsoft Sans Serif" Size="8.25" Underline="Off" Strikeout="Off" Italic="Off" Bold="On" /&gt;&lt;Expressions type="PerpetuumSoft.Instrumentation.Model.ExpressionBindingCollection" id="50" /&gt;&lt;Fill type="PerpetuumSoft.Framework.Drawing.SolidFill" id="51" Color="Black" /&gt;&lt;/Item&gt;&lt;/Elements&gt;&lt;Styles type="PerpetuumSoft.Instrumentation.Styles.StyleCollection" id="52"&gt;&lt;Item type="PerpetuumSoft.Instrumentation.Styles.Style" id="53" Name="Default"&gt;&lt;Stroke type="PerpetuumSoft.Framework.Drawing.SimpleStroke" id="54" Width="1" Style="None" /&gt;&lt;Font type="PerpetuumSoft.Framework.Drawing.FontDescriptor" id="55" FamilyName="Microsoft Sans Serif" /&gt;&lt;/Item&gt;&lt;/Styles&gt;&lt;/root&gt;</value>
+  </data>
+  <data name="BemaFi32" xml:space="preserve">
+    <value>;----------------------------------------------------------------------------;
+;                                                                            ;
+;  BEMAFI32.INI                                                              ;
+;  Ver 5.10.6.5 - Janeiro/2010                                                 ;
+;                                                                            ;
+;  Arquivo de inicializacao da dll BemaFI32 para as impressoras fiscais      ;
+;  MP-20 FI II, MP-40 FI II, MP-2000 FI TH, MP-2100 TH FI, MP-3000 TH FI     ;
+;  MP-4000 TH FI, MP-6000 FI TH, MP-6100 TH FI, MP-7000 TH FI, MP-25 FI e    ;
+;  MP-50 FI                                                                  ;
+;                                                                            ;
+;----------------------------------------------------------------------------;
+
+[Sistema]
+Porta=DEFAULT
+Path=C:\
+Status=0
+Retorno=0
+StatusFuncao=0
+ControlePorta=1
+ModeloImp=BEMATECH
+ConfigRede=0
+ModoGaveta=0
+Log=0
+LogDiario=0
+CrLfVinculado=0
+CrLfGerencial=0
+TimeOutGerencial=40
+EmulMFD=0
+StatusCheque=
+CalculoIcmsCupom=0
+ForceWTSClient=1
+RetriesWTSCmd=3
+HabilitaRFDImpMFD=0
+GerarRFD=0
+
+
+[ModoRemoto]
+IP=
+Porta=
+
+
+[MFD]
+Impressora=0
+StatusErro=1
+TimeOutZ=99
+
+
+[Opcional]
+Favorecido=
+Cidade=
+
+
+[SoftwareHouse]
+COO=
+NumeroAplicativo=
+CNPJ=
+IE=
+IM=
+RazaoSocial=
+NomeAplicativo=
+Versao=
+Linha1=
+Linha2=
+
+
+[ECF]
+IM=
+UF=
+
+
+[Formato]
+; 
+;    +------------------------------------- coluna do valor numerico
+;    |  +---------------------------------- coluna extenso 1
+;    |  |  +------------------------------- coluna extenso 2
+;    |  |  |  +---------------------------- coluna favorecido
+;    |  |  |  |  +------------------------- coluna da cidade
+;    |  |  |  |  |  +---------------------- coluna do dia 
+;    |  |  |  |  |  |  +------------------- coluna do mes
+;    |  |  |  |  |  |  |  +---------------- coluna do ano
+;    |  |  |  |  |  |  |  |  +------------- linha do valor numerico
+;    |  |  |  |  |  |  |  |  |  +---------- linha do extenso 1
+;    |  |  |  |  |  |  |  |  |  |  +------- linha do extenso 2
+;    |  |  |  |  |  |  |  |  |  |  |  +---- linha do favorecido
+;    |  |  |  |  |  |  |  |  |  |  |  |  +- linha da cidade/data
+;    |  |  |  |  |  |  |  |  |  |  |  |  |
+000=51,04,01,05,06,60,65,81,01,06,08,11,14
+001=51,10,01,06,18,50,54,71,02,05,08,10,12
+003=49,08,01,05,18,52,55,72,01,05,07,09,12
+004=52,09,01,05,18,50,53,72,02,06,09,11,13
+006=56,10,01,05,15,43,48,72,01,06,08,10,13
+008=56,17,01,07,18,50,55,71,03,06,09,11,13
+021=52,12,01,04,18,49,53,71,02,07,09,11,13
+022=52,07,01,04,15,44,49,71,02,06,08,10,13
+024=51,07,01,05,18,48,52,72,01,05,07,09,12
+027=51,10,01,06,18,50,54,71,02,05,08,10,12
+028=55,06,01,05,18,50,53,71,01,05,08,10,12
+029=55,12,01,04,18,50,55,72,01,06,08,10,13
+031=51,10,01,06,18,50,54,71,02,05,08,10,12
+032=51,10,01,06,18,50,54,71,02,05,08,10,12
+033=48,17,01,06,18,46,50,71,02,06,08,11,13
+034=49,14,01,04,15,45,57,71,01,05,07,09,11
+035=51,10,01,06,18,50,54,71,02,05,08,10,12
+036=51,10,01,06,18,50,54,71,02,05,08,10,12
+037=51,10,01,06,18,50,54,71,02,05,08,10,12
+038=56,10,01,04,18,51,56,72,02,07,10,12,14
+039=51,10,01,06,18,50,54,71,02,05,08,10,12
+041=56,09,01,04,18,54,61,72,03,07,09,12,14
+047=52,08,01,05,18,47,50,72,01,05,07,10,12
+048=51,10,01,06,18,50,54,71,02,05,08,10,12
+059=50,15,01,05,18,55,59,72,01,05,07,09,11
+070=54,05,01,05,18,48,52,72,02,06,08,10,12
+104=56,13,01,04,18,48,53,72,01,04,07,10,12
+106=52,12,01,05,18,52,55,71,02,07,09,11,13
+151=54,06,01,04,18,47,52,71,01,05,07,10,12
+153=51,09,01,05,18,51,55,72,01,05,08,10,13
+168=53,05,01,05,18,54,57,71,02,06,08,11,13
+200=52,06,01,05,18,47,52,71,01,05,07,10,12
+201=52,11,01,04,18,47,51,71,01,05,07,09,11
+206=56,14,01,06,18,53,56,72,01,06,08,10,13
+207=50,04,01,05,18,48,52,71,02,06,08,11,13
+211=48,11,01,05,18,52,56,71,03,07,09,12,14
+215=55,06,01,05,18,51,54,71,02,05,08,10,13
+220=56,09,01,05,18,49,53,71,02,05,08,10,12
+230=50,12,01,05,18,54,58,71,02,05,08,10,13
+231=52,12,01,05,18,53,58,72,02,06,08,10,12
+237=50,01,01,04,18,50,54,71,02,06,09,11,14
+244=48,14,01,04,18,49,53,71,03,06,09,11,13
+254=51,09,01,05,18,53,56,71,01,05,08,11,14
+275=51,07,01,04,18,46,52,68,03,08,10,12,14
+282=56,12,01,05,18,50,54,71,02,06,08,10,13
+291=51,10,01,06,18,50,54,71,02,05,08,10,12
+294=51,10,01,06,18,50,54,71,02,05,08,10,12
+302=51,07,01,05,18,47,51,71,02,06,08,10,13
+308=51,10,01,06,18,50,54,71,02,05,08,10,12
+320=54,06,01,04,18,48,51,72,02,05,08,10,13
+334=54,06,01,04,18,54,57,71,02,06,08,10,12
+341=54,08,01,05,18,50,54,72,02,06,09,12,15
+346=54,12,01,05,18,54,57,71,02,05,08,10,12
+347=53,15,01,04,18,47,51,72,02,06,09,11,14
+351=52,14,01,05,18,55,58,72,01,05,07,10,12
+353=52,07,01,05,18,53,58,71,02,05,07,10,12
+356=51,10,01,06,18,50,54,71,02,05,08,10,12
+369=47,07,01,05,18,51,55,71,02,06,08,10,12
+370=52,06,01,05,18,47,50,71,01,05,07,10,12
+372=51,07,01,04,18,46,49,71,02,06,08,11,13
+376=54,07,01,04,18,54,58,72,02,06,08,10,12
+388=46,09,01,06,18,48,52,72,02,06,09,11,14
+389=52,06,01,05,18,53,58,72,02,07,09,12,14
+392=49,12,01,05,18,54,58,72,02,05,07,11,13
+394=51,05,01,05,18,51,55,71,01,05,07,09,13
+399=54,12,01,04,18,52,57,72,01,05,07,10,12
+409=55,12,01,04,23,52,58,71,04,07,09,11,13
+415=54,12,01,06,18,50,54,72,03,07,10,12,14
+420=54,08,01,04,18,50,54,72,02,06,08,10,13
+422=51,10,01,06,18,50,54,71,02,05,08,10,12
+424=51,10,01,06,18,50,54,71,02,05,08,10,12
+434=56,08,01,05,18,50,54,72,02,06,09,11,13
+453=54,12,01,05,18,51,56,72,03,07,10,12,14
+456=48,11,01,05,18,47,50,71,02,06,08,10,12
+464=51,10,01,06,18,50,54,71,02,05,08,10,12
+472=53,12,01,05,18,50,53,71,02,06,09,10,14
+477=55,08,01,05,18,52,57,72,03,07,09,11,14
+479=53,07,01,05,18,50,53,71,02,06,08,10,12
+483=52,08,01,05,18,47,50,71,02,05,07,09,11
+487=58,17,01,05,18,48,52,72,02,06,08,11,13
+494=51,09,01,05,18,50,53,71,02,06,08,10,13
+602=56,10,01,03,18,47,52,66,02,05,07,10,13
+603=51,10,01,06,18,50,54,71,02,05,08,10,12
+607=51,09,01,05,18,53,56,72,02,05,08,10,12
+610=55,15,01,05,18,53,58,71,01,06,08,10,12
+630=49,05,01,05,18,47,52,71,01,06,08,10,13
+718=51,07,01,05,18,48,53,71,01,06,08,10,13
+756=51,10,01,06,18,50,54,71,02,05,08,10,12
+995=51,10,01,06,18,50,54,71,02,05,08,10,12
+996=51,10,01,06,18,50,54,71,02,05,08,10,12
+998=80,03,01,04,22,54,60,80,03,05,06,08,10
+
+
+[FormatoYanco]
+999=61,12,02,03,23,50,61,78,04,09,13,18,22,10
+000=38,03,03,03,00,11,35,78,12,17,22,26,31,05
+001=61,12,02,03,23,50,61,78,04,09,13,18,22,10
+003=60,14,02,04,26,54,63,78,12,22,31,44,53,05
+004=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+006=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+007=61,10,01,02,19,47,60,76,04,09,14,18,22,10
+008=59,17,05,06,25,53,62,78,07,11,16,20,24,10
+020=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+021=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+022=61,15,03,06,25,53,61,78,07,21,30,39,52,05
+024=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+026=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+027=61,10,00,01,20,47,60,78,04,09,15,18,22,10
+028=61,10,01,01,20,47,60,78,04,09,15,18,22,10
+029=63,13,01,03,26,53,62,78,07,25,35,44,56,05
+030=62,10,00,01,19,47,60,78,03,09,14,18,21,10
+031=61,17,03,05,22,50,60,78,13,23,37,46,54,05
+032=62,11,00,01,20,47,60,78,07,21,35,44,53,05
+033=56,15,02,04,22,49,59,78,05,11,14,18,23,10
+034=62,10,00,01,20,47,60,78,07,23,36,45,54,05
+035=62,10,00,00,22,49,60,78,04,09,15,18,22,10
+036=62,12,02,03,23,50,61,78,07,16,29,39,48,05
+037=62,10,00,01,20,47,60,78,07,22,35,44,54,05
+038=60,11,01,02,22,50,60,78,12,26,39,49,58,05
+039=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+041=60,11,02,04,26,53,63,77,07,11,16,20,24,20
+043=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+047=62,10,00,01,20,47,60,78,07,22,35,44,54,05
+048=59,10,01,02,22,49,59,78,11,26,35,44,57,05
+059=62,10,00,01,20,47,60,78,07,22,35,44,54,05
+070=62,10,00,01,20,47,60,78,07,21,35,44,53,05
+104=59,17,02,03,27,54,64,78,04,09,13,17,20,10
+106=63,13,02,03,25,53,62,78,08,26,34,49,57,05
+109=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+111=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+113=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+116=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+148=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+150=62,11,00,01,20,47,60,78,07,21,35,44,53,05
+151=61,12,02,02,23,50,60,78,07,21,30,39,48,05
+152=63,11,00,01,20,47,60,78,04,09,15,18,22,10
+153=64,13,02,04,25,52,62,78,04,09,15,18,22,10
+164=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+165=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+166=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+168=59,11,01,02,24,51,62,78,12,26,35,44,53,05
+171=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+175=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+184=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+200=58,12,01,02,24,52,59,78,08,25,39,52,65,05
+201=59,14,02,03,21,48,60,78,12,21,30,39,52,05
+202=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+204=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+205=61,10,00,01,18,47,60,78,08,24,38,47,55,05
+206=59,17,02,03,26,54,64,78,11,21,30,39,52,05
+207=62,11,01,02,20,47,61,78,04,09,14,18,22,10
+208=62,07,10,00,01,20,47,60,78,22,35,44,53,05
+209=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+210=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+211=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+212=61,10,01,02,20,47,60,78,04,10,15,19,22,10
+213=62,10,00,01,20,47,60,56,78,07,22,35,44,05
+214=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+215=57,16,02,04,22,49,60,78,12,26,35,44,52,05
+216=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+217=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+219=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+220=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+221=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+222=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+223=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+224=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+225=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+226=61,10,00,01,19,47,60,78,08,22,35,44,53,05
+229=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+230=60,14,01,02,26,53,63,78,11,26,35,44,57,05
+233=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+237=58,13,00,02,22,50,61,78,06,11,16,20,23,10
+239=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+242=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+251=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+252=62,10,00,01,19,47,60,78,08,22,35,44,53,05
+254=62,10,00,01,19,47,60,78,07,22,35,44,53,05
+267=62,10,00,01,20,47,60,78,03,09,15,18,21,10
+275=59,11,04,03,23,51,60,78,05,13,18,22,25,20
+291=57,16,03,04,23,49,59,78,06,11,15,18,22,10
+294=60,14,02,04,27,54,63,78,12,21,31,44,53,05
+334=61,13,02,03,24,54,64,78,04,09,13,16,20,10
+341=58,11,03,04,25,53,62,78,04,11,16,20,25,10
+347=59,14,01,03,26,53,63,78,10,25,35,44,56,05
+351=62,16,01,03,26,53,62,78,07,21,32,40,52,05
+353=70,01,01,01,36,54,63,80,02,06,10,14,17,10
+361=62,10,00,01,20,47,60,78,07,22,35,44,53,05
+366=59,15,02,02,23,50,61,78,12,25,39,48,57,05
+369=61,12,02,03,23,50,62,78,08,21,35,44,53,05
+389=61,13,04,04,26,54,63,78,13,30,40,53,61,05
+392=60,14,02,03,21,48,60,78,11,25,34,43,56,05
+399=62,21,05,06,26,53,63,78,04,09,13,18,22,10
+409=57,19,04,06,23,51,61,78,07,13,16,20,23,10
+412=62,11,00,01,20,47,60,78,09,21,34,44,54,05
+415=61,16,03,04,25,53,62,77,05,11,16,20,23,10
+434=61,14,03,09,24,51,61,78,05,09,14,18,23,10
+477=62,13,03,06,26,53,61,78,07,12,16,22,25,10
+479=61,13,01,03,22,50,60,78,04,09,13,17,22,10
+605=60,13,02,04,26,54,63,78,12,21,30,44,53,05
+
+
+[Copia]
+Banco=
+Valor=
+Favorecido=
+Cidade=
+Data=
+ImpressaoVerso=
+Linhas=
+Mensagem=
+
+
+[RelatorioTipo60]
+COOInicial=
+COOFinal=
+GTInicial=
+GTFinal=
+
+
+[TEF]
+REQ=C:\TEF_DIAL\REQ
+RESP=C:\TEF_DIAL\RESP
+STATUS=0
+LINHAS=74
+BYTES=0
+VIAS=1
+
+
+[CONFIG]
+InicioDia=0
+DATARED=
+TOTSUPR=
+MOEDASING=Real
+MOEDAPLU=Reais
+
+
+[ReducaoYanco]
+GT=
+COO=
+CANC=
+ACRE=
+DESC=
+ALIQ=
+SANG=
+SUPR=
+TOTPARC=
+TOTNSUJ=
+CONTNSU=
+CONTOPN=
+NUMALIQ=
+DATAMOV=
+
+
+[Info]
+StampVinculado=
+StampGerencial=</value>
+  </data>
+  <data name="elgin" xml:space="preserve">
+    <value>[Sistema] 
+ModeloImp=ELGIN_FIT
+Porta=COM1 
+Path=C:\ 
+HabilitaICMSCupom=1 
+DINHEIRO=0 
+EspacamentoDocumentos=7 
+SANGRIA=1 
+SUPRIMENTO=0 
+HOMOLOGAR=1 
+BAUD=115200 
+HabilitaCorte=1 
+Gera_RFD_REDZ=1 
+TimeOutRedZ=40 
+Endereco=278 
+PathRFD=C:\RFD 
+TimeOutComandos=10 
+ChecaCTS=0 
+CorrigeRelogioZ=0 
+LMFAutomatico=1 
+[Flags] 
+NumPkt=43 
+CupomManiaLido=0
+CupomManiaValorAux=0
+CupomManiaTotalImp=0,00</value>
+  </data>
+  <data name="BemaFi64" xml:space="preserve">
+    <value>;----------------------------------------------------------------------------;
+;                                                                            ;
+;  BEMAFI64.INI                                                              ;
+;  Ver 6.1.0.0 - Fevereiro/2011                                              ;
+;                                                                            ;
+;  Arquivo de inicializacao da dll BemaFI64 para as impressoras fiscais      ;
+;  MP-20 FI II, MP-40 FI II, MP-2000 FI TH, MP-2100 TH FI, MP-3000 TH FI     ;
+;  MP-4000 TH FI, MP-6000 FI TH, MP-6100 TH FI, MP-7000 TH FI, MP-25 FI e    ;
+;  MP-50 FI.                                                                 ;
+;                                                                            ;
+;----------------------------------------------------------------------------;
+
+[Sistema]
+Porta=DEFAULT
+Path=C:\
+Status=0
+Retorno=0
+StatusFuncao=0
+ControlePorta=1
+ModeloImp=BEMATECH
+ConfigRede=0
+ModoGaveta=0
+Log=1
+LogDiario=1
+CrLfVinculado=0
+CrLfGerencial=0
+TimeOutGerencial=40
+EmulMFD=0
+StatusCheque=
+CalculoIcmsCupom=0
+ForceWTSClient=1
+RetriesWTSCmd=3
+HabilitaRFDImpMFD=0
+GerarRFD=0
+
+
+[ModoRemoto]
+IP=
+Porta=
+
+
+[MFD]
+Impressora=1
+StatusErro=1
+TimeOutZ=99
+
+
+[Opcional]
+Favorecido=
+Cidade=
+
+
+[SoftwareHouse]
+COO=
+NumeroAplicativo=
+CNPJ=
+IE=
+IM=
+RazaoSocial=
+NomeAplicativo=
+Versao=
+Linha1=
+Linha2=
+
+
+[ECF]
+IM=
+UF=
+
+
+[Formato]
+; 
+;    +------------------------------------- coluna do valor numerico
+;    |  +---------------------------------- coluna extenso 1
+;    |  |  +------------------------------- coluna extenso 2
+;    |  |  |  +---------------------------- coluna favorecido
+;    |  |  |  |  +------------------------- coluna da cidade
+;    |  |  |  |  |  +---------------------- coluna do dia 
+;    |  |  |  |  |  |  +------------------- coluna do mes
+;    |  |  |  |  |  |  |  +---------------- coluna do ano
+;    |  |  |  |  |  |  |  |  +------------- linha do valor numerico
+;    |  |  |  |  |  |  |  |  |  +---------- linha do extenso 1
+;    |  |  |  |  |  |  |  |  |  |  +------- linha do extenso 2
+;    |  |  |  |  |  |  |  |  |  |  |  +---- linha do favorecido
+;    |  |  |  |  |  |  |  |  |  |  |  |  +- linha da cidade/data
+;    |  |  |  |  |  |  |  |  |  |  |  |  |
+000=51,04,01,05,06,60,65,81,01,06,08,11,14
+001=51,10,01,06,18,50,54,71,02,05,08,10,12
+003=49,08,01,05,18,52,55,72,01,05,07,09,12
+004=52,09,01,05,18,50,53,72,02,06,09,11,13
+006=56,10,01,05,15,43,48,72,01,06,08,10,13
+008=56,17,01,07,18,50,55,71,03,06,09,11,13
+021=52,12,01,04,18,49,53,71,02,07,09,11,13
+022=52,07,01,04,15,44,49,71,02,06,08,10,13
+024=51,07,01,05,18,48,52,72,01,05,07,09,12
+027=51,10,01,06,18,50,54,71,02,05,08,10,12
+028=55,06,01,05,18,50,53,71,01,05,08,10,12
+029=55,12,01,04,18,50,55,72,01,06,08,10,13
+031=51,10,01,06,18,50,54,71,02,05,08,10,12
+032=51,10,01,06,18,50,54,71,02,05,08,10,12
+033=48,17,01,06,18,46,50,71,02,06,08,11,13
+034=49,14,01,04,15,45,57,71,01,05,07,09,11
+035=51,10,01,06,18,50,54,71,02,05,08,10,12
+036=51,10,01,06,18,50,54,71,02,05,08,10,12
+037=51,10,01,06,18,50,54,71,02,05,08,10,12
+038=56,10,01,04,18,51,56,72,02,07,10,12,14
+039=51,10,01,06,18,50,54,71,02,05,08,10,12
+041=56,09,01,04,18,54,61,72,03,07,09,12,14
+047=52,08,01,05,18,47,50,72,01,05,07,10,12
+048=51,10,01,06,18,50,54,71,02,05,08,10,12
+059=50,15,01,05,18,55,59,72,01,05,07,09,11
+070=54,05,01,05,18,48,52,72,02,06,08,10,12
+104=56,13,01,04,18,48,53,72,01,04,07,10,12
+106=52,12,01,05,18,52,55,71,02,07,09,11,13
+151=54,06,01,04,18,47,52,71,01,05,07,10,12
+153=51,09,01,05,18,51,55,72,01,05,08,10,13
+168=53,05,01,05,18,54,57,71,02,06,08,11,13
+200=52,06,01,05,18,47,52,71,01,05,07,10,12
+201=52,11,01,04,18,47,51,71,01,05,07,09,11
+206=56,14,01,06,18,53,56,72,01,06,08,10,13
+207=50,04,01,05,18,48,52,71,02,06,08,11,13
+211=48,11,01,05,18,52,56,71,03,07,09,12,14
+215=55,06,01,05,18,51,54,71,02,05,08,10,13
+220=56,09,01,05,18,49,53,71,02,05,08,10,12
+230=50,12,01,05,18,54,58,71,02,05,08,10,13
+231=52,12,01,05,18,53,58,72,02,06,08,10,12
+237=50,01,01,04,18,50,54,71,02,06,09,11,14
+244=48,14,01,04,18,49,53,71,03,06,09,11,13
+254=51,09,01,05,18,53,56,71,01,05,08,11,14
+275=51,07,01,04,18,46,52,68,03,08,10,12,14
+282=56,12,01,05,18,50,54,71,02,06,08,10,13
+291=51,10,01,06,18,50,54,71,02,05,08,10,12
+294=51,10,01,06,18,50,54,71,02,05,08,10,12
+302=51,07,01,05,18,47,51,71,02,06,08,10,13
+308=51,10,01,06,18,50,54,71,02,05,08,10,12
+320=54,06,01,04,18,48,51,72,02,05,08,10,13
+334=54,06,01,04,18,54,57,71,02,06,08,10,12
+341=54,08,01,05,18,50,54,72,02,06,09,12,15
+346=54,12,01,05,18,54,57,71,02,05,08,10,12
+347=53,15,01,04,18,47,51,72,02,06,09,11,14
+351=52,14,01,05,18,55,58,72,01,05,07,10,12
+353=52,07,01,05,18,53,58,71,02,05,07,10,12
+356=51,10,01,06,18,50,54,71,02,05,08,10,12
+369=47,07,01,05,18,51,55,71,02,06,08,10,12
+370=52,06,01,05,18,47,50,71,01,05,07,10,12
+372=51,07,01,04,18,46,49,71,02,06,08,11,13
+376=54,07,01,04,18,54,58,72,02,06,08,10,12
+388=46,09,01,06,18,48,52,72,02,06,09,11,14
+389=52,06,01,05,18,53,58,72,02,07,09,12,14
+392=49,12,01,05,18,54,58,72,02,05,07,11,13
+394=51,05,01,05,18,51,55,71,01,05,07,09,13
+399=54,12,01,04,18,52,57,72,01,05,07,10,12
+409=55,12,01,04,23,52,58,71,04,07,09,11,13
+415=54,12,01,06,18,50,54,72,03,07,10,12,14
+420=54,08,01,04,18,50,54,72,02,06,08,10,13
+422=51,10,01,06,18,50,54,71,02,05,08,10,12
+424=51,10,01,06,18,50,54,71,02,05,08,10,12
+434=56,08,01,05,18,50,54,72,02,06,09,11,13
+453=54,12,01,05,18,51,56,72,03,07,10,12,14
+456=48,11,01,05,18,47,50,71,02,06,08,10,12
+464=51,10,01,06,18,50,54,71,02,05,08,10,12
+472=53,12,01,05,18,50,53,71,02,06,09,10,14
+477=55,08,01,05,18,52,57,72,03,07,09,11,14
+479=53,07,01,05,18,50,53,71,02,06,08,10,12
+483=52,08,01,05,18,47,50,71,02,05,07,09,11
+487=58,17,01,05,18,48,52,72,02,06,08,11,13
+494=51,09,01,05,18,50,53,71,02,06,08,10,13
+602=56,10,01,03,18,47,52,66,02,05,07,10,13
+603=51,10,01,06,18,50,54,71,02,05,08,10,12
+607=51,09,01,05,18,53,56,72,02,05,08,10,12
+610=55,15,01,05,18,53,58,71,01,06,08,10,12
+630=49,05,01,05,18,47,52,71,01,06,08,10,13
+718=51,07,01,05,18,48,53,71,01,06,08,10,13
+756=51,10,01,06,18,50,54,71,02,05,08,10,12
+995=51,10,01,06,18,50,54,71,02,05,08,10,12
+996=51,10,01,06,18,50,54,71,02,05,08,10,12
+998=80,03,01,04,22,54,60,80,03,05,06,08,10
+
+
+[Copia]
+Banco=
+Valor=
+Favorecido=
+Cidade=
+Data=
+ImpressaoVerso=
+Linhas=
+Mensagem=
+
+
+[RelatorioTipo60]
+COOInicial=
+COOFinal=
+GTInicial=
+GTFinal=
+
+
+[Info]
+StampVinculado=
+StampGerencial=</value>
+  </data>
+</root>

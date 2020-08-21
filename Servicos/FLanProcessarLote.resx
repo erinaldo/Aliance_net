@@ -1,0 +1,521 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="BB_Cancelar.Text" xml:space="preserve">
+    <value>(F6)
+ Cancelar</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>31, 13</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="st_gerarpedido.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 7</value>
+  </data>
+  <data name="dt_processamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 20</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Lote:</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pValores.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="BB_Gravar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="pDados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 37</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pValores</value>
+  </data>
+  <data name="BB_Cancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pDados.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pValores.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BB_Gravar.ToolTipText" xml:space="preserve">
+    <value>Gravar Registro</value>
+  </data>
+  <data name="pValores.Size" type="System.Drawing.Size, System.Drawing">
+    <value>454, 37</value>
+  </data>
+  <data name="BB_Cancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA85JREFUWEell71r
+        VFEQxTcRTJfKVNkqIKiQwkRBJS5YiFqIX9gkmEqCiDaiKBaWItY2a5HW/8E/QiytrLRKIaygYPRd5zfv
+        zc3cu+9jHwkMb/fte/ecmTln7s3coOffZHU++Fd+7s8lKyx/+Zfe6Ll+7eN/1+aDRfH6QSh235Tx7sVB
+        vH0Sfj/fCp+HR2IcGjuCyuIKyPXVdigebZRx/0wZW6tl7IxC8ex2gOSvx7cOR6Q4vxCKl5slMFk/vVxG
+        E/id46Egbg7L2FzT9/dunFYivaqh4JQXcDLKwMPOepp5Dn5lKRQWUpXJvYuzk4jglNuAfeYQog1UhWsV
+        +w+vlm0w4NFiKAiSEYKQ+Lh0tL0SreAAQ0qAv20Ma4O+a8WoiIELAbRUXF9pJ6EP8TJlb8pcCHw/0dxP
+        ev3p1LGg1dg+p9lHIVMJ0cXX0Ur4sJBaWfWhBLp6LsSwWhsJ1oII4lNXAExQEdoj96ZaoeBVeTsFJwuY
+        39uUDcjetZOlLgxc2sB37idViNl7tdMOwvvc1C4kzOddJCZ3z2r/NXgfe0pMEzDVm8+xod0ji9xq0uNZ
+        SKAJ1YOB89kTYLZHSxl4ZTV6Tbm1l37ImNWEWJe9yFRbQeaAs5YETno/L2JUAqZ8IaBDRrzNA5Q3IcGE
+        y30+g8fRg4GrQ0hQWpIS8LO98rr1F1Wrx8kAAn7IoHA8Lr1uGjRKQCoQwRnxUwT8xuIqMEXCVF3ZCwGH
+        9UErCSOgmQPO9JRqagUosc59r/YaAuZvzQJFV0NGwc3n0g78nw+aSMDAGeNSyZSAbamIrYEAJFgM4UEi
+        Aac1DT6PBGwPwV0JAW44q5GlibDO50rC/O2HjLOaHzZKAPWTOVgSfy4sHlRgymoimC6PRxKA+iHjrPbj
+        0rKCcNX+A067pRW0XltgvdUH7DBBOeU7Q6Rr0unMp3rO56Z2rgoOQQPH8lKNCB4JUB7vc8mMBbr28Dho
+        qswTq0nP9Tvis/MjBKz/UxYjC+9zWZQMZyZhZ0Kvdp854Hn5PQllagRsG5VFEVQXCeu1ZuzVbkc7O0mL
+        aJPyewL5Hq67JESY+aJ6NFF7mKgW4Td6riQsc09AKsxUrSWQD5o44WzIICTXEiqSRxSc9bzKOozHsfRt
+        CWgeftAkJ5ncatW+bvt7/J+g8nn856U6ZSW26zqjRxImyhqf52qPQybvuVSNHbex7E1kIMEBUjNr8Hnc
+        WGzCeXDaIIJr7XlXJehXPNtZyZusRukB5XcB7lXyWYhAhmCPiGc8dzhhthto73J3EfC/s/h4MNDgcx59
+        1uLZ/zJUjmGrwAOmAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
+    <value>CenterScreen</value>
+  </data>
+  <data name="&gt;&gt;pValores.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>460, 129</value>
+  </data>
+  <data name="dt_processamento.Mask" xml:space="preserve">
+    <value>00/00/0000</value>
+  </data>
+  <data name="st_gerarpedido.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 9.75pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;dt_processamento.Name" xml:space="preserve">
+    <value>dt_processamento</value>
+  </data>
+  <data name="tlpCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="tlpCentral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 86</value>
+  </data>
+  <data name="BB_Gravar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 8</value>
+  </data>
+  <data name="&gt;&gt;st_gerarpedido.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Processar Lote</value>
+  </data>
+  <data name="id_lotebusca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>55, 20</value>
+  </data>
+  <data name="ds_lotebusca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>97, 5</value>
+  </data>
+  <data name="BB_Cancelar.ToolTipText" xml:space="preserve">
+    <value>Cancelar Operação</value>
+  </data>
+  <data name="id_lotebusca.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;ds_lotebusca.Name" xml:space="preserve">
+    <value>ds_lotebusca</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Name" xml:space="preserve">
+    <value>barraMenu</value>
+  </data>
+  <data name="st_gerarpedido.Text" xml:space="preserve">
+    <value>Gerar pedido remessa para transporte</value>
+  </data>
+  <data name="pValores.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pValores.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 46</value>
+  </data>
+  <data name="st_gerarpedido.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>63, 13</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tlpCentral.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;dt_processamento.Parent" xml:space="preserve">
+    <value>pValores</value>
+  </data>
+  <data name="&gt;&gt;pValores.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="st_gerarpedido.Size" type="System.Drawing.Size, System.Drawing">
+    <value>293, 20</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="BB_Cancelar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;pDados.Name" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="id_lotebusca.Location" type="System.Drawing.Point, System.Drawing">
+    <value>41, 5</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>36</value>
+  </data>
+  <data name="&gt;&gt;id_lotebusca.Name" xml:space="preserve">
+    <value>id_lotebusca</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="barraMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="pDados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TFLanProcessarLote</value>
+  </data>
+  <data name="tlpCentral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 43</value>
+  </data>
+  <data name="dt_processamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>76, 7</value>
+  </data>
+  <data name="tlpCentral.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pDados" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pValores" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,43,Percent,100" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;st_gerarpedido.Name" xml:space="preserve">
+    <value>st_gerarpedido</value>
+  </data>
+  <data name="tlpCentral.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;pDados.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BB_Cancelar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;BB_Gravar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_Gravar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;st_gerarpedido.Type" xml:space="preserve">
+    <value>Componentes.CheckBoxDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tlpCentral.RowCount" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="BB_Gravar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>90, 40</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_Gravar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_Gravar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAtVJREFUWEfVl99L
+        FUEUx/VviPo7hBsYglAPQUTgQyk9ZQ8GgYI9VA8lREWCYGBhpA8iCvnQLygoil6KQkgwuHS5ROiDIEpJ
+        CP0DE5+h73J27657Z+5F8MJh5u7u+Z7PnDkzu9PZ8f936PARp/5+tH92fncmcQiOnb+24C7ceZfYpfG3
+        rh1mNYmheCkAbnxY3UzZzu5f1w7L6gqiAeDhy7qbef3DG/2t7V8tA6CBlrRpCwHuPfnuJp/W3O3Fqhub
+        W3XrG1seAJEYwxcNtNBEmxilAFcff3XXZ1e8c0xg64MGWmjuCXBmZM7TKVXKAGKIxJh80dI0EINYqVXH
+        HwtAuiDOBq3/XPPXmm0FgBaaQJQCkCaIRx8tJwAEjDENAC00NQWlGeDh4akvyWirtXowgHyAQKtpACgp
+        msv3P6YAEJStfKuW9gVQW9v2WmhqheVm4MTFaT8/PMSc4YQzQgSMMXzJAFp2FTQFwPYJAAJ29CF9FSta
+        1IFqgME2rAKbAR4+d+ON35aBaMXQQCsIgHRBjWM7DC07BaUZoGAgpnox5rCVFi0VIXVWCKD9WluntmT+
+        t2LS0SrIBTh2djJ5YeAAtbJABmJMGURHU8AgSwFscN5cQ1duRRnLjRqyqwAABtuwCmwGBMCoCf7i1Xv3
+        6fNykOGD7+nRZx6CbGgKSgGUOj7HEJlfeu4hQm1gcMQDYNEAiACAkUqNiFHpOmCCtK0AeJZsBmUABwJa
+        AIQ0IloBFLU2A0EAqvgsgA0OzIPZ+QTC9gUUBNB18maSJr0NLQABLAB9ruWZBWAl8KwywGs5twhZFtzQ
+        ng0ERagpIFB2Wy4CUDaUAbsV5wLwfa7DAhDaNGhtDWSLrlkAwPVJRku2c09iFkKbx6m+fp/msbsTQYYP
+        vgRjUOjpS6vhZGTPgrqJI9bdezyxoz29rsgqlUrqHn7SopVe4ejzIKxAbN8efq3GfhyAD0aMfz5VRxCi
+        AzV+AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BB_Cancelar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;pDados.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BB_Gravar.Text" xml:space="preserve">
+    <value> (F4)
+ Gravar</value>
+  </data>
+  <data name="ds_lotebusca.Size" type="System.Drawing.Size, System.Drawing">
+    <value>346, 20</value>
+  </data>
+  <data name="&gt;&gt;dt_processamento.Type" xml:space="preserve">
+    <value>Componentes.EditData, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;id_lotebusca.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="BB_Gravar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Name" xml:space="preserve">
+    <value>BB_Cancelar</value>
+  </data>
+  <data name="BB_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 40</value>
+  </data>
+  <data name="&gt;&gt;dt_processamento.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;ds_lotebusca.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="barraMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="ds_lotebusca.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="ds_lotebusca.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="barraMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>460, 43</value>
+  </data>
+  <data name="&gt;&gt;ds_lotebusca.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;st_gerarpedido.Parent" xml:space="preserve">
+    <value>pValores</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>7, 10</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pDados.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ds_lotebusca.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BB_Cancelar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="dt_processamento.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;id_lotebusca.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BB_Gravar.Name" xml:space="preserve">
+    <value>BB_Gravar</value>
+  </data>
+  <data name="st_gerarpedido.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Data Envio:</value>
+  </data>
+  <data name="pDados.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="id_lotebusca.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Name" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="&gt;&gt;id_lotebusca.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pValores.Name" xml:space="preserve">
+    <value>pValores</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="barraMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="label6.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Spanish</value>
+  </metadata>
+</root>

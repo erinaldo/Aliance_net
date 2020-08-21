@@ -1,0 +1,1039 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6737E793-A3AC-41FB-9838-1243C8907E30}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Frota</RootNamespace>
+    <AssemblyName>Frota</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Drawing.Design" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Utils, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Utils\obj\Debug\Utils.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FCadCfgFrota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCfgFrota.Designer.cs">
+      <DependentUpon>FCadCfgFrota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadDesenho.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadDesenho.Designer.cs">
+      <DependentUpon>FCadDesenho.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadDespesa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadDespesa.Designer.cs">
+      <DependentUpon>FCadDespesa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMarcaVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMarcaVeiculo.Designer.cs">
+      <DependentUpon>FCadMarcaVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadRodado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadRodado.Designer.cs">
+      <DependentUpon>FCadRodado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadRotaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadRotaFrete.Designer.cs">
+      <DependentUpon>FCadRotaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadVeiculo.Designer.cs">
+      <DependentUpon>FCadVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CfgMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CfgMDFe.Designer.cs">
+      <DependentUpon>FCad_CfgMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FConsultaVeiculos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FConsultaVeiculos.Designer.cs">
+      <DependentUpon>FConsultaVeiculos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FListRodado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FListRodado.Designer.cs">
+      <DependentUpon>FListRodado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAbastAvulso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbastAvulso.Designer.cs">
+      <DependentUpon>FAbastAvulso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAbastComposto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAbastComposto.Designer.cs">
+      <DependentUpon>FAbastComposto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAcertoMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAcertoMotorista.Designer.cs">
+      <DependentUpon>FAcertoMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadICMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadICMS.Designer.cs">
+      <DependentUpon>FCadICMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadPremioSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadPremioSeguro.designer.cs">
+      <DependentUpon>FCadPremioSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadSeguroVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadSeguroVeiculo.designer.cs">
+      <DependentUpon>FCadSeguroVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCartaCorrecao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCartaCorrecao.Designer.cs">
+      <DependentUpon>FCartaCorrecao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCartaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCartaFrete.Designer.cs">
+      <DependentUpon>FCartaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCentralGerFrota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCentralGerFrota.Designer.cs">
+      <DependentUpon>FCentralGerFrota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCompValorFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCompValorFrete.Designer.cs">
+      <DependentUpon>FCompValorFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCTe.Designer.cs">
+      <DependentUpon>FCTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDadosMovPneu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDadosMovPneu.Designer.cs">
+      <DependentUpon>FDadosMovPneu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDespComposta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDespComposta.Designer.cs">
+      <DependentUpon>FDespComposta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDespesaSeguro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDespesaSeguro.Designer.cs">
+      <DependentUpon>FDespesaSeguro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDespesasViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDespesasViagem.Designer.cs">
+      <DependentUpon>FDespesasViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDevolucaoOutrasReceitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDevolucaoOutrasReceitas.Designer.cs">
+      <DependentUpon>FDevolucaoOutrasReceitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDocumentoCTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDocumentoCTe.Designer.cs">
+      <DependentUpon>FDocumentoCTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FImportarNFeCTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImportarNFeCTe.Designer.cs">
+      <DependentUpon>FImportarNFeCTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FInfracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FInfracoes.designer.cs">
+      <DependentUpon>FInfracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanAbastFrota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanAbastFrota.Designer.cs">
+      <DependentUpon>FLanAbastFrota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanAbastVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanAbastVeiculo.designer.cs">
+      <DependentUpon>FLanAbastVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanAcertoMotorista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanAcertoMotorista.Designer.cs">
+      <DependentUpon>FLanAcertoMotorista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCartaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCartaFrete.Designer.cs">
+      <DependentUpon>FLanCartaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCTe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCTe.Designer.cs">
+      <DependentUpon>FLanCTe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanInfracoes.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanInfracoes.Designer.cs">
+      <DependentUpon>FLanInfracoes.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanManutencao.Designer.cs">
+      <DependentUpon>FLanManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMDFe.Designer.cs">
+      <DependentUpon>FLanMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMovimentacaoPneu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMovimentacaoPneu.Designer.cs">
+      <DependentUpon>FLanMovimentacaoPneu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMovPneu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMovPneu.Designer.cs">
+      <DependentUpon>FLanMovPneu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanOutrasReceitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanOutrasReceitas.Designer.cs">
+      <DependentUpon>FLanOutrasReceitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanSeguros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanSeguros.Designer.cs">
+      <DependentUpon>FLanSeguros.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaAbastecida.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaAbastecida.Designer.cs">
+      <DependentUpon>FListaAbastecida.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaCartaFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaCartaFrete.Designer.cs">
+      <DependentUpon>FListaCartaFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaCTeMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaCTeMDFe.Designer.cs">
+      <DependentUpon>FListaCTeMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaNFeMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaNFeMDFe.Designer.cs">
+      <DependentUpon>FListaNFeMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaVeic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaVeic.Designer.cs">
+      <DependentUpon>FListaVeic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaViagemMot.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaViagemMot.Designer.cs">
+      <DependentUpon>FListaViagemMot.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListFrete.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListFrete.Designer.cs">
+      <DependentUpon>FListFrete.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListManutencao.Designer.cs">
+      <DependentUpon>FListManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListRota.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListRota.Designer.cs">
+      <DependentUpon>FListRota.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanViagem.Designer.cs">
+      <DependentUpon>FLanViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListViagem.Designer.cs">
+      <DependentUpon>FListViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FManutencao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FManutencao.designer.cs">
+      <DependentUpon>FManutencao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMDFe.Designer.cs">
+      <DependentUpon>FMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMovimentarVeiculo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMovimentarVeiculo.Designer.cs">
+      <DependentUpon>FMovimentarVeiculo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMovPneu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMovPneu.Designer.cs">
+      <DependentUpon>FMovPneu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOrdemColeta.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOrdemColeta.Designer.cs">
+      <DependentUpon>FOrdemColeta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FOutrasReceitas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FOutrasReceitas.Designer.cs">
+      <DependentUpon>FOutrasReceitas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadPneu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadPneu.Designer.cs">
+      <DependentUpon>FCadPneu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQtdeCarga.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQtdeCarga.Designer.cs">
+      <DependentUpon>FQtdeCarga.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRequisicao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRequisicao.Designer.cs">
+      <DependentUpon>FRequisicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRetirarItensAlmox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRetirarItensAlmox.Designer.cs">
+      <DependentUpon>FRetirarItensAlmox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSeguroMDFe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSeguroMDFe.Designer.cs">
+      <DependentUpon>FSeguroMDFe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FViagem.Designer.cs">
+      <DependentUpon>FViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\FCadCfgFrota.resx">
+      <DependentUpon>FCadCfgFrota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadDesenho.resx">
+      <DependentUpon>FCadDesenho.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadDespesa.resx">
+      <DependentUpon>FCadDespesa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMarcaVeiculo.resx">
+      <DependentUpon>FCadMarcaVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadRodado.resx">
+      <DependentUpon>FCadRodado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadRotaFrete.resx">
+      <DependentUpon>FCadRotaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadVeiculo.resx">
+      <DependentUpon>FCadVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_CfgMDFe.resx">
+      <DependentUpon>FCad_CfgMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FConsultaVeiculos.resx">
+      <DependentUpon>FConsultaVeiculos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FListRodado.resx">
+      <DependentUpon>FListRodado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAbastAvulso.resx">
+      <DependentUpon>FAbastAvulso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAbastComposto.resx">
+      <DependentUpon>FAbastComposto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAcertoMotorista.resx">
+      <DependentUpon>FAcertoMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadICMS.resx">
+      <DependentUpon>FCadICMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadPremioSeguro.resx">
+      <DependentUpon>FCadPremioSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadSeguroVeiculo.resx">
+      <DependentUpon>FCadSeguroVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCartaCorrecao.resx">
+      <DependentUpon>FCartaCorrecao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCartaFrete.resx">
+      <DependentUpon>FCartaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCentralGerFrota.resx">
+      <DependentUpon>FCentralGerFrota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCompValorFrete.resx">
+      <DependentUpon>FCompValorFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCTe.resx">
+      <DependentUpon>FCTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDadosMovPneu.resx">
+      <DependentUpon>FDadosMovPneu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDespComposta.resx">
+      <DependentUpon>FDespComposta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDespesaSeguro.resx">
+      <DependentUpon>FDespesaSeguro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDespesasViagem.resx">
+      <DependentUpon>FDespesasViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDevolucaoOutrasReceitas.resx">
+      <DependentUpon>FDevolucaoOutrasReceitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDocumentoCTe.resx">
+      <DependentUpon>FDocumentoCTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImportarNFeCTe.resx">
+      <DependentUpon>FImportarNFeCTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FInfracoes.resx">
+      <DependentUpon>FInfracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanAbastFrota.resx">
+      <DependentUpon>FLanAbastFrota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanAbastVeiculo.resx">
+      <DependentUpon>FLanAbastVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanAcertoMotorista.resx">
+      <DependentUpon>FLanAcertoMotorista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCartaFrete.resx">
+      <DependentUpon>FLanCartaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCTe.resx">
+      <DependentUpon>FLanCTe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanInfracoes.resx">
+      <DependentUpon>FLanInfracoes.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanManutencao.resx">
+      <DependentUpon>FLanManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMDFe.resx">
+      <DependentUpon>FLanMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMovimentacaoPneu.resx">
+      <DependentUpon>FLanMovimentacaoPneu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMovPneu.resx">
+      <DependentUpon>FLanMovPneu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanOutrasReceitas.resx">
+      <DependentUpon>FLanOutrasReceitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanSeguros.resx">
+      <DependentUpon>FLanSeguros.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaAbastecida.resx">
+      <DependentUpon>FListaAbastecida.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaCartaFrete.resx">
+      <DependentUpon>FListaCartaFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaCTeMDFe.resx">
+      <DependentUpon>FListaCTeMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaNFeMDFe.resx">
+      <DependentUpon>FListaNFeMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaVeic.resx">
+      <DependentUpon>FListaVeic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaViagemMot.resx">
+      <DependentUpon>FListaViagemMot.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListFrete.resx">
+      <DependentUpon>FListFrete.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListManutencao.resx">
+      <DependentUpon>FListManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListRota.resx">
+      <DependentUpon>FListRota.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanViagem.resx">
+      <DependentUpon>FLanViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListViagem.resx">
+      <DependentUpon>FListViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FManutencao.resx">
+      <DependentUpon>FManutencao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMDFe.resx">
+      <DependentUpon>FMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMovimentarVeiculo.resx">
+      <DependentUpon>FMovimentarVeiculo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMovPneu.resx">
+      <DependentUpon>FMovPneu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOrdemColeta.resx">
+      <DependentUpon>FOrdemColeta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FOutrasReceitas.resx">
+      <DependentUpon>FOutrasReceitas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPneu.resx">
+      <DependentUpon>FCadPneu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQtdeCarga.resx">
+      <DependentUpon>FQtdeCarga.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRequisicao.resx">
+      <DependentUpon>FRequisicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRetirarItensAlmox.resx">
+      <DependentUpon>FRetirarItensAlmox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSeguroMDFe.resx">
+      <DependentUpon>FSeguroMDFe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FViagem.resx">
+      <DependentUpon>FViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almoxarifado\Almoxarifado.csproj">
+      <Project>{1E43B375-FBA8-4428-9E3F-40CD27E476A9}</Project>
+      <Name>Almoxarifado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{dd35b696-7b35-4a9a-b396-2be0923263c9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commoditties\Commoditties.csproj">
+      <Project>{292D6426-61F4-4271-8C8F-B20730482F44}</Project>
+      <Name>Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Consulta\Consulta.csproj">
+      <Project>{A5BC81C1-BE21-4D67-A42E-A051640E36D4}</Project>
+      <Name>Consulta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CTe\CTe.csproj">
+      <Project>{D554AFE6-DD57-42F4-A454-C9B863935A9A}</Project>
+      <Name>CTe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fiscal\Fiscal.csproj">
+      <Project>{35FC49F9-4E65-4D10-9DB3-5ED052D9DB34}</Project>
+      <Name>Fiscal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDFe\MDFe.csproj">
+      <Project>{A3A04509-5C11-4768-B07D-631897C5C6EB}</Project>
+      <Name>MDFe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{b765028d-8b44-4002-9b45-c69fcb083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976A508-894E-45A8-8055-ABE829C1BFA3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostoCombustivel\PostoCombustivel.csproj">
+      <Project>{6A5A70D0-8258-42DE-9B25-8D6FB7F0E497}</Project>
+      <Name>PostoCombustivel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCamLibrary\WebCamLibrary.csproj">
+      <Project>{172F13F8-7B9F-4CC2-ADB4-27C8B1E966DC}</Project>
+      <Name>WebCamLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Almoxarifado.TList_Movimentacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_ConhecimentoFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_CTRCompValorFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_CTRNotaFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_CTROrdemColeta.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_CTRQtdeCarga.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_CTRValePedagio.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_EventoCTe.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.CTRC.TList_SeguroCarga.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.NotaFiscal.TList_RegLanFaturamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Caixa.TList_LanCaixa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Adiantamento.TList_LanAdiantamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadConf_Layout.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadDesenhoPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadDimensaoPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadLayoutVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadMarcaPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadMarcaVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadModeloPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadMotorista.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadSeguroPremios.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadSeguroVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CadVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CfgFrota.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_CfgMDFe.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_Infracoes.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_LanPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_ManutencaoVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_Rodado.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_Abastecidas.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_AcertoMotorista.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_CartaFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_MDFe.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_MDFe_Seguro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_MovPneu.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_OutrasReceitas.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_RotaFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_Despesa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_RotaFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_AbastVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_Viagem.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.FCadCFGBanco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadBanco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadBandeiraCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCartaoCredito.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCategoriaCliFor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCentroResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCFGContratoFin.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCFGDescCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCfgEmprestimos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCFGFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCfgFolhaPagamento.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCFGImpCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCFGVendedor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCidade.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadClifor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCliforResumido.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCondPGTO_X_Parcelas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadConfigAdto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadContaGer.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadContaGer_X_Empresa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadCotacaoMoeda.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadDRE.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadGrupoCF.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadJuro.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadMaquinaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadMoeda.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadMotivoInativo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadPais.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadPortador.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadPortadorXJuro.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadTpData.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadTPDocto_Dup.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadTPDuplicata.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadUF.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCadVendedorCondPgto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCad_CondPGTO.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCad_Historico.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCad_RamoAtividade.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCad_TaxaBandeira.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCfgImpCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFClifor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFComissao_X_Desconto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFContatoPF.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFContatos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFCopiarConfigVend.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFDadosBanc.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFDescontoVendedor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFEndereco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFGerenteVendedor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFHistorico.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFListaHistoricos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFListVendedor.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFParamDRE.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFPessoasAutorizadas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFPracaCobranca.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFReferencia.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFVendedorEmpresa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFVendedorGrupoProd.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFVendedorRegVenda.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Cadastros.TFVendedorTabPreco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.FDescontarCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.FLanCliforInativo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.FLoteCartaoDescontar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRelCentroResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRelExtratoIR.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRelMovimentoCaixa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRelPortadoresReceber.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRel_DupLiquidada.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRel_SaldoContasGerenciais.datasource" />
+    <None Include="Properties\DataSources\Financeiro.Relatorio.TFRel_SaldoSinteticoContaGer.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAcertoViagem.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAddCResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAgruparDuplicata.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAgruparFinPosto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAlterarCResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAlterarPgto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAnaliseCredito.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAplicarResgatar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAtualizaBoleto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFAtualizaSeqRemessa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFBuscarCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFCarregarCartaoPrePago.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFCCustoLancto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFChequeTroco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaBloquetos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaCaixa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaCentroResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaEmprestimos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaFinCentroResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaFolhaPgto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaLiberarCredito.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsultaTitulosRecebidos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFConsulta_Adiantamento.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFContratoFin.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFCorrigirTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDadosDuplicata.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFData.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDataAdicionais.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDescontarBloqueto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDespesasViagem.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDevEmprestimo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDuplicataAgrup.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFDuplicatasPerdidas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFEmpreendimento.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFEmprestimos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFEnviarLote.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFExcluirPrevisaoDRG.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFFolha.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFFolhaPgto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFImpCarne.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanCaixa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanCartaoPrePago.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanCCustoEmpreendimento.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanContaDescCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanContas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanContratoFin.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanCustodiaCH.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanDevolucaoCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanDuplicata.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanEmpreendimentos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanLiquidacao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanListaCheques.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanLoteCH.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanProcessarLoteCheque.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLanViagem.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_Adiantamento.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_BloqueioCredito.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_Bloqueto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_Cobranca.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_COB_Retorno.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_FechamentoCaixa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_GerarCreditoTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_LiquidaTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_PrevisaoCentroResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_ReciboAvulso.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_Remessa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLan_Transfere_Caixa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLiquidarContasPagar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLiquidarDupTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaChCustodiaDeposito.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaChPreDatados.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaChTroco.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaCliforInadimplente.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaParcelas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaParcelasAgrupadas.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFListaParcPagar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLocalizarBloquetos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLocalizarChequesDescontar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLoginDesconto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLoteBoletoDescontar.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLoteCustodia.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFLoteRemessa.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFProcessarLoteBloqueto.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFQuitarAdiantamentos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFQuitarFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFRastrearLancamentos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFRateioCentro.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFRateioCResultado.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFReimprimirCheques.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFSaldoCreditos.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFTitulosCustodia.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFTransfTitulo.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFTrocoPDV.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFValidaLogin.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFViagem.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFVisualizaCheques.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFVisualizarCartao.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFVisualizarCFReceber.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TFVisualizarConvenio.datasource" />
+    <None Include="Properties\DataSources\Financeiro.TInfo.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.FCadCmiSimples.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.FCadMovimentacaoComercial.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.FCFOP.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFAliquotaSimples.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadAjusteICMS.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadAjusteIPI.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadCFOP.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadCMI.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadCondFiscalClifor.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadCondFiscalProduto.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadDetRecIsentaPisCofins.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadImposto.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadMovimentacao.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadMovXCmi.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadMov_X_CFOP.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadMov_X_CMI.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadNCM.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadObsFiscal.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadReceitaPisCofins.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadSitTribut.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadTabelaSimples.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadTpBaseCalcCredito.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadTpContribuicaoPisCofins.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadTpCreditoPisCofins.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCadTpImposto_x_SitTrib.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCad_CondFiscalICMS.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCad_CondFiscalImpostos.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCondFiscalICMS.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFCondFiscalImposto.datasource" />
+    <None Include="Properties\DataSources\Fiscal.Cadastros.TFTabSimples.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFImportDominio.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanctoImposto.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanGIAICMS.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanLivroFiscal.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanLivroLMC.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanProcessarImpostos.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanSintegra.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanSpedFiscal.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLanSpedPisCofins.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFLan_Impostos.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFProcessarImposto.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFReprocessarFiscal.datasource" />
+    <None Include="Properties\DataSources\Fiscal.TFTermoLMC.datasource" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

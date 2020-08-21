@@ -1,0 +1,19 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Windows.Forms;
+
+namespace Locacao
+{
+    public partial class FLanPainelLocTerceiro : Form
+    {
+        public FLanPainelLocTerceiro()
+        {
+            InitializeComponent();
+        }
+    }
+}

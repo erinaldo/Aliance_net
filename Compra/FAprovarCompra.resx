@@ -1,0 +1,2400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="nm_clifor_requisitante.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="bindingNavigator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 25</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Name" xml:space="preserve">
+    <value>scNegociacao</value>
+  </data>
+  <data name="&gt;&gt;editDefault3.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="nmfornecedorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Fornecedor</value>
+  </data>
+  <data name="&gt;&gt;ds_produto.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="cdcondpgtoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="lblMotivoRepRen.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="editFloat1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 118</value>
+  </data>
+  <data name="ds_motivorenegociar.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cdtransportadoraDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cdtransportadoraDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Transportadora</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel1.Parent" xml:space="preserve">
+    <value>scNegociacao</value>
+  </data>
+  <data name="tpNegociacoes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="bb_renegociar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="sigla_unidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>336, 81</value>
+  </data>
+  <data name="&gt;&gt;gNegociacoes.Name" xml:space="preserve">
+    <value>gNegociacoes</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAStJREFUOE9jYBg0
+        oHDW8/9NC57/z5z4+D8uR4W3P8Apx5A789n/VUfe/8elKL77wf/ghmu4DciY8vT/wn0fsCqK73n4f+n+
+        ///9qy/gNiCh58n/aVveYyiKaL8P1pw56/9/r9ITuA2I7Hr0v3f1BxRFoa33wJpb1wFt7/z73yX/AG4D
+        Apsf/q+b/w6uKLjl7v9Fe///7wBqzpjz879d3c//9hnbcRvgUXX/f/60NyiK7Ipv/0+f8/u/f9e3/zqF
+        7/5bJKzHbYB96d3/2ZNfYyjSTzn/36ToxX+VrE//jSOX4TbAIu/O/9T+11gVGSSd+C+b9vW/bvA83AYY
+        Zt3+H9byEqci/dTL/zV8p+E2QCftxn+/6od4Fal4TMBtgFPulf8gBXgVDZqMh+wQAPB2wKsSwCgmAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdtransportadoraDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Name" xml:space="preserve">
+    <value>BB_Cancelar</value>
+  </data>
+  <data name="dt_requisicaostrLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>80, 13</value>
+  </data>
+  <data name="cd_clifor_requisitanteLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 13</value>
+  </data>
+  <data name="&gt;&gt;siglaDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>siglaDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="dsportadorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Portador</value>
+  </data>
+  <data name="nrdiaspagamentoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>79, 13</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;emailvendedorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>emailvendedorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="cdmoedaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. Moeda</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem1.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="qtd_aprovada.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;qtdmincompraDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="BB_Cancelar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cd_produtoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ds_motivorenegociar.Name" xml:space="preserve">
+    <value>ds_motivorenegociar</value>
+  </data>
+  <data name="bb_reprovar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;nrdiasvigenciaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nrdiasvigenciaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;nm_empresa.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;ds_produto.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Qtd. Aprovada:</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtd_aprovada.Size" type="System.Drawing.Size, System.Drawing">
+    <value>137, 26</value>
+  </data>
+  <data name="&gt;&gt;lblMotivoRepRen.Parent" xml:space="preserve">
+    <value>pAprovar</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;qtd_aprovada.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="bindingNavigatorSeparator4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="tcDetalhes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 304</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ds_observacao.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="nrdiaspagamentoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dias Pagar</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;ds_produto.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 24</value>
+  </data>
+  <data name="&gt;&gt;idnegociacaoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveLastItem1</value>
+  </data>
+  <data name="&gt;&gt;dscondpgtoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorMovePreviousItem1</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 549</value>
+  </data>
+  <data name="editDefault3.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="dtcotacaostrDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dt. Cotação</value>
+  </data>
+  <data name="&gt;&gt;nm_clifor_requisitante.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitante.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;St_integrar.Name" xml:space="preserve">
+    <value>St_integrar</value>
+  </data>
+  <data name="toolStripSeparator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 43</value>
+  </data>
+  <data name="&gt;&gt;dsportadorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dsportadorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;bsCotacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nm_clifor_requisitante.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="pDados.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="dt_requisicao.Mask" xml:space="preserve">
+    <value>00/00/0000</value>
+  </data>
+  <data name="dt_requisicao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bindingNavigator1.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel1</value>
+  </data>
+  <data name="editDefault2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 20</value>
+  </data>
+  <data name="sigla_unidade.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;cdfornecedorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cdfornecedorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. Fornecedor</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="panelDados1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>statusDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;emailvendedorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>emailvendedorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="Dt_validadecotacao.Width" type="System.Int32, mscorlib">
+    <value>122</value>
+  </data>
+  <data name="tipofreteDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Tipo Frete</value>
+  </data>
+  <data name="ds_observacao.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem2.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pAprovar.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cdcondpgtoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="BB_Cancelar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 40</value>
+  </data>
+  <data name="&gt;&gt;ds_observacaoLabel.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;dtcotacaostrDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dtcotacaostrDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;bsRequisicao.Name" xml:space="preserve">
+    <value>bsRequisicao</value>
+  </data>
+  <data name="bindingNavigator1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 242</value>
+  </data>
+  <data name="&gt;&gt;prazoentregaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>prazoentregaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;qtdmincompraDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>qtdmincompraDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblConciliacao.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tlpCentral.ColumnCount" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="bb_aprovar.Text" xml:space="preserve">
+    <value> (F4)
+ Aprovar</value>
+  </data>
+  <data name="&gt;&gt;bsNegociacao.Name" xml:space="preserve">
+    <value>bsNegociacao</value>
+  </data>
+  <data name="dsobservacaoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="&gt;&gt;editDefault2.Name" xml:space="preserve">
+    <value>editDefault2</value>
+  </data>
+  <data name="gNegociacoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bb_renegociar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>115, 40</value>
+  </data>
+  <data name="dt_requisicao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 81</value>
+  </data>
+  <data name="&gt;&gt;nmvendedorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nmvendedorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem1.Text" xml:space="preserve">
+    <value>Registro Anterior</value>
+  </data>
+  <data name="&gt;&gt;pDados.Name" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="cd_clifor_requisitanteLabel.Text" xml:space="preserve">
+    <value>Requisitante:</value>
+  </data>
+  <data name="&gt;&gt;lblConciliacao.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="editDefault3.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="lblConciliacao.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleCenter</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="cdfornecedorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="cd_empresaLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>34, 6</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;editDefault2.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="idnegociacaoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;qtdatendidaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>qtdatendidaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAL1JREFUOE9jYBgy
+        ILz9wX+yHRvf/eB/cMM18gyI73n4f+n+///9qy+QbkBE+32w5sxZ//97lZ4gzYDQ1ntgza3rgLZ3/v3v
+        kn+AeAOCW+7+X7T3//8OoOaMOT//29X9/G+fsZ14A0ChbVd8+3/6nN///bu+/dcpfPffImE9aQaADNFP
+        Of/fpOjFf5WsT/+NI5eRbgDIEIOkE/9l077+1w2eR54BYJekXv6v4TuNfANAhqh4TKDMALKTMc01AgDQ
+        FGCYkuTLEQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="bindingNavigatorPositionItem1.AccessibleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="&gt;&gt;sigla_unidade.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="St_integrar.HeaderText" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="&gt;&gt;nmvendedorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 13</value>
+  </data>
+  <data name="bb_aprovar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAtVJREFUWEfVl99L
+        FUEUx/VviPo7hBsYglAPQUTgQyk9ZQ8GgYI9VA8lREWCYGBhpA8iCvnQLygoil6KQkgwuHS5ROiDIEpJ
+        CP0DE5+h73J27657Z+5F8MJh5u7u+Z7PnDkzu9PZ8f936PARp/5+tH92fncmcQiOnb+24C7ceZfYpfG3
+        rh1mNYmheCkAbnxY3UzZzu5f1w7L6gqiAeDhy7qbef3DG/2t7V8tA6CBlrRpCwHuPfnuJp/W3O3Fqhub
+        W3XrG1seAJEYwxcNtNBEmxilAFcff3XXZ1e8c0xg64MGWmjuCXBmZM7TKVXKAGKIxJh80dI0EINYqVXH
+        HwtAuiDOBq3/XPPXmm0FgBaaQJQCkCaIRx8tJwAEjDENAC00NQWlGeDh4akvyWirtXowgHyAQKtpACgp
+        msv3P6YAEJStfKuW9gVQW9v2WmhqheVm4MTFaT8/PMSc4YQzQgSMMXzJAFp2FTQFwPYJAAJ29CF9FSta
+        1IFqgME2rAKbAR4+d+ON35aBaMXQQCsIgHRBjWM7DC07BaUZoGAgpnox5rCVFi0VIXVWCKD9WluntmT+
+        t2LS0SrIBTh2djJ5YeAAtbJABmJMGURHU8AgSwFscN5cQ1duRRnLjRqyqwAABtuwCmwGBMCoCf7i1Xv3
+        6fNykOGD7+nRZx6CbGgKSgGUOj7HEJlfeu4hQm1gcMQDYNEAiACAkUqNiFHpOmCCtK0AeJZsBmUABwJa
+        AIQ0IloBFLU2A0EAqvgsgA0OzIPZ+QTC9gUUBNB18maSJr0NLQABLAB9ruWZBWAl8KwywGs5twhZFtzQ
+        ng0ERagpIFB2Wy4CUDaUAbsV5wLwfa7DAhDaNGhtDWSLrlkAwPVJRku2c09iFkKbx6m+fp/msbsTQYYP
+        vgRjUOjpS6vhZGTPgrqJI9bdezyxoz29rsgqlUrqHn7SopVe4ejzIKxAbN8efq3GfhyAD0aMfz5VRxCi
+        AzV+AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem2.Text" xml:space="preserve">
+    <value>Primeiro Registro</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 102</value>
+  </data>
+  <data name="tpCotacoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitanteLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bb_aprovar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAKtJREFUOE9jYBh0
+        oHDW8/8UOSp35rP/Cd33yDckY8rT//P2//6f0HWHPEMSep78n73v1//OrX//u5VeJt2QyK5H/6ds+/W/
+        ZOnf/wnT//63yT1LmiGBzQ//t659D9ZsXPLlv3T0tf/GkcuIN8Sj6v7/krnv4JoVXXqI1wyKPvvSu/8D
+        W56BbSZZM8gAi7w7/20KrpCnGWSAYdZt8jWDDNBJu0GanylKtoNCMwCgfl+gC2KedgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="pAprovar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 432</value>
+  </data>
+  <data name="editDefault3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>244, 20</value>
+  </data>
+  <data name="bb_reprovar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA+RJREFUWEftl81q
+        U0EUxxN8AMFlF77E9VksvsCVbsSdLl2Igm8w4sKVi0pxUUFEVJAWQW8LBakQi2lr1aR+VdtUg03G+Z3k
+        n05vvtMuveUwc2/mzvmdz7ktFo55NQ+qni2Kpz4U9rZLtlvtzHRn14cvtgqN02ft/uK5YvGY6o6+7sO1
+        8+2jr5QX/G71XkdclnnkztMNE5d5k0cv33rnnAGPdfn6qo8lVsa885vPDOL+3IopvLH4u0sAmrl8dXQI
+        XIyFsfig6Ii0AQU2u7RrlucBgOK3NE1HB6g1dkw5IH++122U8Buy/KnmK38bNue35yuVLoBWGDI//3lx
+        MMDrN2sWKzZhvv5jswNAzLligL1m09Zurn41AOTZVr0LgGf4rS8AmyAsehc2ZVz+1fTv/bZ/1SwZCCIl
+        jCjHckAR5jwr/dy3PCAMKOY5wr4DAVgg5ZoDgFgo2m4m8y37w/1Gs+Zvzz8xgPKXAwNAmGsP5qzFKNb2
+        zAGs1wvxiAJEELifrFcYBKOSlGfkHQExsu9EALEXlGiCiAGA4ncuFC7tVwycOQk8EIDEk+WyOo6d5mym
+        i03JC3IEce0/4pyFv9Sl9lzvUi1paEQ9+0AWSgRiIPIASiBZgmJEVXLtwU2fpImfujV1OLrE5gCQlJLz
+        M5d69wA2U6kAoIxWVsf3JBXrzcosNcUFV+iMzHUPAPsieGBgF8wDKKFIHMpKPYJwMXeZMyuToPBCedpE
+        MDEA3Y+SBqCvBzgcWAgEYcBiXSgDQLLwuGqbJbg5CO7FU+EIsvuCScsjeODuurd9+1aATiYaBxAA5JPN
+        hV4aA7AOZSglZLzjonDkAVg/FEBewDolnEqKJBUEHuBYZZ1KTVlPQhKa2bU563oI1gPAO0MPInkh9oCa
+        SgygziclKEQxQu0LDCCUIyTg0KNYRylJo3LTiMUKg9V0UBYnHQkJECEh9lfK161KyAFOw6HKCYG+YgCJ
+        ATjtKD8qQL0fBSo5RqxX2+boBY41fBeMDICCNNCmzneOWZTHQg5wny+7JEvsGSPK6YSEAmM4a0byAF6A
+        GAgsjRWTiMRez1AWNx1lPsoRF2pE3XWsT7EWQGbk5IK+FfAOggcQ3Gvtt90PpBjLlQtq41TAwCYUf6Xq
+        W04fJb0AAp8lGBAoI/7MOZAoSSqBBqUPlpGVA0ICqS2rj+sziyqQB/AG1WBj8JQOHGu7QUha1g+t/V7f
+        6P0g8IYgyAfyRCB24LSVMyfpxrI8BoEaC9gw9gIA3AsE5VKsMuXdiazOe0IWKBw60XC7XHzY42mzI7Ta
+        sf4lai/GGlwpIOYIz3l2ItZOAvb/nZPwwD8i0mrgReqAVgAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;lblMotivoRepRen.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="panelDados1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 120</value>
+  </data>
+  <data name="&gt;&gt;dscondpgtoDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dscondpgtoDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="dt_requisicao.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="tlpCentral.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 506</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicaostrLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gNegociacoes.Type" xml:space="preserve">
+    <value>Componentes.DataGridDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="bb_reprovar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;nmvendedorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>nmvendedorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;gCotacao.Parent" xml:space="preserve">
+    <value>tpCotacoes</value>
+  </data>
+  <data name="BB_Cancelar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="nmtransportadoraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="&gt;&gt;lblMotivoRepRen.Name" xml:space="preserve">
+    <value>lblMotivoRepRen</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem2.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="cd_empresaLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cdportadorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="emailvendedorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Email Vendedor</value>
+  </data>
+  <data name="&gt;&gt;tcDetalhes.Name" xml:space="preserve">
+    <value>tcDetalhes</value>
+  </data>
+  <data name="cdportadorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Cd. Portador</value>
+  </data>
+  <data name="quantidade.Location" type="System.Drawing.Point, System.Drawing">
+    <value>241, 81</value>
+  </data>
+  <data name="vlunitariocotadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Unitario Cotado</value>
+  </data>
+  <data name="bb_aprovar.ToolTipText" xml:space="preserve">
+    <value>Aprovar Compra</value>
+  </data>
+  <data name="&gt;&gt;Dt_validadecotacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cd_produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 55</value>
+  </data>
+  <data name="&gt;&gt;bb_reprovar.Name" xml:space="preserve">
+    <value>bb_reprovar</value>
+  </data>
+  <data name="&gt;&gt;bb_aprovar.Name" xml:space="preserve">
+    <value>bb_aprovar</value>
+  </data>
+  <data name="&gt;&gt;sigla_unidade.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nmfornecedorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="cd_clifor_requisitante.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="cd_empresaLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>51, 13</value>
+  </data>
+  <data name="bindingNavigator1.Text" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="&gt;&gt;nm_clifor_requisitante.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="bb_aprovar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cdtransportadoraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>113</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 63</value>
+  </data>
+  <data name="&gt;&gt;tpCotacoes.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;stdepositarpagtoboolDataGridViewCheckBoxColumn.Name" xml:space="preserve">
+    <value>stdepositarpagtoboolDataGridViewCheckBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bsCotacao.Name" xml:space="preserve">
+    <value>bsCotacao</value>
+  </data>
+  <data name="&gt;&gt;cd_empresaLabel.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;vlunitarionegociadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>vlunitarionegociadoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="editDefault2.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Left, Right</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ds_motivorenegociar.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem2.Text" xml:space="preserve">
+    <value>Proximo Registro</value>
+  </data>
+  <data name="&gt;&gt;gNegociacoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pAprovar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 69</value>
+  </data>
+  <data name="&gt;&gt;St_integrar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cd_empresa.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="bb_renegociar.Text" xml:space="preserve">
+    <value>(F9)
+ Renegociar</value>
+  </data>
+  <data name="nmvendedorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="&gt;&gt;gCotacao.Type" xml:space="preserve">
+    <value>Componentes.DataGridDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblMotivoRepRen.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigatorPositionItem1.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem1.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cd_produtoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;tpNegociacoes.Name" xml:space="preserve">
+    <value>tpNegociacoes</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripTextBox, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ds_observacaoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>68, 13</value>
+  </data>
+  <data name="cd_empresa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;cdportadorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cdportadorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="dt_requisicaostrLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 84</value>
+  </data>
+  <data name="&gt;&gt;tipofreteDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>tipofreteDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;editDefault2.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="cdtransportadoraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. Transportadora</value>
+  </data>
+  <data name="&gt;&gt;fonefaxDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>fonefaxDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="bindingNavigatorPositionItem2.ToolTipText" xml:space="preserve">
+    <value>Registro Corrente</value>
+  </data>
+  <data name="tpNegociacoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1012, 275</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitante.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;tcDetalhes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabControl, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMotivoRepRen.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 2</value>
+  </data>
+  <data name="bb_renegociar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="bindingNavigatorPositionItem2.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;siglaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdportadorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>cdportadorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="foneFaxDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicao.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="ds_observacaoLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;tpCotacoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cd_produtoLabel.Name" xml:space="preserve">
+    <value>cd_produtoLabel</value>
+  </data>
+  <data name="dt_requisicao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>73, 20</value>
+  </data>
+  <data name="siglaDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Sigla</value>
+  </data>
+  <data name="&gt;&gt;stdepositarpagtoboolDataGridViewCheckBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;idnegociacaoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>idnegociacaoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="quantidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 20</value>
+  </data>
+  <data name="editDefault2.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BB_Cancelar.Text" xml:space="preserve">
+    <value>(F6)
+ Cancelar</value>
+  </data>
+  <data name="quantidade.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gCotacao.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;emailvendedorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdcondpgtoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigator2.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="ds_observacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 81</value>
+  </data>
+  <data name="nm_empresa.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="cd_clifor_requisitanteLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveFirstItem1</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoDataGridViewTextBoxColumn2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Name" xml:space="preserve">
+    <value>barraMenu</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tlpCentral.CellBorderStyle" type="System.Windows.Forms.TableLayoutPanelCellBorderStyle, System.Windows.Forms">
+    <value>Inset</value>
+  </data>
+  <data name="&gt;&gt;qtd_aprovada.Name" xml:space="preserve">
+    <value>qtd_aprovada</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>88, 120</value>
+  </data>
+  <data name="nmvendedorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator2.Name" xml:space="preserve">
+    <value>bindingNavigator2</value>
+  </data>
+  <data name="qtdporcompraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Qtd. Por Compra</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitanteLabel.Name" xml:space="preserve">
+    <value>cd_clifor_requisitanteLabel</value>
+  </data>
+  <data name="&gt;&gt;nrdiasvigenciaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cdcondpgtoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. CondPgto</value>
+  </data>
+  <data name="&gt;&gt;nm_clifor_requisitante.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="lblMotivoRepRen.Size" type="System.Drawing.Size, System.Drawing">
+    <value>226, 13</value>
+  </data>
+  <data name="bb_reprovar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>dsobservacaoDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="bb_reprovar.Text" xml:space="preserve">
+    <value> (F5)
+ Reprovar</value>
+  </data>
+  <data name="nmtransportadoraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Transportadora</value>
+  </data>
+  <data name="&gt;&gt;pDados.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;nm_empresa.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;nmfornecedorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pDados.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="&gt;&gt;panelDados1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;tpNegociacoes.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="stdepositarpagtoboolDataGridViewCheckBoxColumn.HeaderText" xml:space="preserve">
+    <value>Depositar Pagamento</value>
+  </data>
+  <data name="nrdiasvigenciaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Dias Vigencia</value>
+  </data>
+  <data name="&gt;&gt;cd_produto.Name" xml:space="preserve">
+    <value>cd_produto</value>
+  </data>
+  <data name="&gt;&gt;editFloat1.Name" xml:space="preserve">
+    <value>editFloat1</value>
+  </data>
+  <data name="qtd_aprovada.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tpCotacoes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="lblMotivoRepRen.Text" xml:space="preserve">
+    <value>Motivo Aprovar/Reprovar/Renegociar:</value>
+  </data>
+  <data name="dsobservacaoDataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Observação</value>
+  </data>
+  <data name="vlunitarionegociadoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>126</value>
+  </data>
+  <data name="sigla_unidade.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 20</value>
+  </data>
+  <data name="&gt;&gt;qtdporcompraDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bb_renegociar.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="BB_Cancelar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitContainer, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cd_clifor_requisitanteLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gNegociacoes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;BB_Cancelar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ds_produto.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 55</value>
+  </data>
+  <data name="&gt;&gt;ds_observacaoLabel.Name" xml:space="preserve">
+    <value>ds_observacaoLabel</value>
+  </data>
+  <data name="tcDetalhes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicao.Name" xml:space="preserve">
+    <value>dt_requisicao</value>
+  </data>
+  <data name="cd_clifor_requisitante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;cd_empresa.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem1.Text" xml:space="preserve">
+    <value>Proximo Registro</value>
+  </data>
+  <data name="editFloat1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 20</value>
+  </data>
+  <data name="dsobservacaoDataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="bindingNavigatorPositionItem2.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;dscondpgtoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dscondpgtoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;siglaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>siglaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;qtd_aprovada.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dsobservacaoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>90</value>
+  </data>
+  <data name="nm_clifor_requisitante.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 20</value>
+  </data>
+  <data name="ds_motivorenegociar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>152, 18</value>
+  </data>
+  <data name="&gt;&gt;nm_empresa.Name" xml:space="preserve">
+    <value>nm_empresa</value>
+  </data>
+  <data name="&gt;&gt;dsmoedaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblMotivoRepRen.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tpCotacoes.Text" xml:space="preserve">
+    <value>COTAÇÕES</value>
+  </data>
+  <data name="gNegociacoes.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;nmtransportadoraDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cd_produto.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="vlunitarionegociadoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Vl. Unitario Negociado</value>
+  </data>
+  <data name="gNegociacoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 242</value>
+  </data>
+  <data name="tlpCentral.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;bb_reprovar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gCotacao.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="cd_produtoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>38, 58</value>
+  </data>
+  <data name="cd_empresa.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator5.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator5</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="quantidade.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAStJREFUOE9jYBg0
+        oHDW8/9NC57/z5z4+D8uR4W3P8Apx5A789n/VUfe/8elKL77wf/ghmu4DciY8vT/wn0fsCqK73n4f+n+
+        ///9qy/gNiCh58n/aVveYyiKaL8P1pw56/9/r9ITuA2I7Hr0v3f1BxRFoa33wJpb1wFt7/z73yX/AG4D
+        Apsf/q+b/w6uKLjl7v9Fe///7wBqzpjz879d3c//9hnbcRvgUXX/f/60NyiK7Ipv/0+f8/u/f9e3/zqF
+        7/5bJKzHbYB96d3/2ZNfYyjSTzn/36ToxX+VrE//jSOX4TbAIu/O/9T+11gVGSSd+C+b9vW/bvA83AYY
+        Zt3+H9byEqci/dTL/zV8p+E2QCftxn+/6od4Fal4TMBtgFPulf8gBXgVDZqMh+wQAPB2wKsSwCgmAAAA
+        AElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cd_produto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="editDefault2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 40</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem1.Text" xml:space="preserve">
+    <value>Primeiro Registro</value>
+  </data>
+  <data name="bb_aprovar.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value>Magenta</value>
+  </data>
+  <data name="&gt;&gt;cdmoedaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cdmoedaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="bb_aprovar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cdcondpgtoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cdcondpgtoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;St_processar.Name" xml:space="preserve">
+    <value>St_processar</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorPositionItem1</value>
+  </data>
+  <data name="&gt;&gt;nmfornecedorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>nmfornecedorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;foneFaxDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="emailvendedorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Email Vendedor</value>
+  </data>
+  <data name="bindingNavigatorCountItem2.ToolTipText" xml:space="preserve">
+    <value>Total de Registros</value>
+  </data>
+  <data name="&gt;&gt;editDefault3.Name" xml:space="preserve">
+    <value>editDefault3</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripSeparator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator2.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator2</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblConciliacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;editFloat1.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;quantidade.Name" xml:space="preserve">
+    <value>quantidade</value>
+  </data>
+  <data name="cdportadorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="&gt;&gt;St_processar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewCheckBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicao.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Prazo Entrega</value>
+  </data>
+  <data name="nmvendedorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Vendedor</value>
+  </data>
+  <data name="qtd_aprovada.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt</value>
+  </data>
+  <data name="&gt;&gt;ds_motivorenegociar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="ds_observacaoLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>681, 3</value>
+  </data>
+  <data name="&gt;&gt;qtdatendidaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bb_renegociar.Name" xml:space="preserve">
+    <value>bb_renegociar</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;foneFaxDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>foneFaxDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;Dt_validadecotacao.Name" xml:space="preserve">
+    <value>Dt_validadecotacao</value>
+  </data>
+  <data name="ds_observacao.Multiline" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tlpCentral.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 43</value>
+  </data>
+  <data name="panelDados1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 304</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMovePreviousItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorMovePreviousItem2</value>
+  </data>
+  <data name="&gt;&gt;tcDetalhes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="bindingNavigator2.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;fonefaxDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitante.Name" xml:space="preserve">
+    <value>cd_clifor_requisitante</value>
+  </data>
+  <data name="&gt;&gt;quantidade.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="statusDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="ds_observacao.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bb_aprovar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicaostrLabel.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="prazoentregaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>91</value>
+  </data>
+  <data name="&gt;&gt;quantidade.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorCountItem2</value>
+  </data>
+  <data name="tpNegociacoes.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem1.Text" xml:space="preserve">
+    <value>Ultimo Registro</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigator2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 245</value>
+  </data>
+  <data name="&gt;&gt;dsportadorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dsportadorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveFirstItem2</value>
+  </data>
+  <data name="barraMenu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1030, 43</value>
+  </data>
+  <data name="&gt;&gt;vlunitariocotadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tcDetalhes.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pAprovar.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="ds_motivorenegociar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>919, 46</value>
+  </data>
+  <data name="&gt;&gt;dsportadorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveLastItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveLastItem2</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAL1JREFUOE9jYBgy
+        ILz9wX+yHRvf/eB/cMM18gyI73n4f+n+///9qy+QbkBE+32w5sxZ//97lZ4gzYDQ1ntgza3rgLZ3/v3v
+        kn+AeAOCW+7+X7T3//8OoOaMOT//29X9/G+fsZ14A0ChbVd8+3/6nN///bu+/dcpfPffImE9aQaADNFP
+        Of/fpOjFf5WsT/+NI5eRbgDIEIOkE/9l077+1w2eR54BYJekXv6v4TuNfANAhqh4TKDMALKTMc01AgDQ
+        FGCYkuTLEQAAAABJRU5ErkJggg==
+</value>
+  </data>
+  <data name="&gt;&gt;cd_produto.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="&gt;&gt;nm_empresa.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblConciliacao.Name" xml:space="preserve">
+    <value>lblConciliacao</value>
+  </data>
+  <data name="panelDados1.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Name" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="dtcotacaostrDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAKtJREFUOE9jYBh0
+        oHDW8/8UOSp35rP/Cd33yDckY8rT//P2//6f0HWHPEMSep78n73v1//OrX//u5VeJt2QyK5H/6ds+/W/
+        ZOnf/wnT//63yT1LmiGBzQ//t659D9ZsXPLlv3T0tf/GkcuIN8Sj6v7/krnv4JoVXXqI1wyKPvvSu/8D
+        W56BbSZZM8gAi7w7/20KrpCnGWSAYdZt8jWDDNBJu0GanylKtoNCMwCgfl+gC2KedgAAAABJRU5ErkJg
+        gg==
+</value>
+  </data>
+  <data name="nmfornecedorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Fornecedor</value>
+  </data>
+  <data name="siglaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;bsEntrega.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ds_observacaoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bb_reprovar.ToolTipText" xml:space="preserve">
+    <value>Reprovar Compra</value>
+  </data>
+  <data name="&gt;&gt;nmtransportadoraDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nmtransportadoraDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="vlunitariocotadoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>110</value>
+  </data>
+  <data name="nm_empresa.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 20</value>
+  </data>
+  <data name="tpCotacoes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;cd_produtoLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_Cancelar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="bindingNavigatorSeparator3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="idnegociacaoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Id. Negociação</value>
+  </data>
+  <data name="qtd_aprovada.Location" type="System.Drawing.Point, System.Drawing">
+    <value>9, 18</value>
+  </data>
+  <data name="&gt;&gt;ds_produto.Name" xml:space="preserve">
+    <value>ds_produto</value>
+  </data>
+  <data name="scNegociacao.SplitterDistance" type="System.Int32, mscorlib">
+    <value>747</value>
+  </data>
+  <data name="&gt;&gt;cdcondpgtoDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>cdcondpgtoDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="pDados.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 2</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;cdportadorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="barraMenu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="bindingNavigatorSeparator2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="bindingNavigatorPositionItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 21</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoDataGridViewTextBoxColumn2.Name" xml:space="preserve">
+    <value>dsobservacaoDataGridViewTextBoxColumn2</value>
+  </data>
+  <data name="lblConciliacao.Text" xml:space="preserve">
+    <value>DADOS ENTREGA</value>
+  </data>
+  <data name="&gt;&gt;quantidade.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;pDados.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TFAprovarCompra</value>
+  </data>
+  <data name="bindingNavigatorCountItem2.Text" xml:space="preserve">
+    <value>de {0}</value>
+  </data>
+  <data name="ds_observacaoLabel.Text" xml:space="preserve">
+    <value>Observação:</value>
+  </data>
+  <data name="fonefaxDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="tcDetalhes.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="cd_empresaLabel.Text" xml:space="preserve">
+    <value>Empresa:</value>
+  </data>
+  <data name="&gt;&gt;cd_produtoLabel.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;editDefault3.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Parent" xml:space="preserve">
+    <value>tpNegociacoes</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem1.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="St_processar.HeaderText" xml:space="preserve">
+    <value>Aprovar</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;bsRequisicao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nm_clifor_requisitante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 29</value>
+  </data>
+  <data name="dsportadorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="editDefault2.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="&gt;&gt;cdfornecedorDataGridViewTextBoxColumn1.Name" xml:space="preserve">
+    <value>cdfornecedorDataGridViewTextBoxColumn1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripLabel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dsmoedaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="&gt;&gt;editFloat1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pAprovar</value>
+  </data>
+  <data name="St_integrar.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator2.Parent" xml:space="preserve">
+    <value>tpCotacoes</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.SplitterPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="dscondpgtoDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Condição Pagamento</value>
+  </data>
+  <data name="BB_Cancelar.ToolTipText" xml:space="preserve">
+    <value>Cancelar Operação</value>
+  </data>
+  <data name="tpNegociacoes.Text" xml:space="preserve">
+    <value>NEGOCIAÇÕES</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator3.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator3</value>
+  </data>
+  <data name="tpCotacoes.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1068, 275</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="dscondpgtoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Condição Pagamento</value>
+  </data>
+  <data name="bb_aprovar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="pDados.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;bsNegociacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingSource, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;ds_motivorenegociar.Parent" xml:space="preserve">
+    <value>pAprovar</value>
+  </data>
+  <data name="&gt;&gt;cd_empresa.Name" xml:space="preserve">
+    <value>cd_empresa</value>
+  </data>
+  <data name="bindingNavigatorMoveNextItem2.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="bb_renegociar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>170, 84</value>
+  </data>
+  <data name="cd_produtoLabel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>47, 13</value>
+  </data>
+  <data name="cd_clifor_requisitanteLabel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>16, 32</value>
+  </data>
+  <data name="scNegociacao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem2.Text" xml:space="preserve">
+    <value>Ultimo Registro</value>
+  </data>
+  <data name="pAprovar.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;pAprovar.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;panelDados1.Name" xml:space="preserve">
+    <value>panelDados1</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="cd_empresa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 3</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorPositionItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorPositionItem2</value>
+  </data>
+  <data name="editDefault3.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="cd_clifor_requisitante.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingNavigator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Quantidade:</value>
+  </data>
+  <data name="lblConciliacao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Top</value>
+  </data>
+  <data name="tlpCentral.LayoutSettings" type="System.Windows.Forms.TableLayoutSettings, System.Windows.Forms">
+    <value>&lt;?xml version="1.0" encoding="utf-16"?&gt;&lt;TableLayoutSettings&gt;&lt;Controls&gt;&lt;Control Name="pDados" Row="0" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="panelDados1" Row="1" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;Control Name="pAprovar" Row="2" RowSpan="1" Column="0" ColumnSpan="1" /&gt;&lt;/Controls&gt;&lt;Columns Styles="Percent,100" /&gt;&lt;Rows Styles="Absolute,113,Percent,100,Absolute,75" /&gt;&lt;/TableLayoutSettings&gt;</value>
+  </data>
+  <data name="&gt;&gt;cdfornecedorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;statusDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="editDefault3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 79</value>
+  </data>
+  <data name="cd_produtoLabel.Text" xml:space="preserve">
+    <value>Produto:</value>
+  </data>
+  <data name="Dt_validadecotacao.HeaderText" xml:space="preserve">
+    <value>Dt. Validade Cotação</value>
+  </data>
+  <data name="gCotacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="&gt;&gt;panelDados1.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="ds_produto.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="tlpCentral.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;nmfornecedorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nmfornecedorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="dt_requisicaostrLabel.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 13</value>
+  </data>
+  <data name="bb_renegociar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACMAAAAgCAYAAACYTcH3AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAACXBJREFUWEd9WPlX
+        U0kWhu75T/uH+Wn6OG7dra0ebcXWcWMXAQUFZFU2SQhbCCGy70vIxiIQwhYIkD355rv13guJzpl4LlWv
+        llvfXeuW+WkAefyl5Y+0/NKH8vLz8/N+ytfGf9Ln87lS5vPzZRspScrnbnBF/k95qbyf81Lcp2a5V0hY
+        /EPf/zPb/Lyk/mVw1rnHkwmkkOY/IJlFcQ5EU0CCYxFOnEdjis4iUZxenCMSiyKd5kQ8AsSEYkBKuGh8
+        4vq+iPBhX/jIuLaCjNWIkPS1H6UUKELaQpmOkWk4kcaZTqF4Chc6U2EsxKPVWtmT4rpEIoVkUhPqkg9B
+        8SMbiJz1f8HIZCqVgmgpmkwhlnXwGftBinlECpLPKVkdU8RD6XOOOlHr1R6eGuG6OFuyo+akpaDSyYAw
+        wBhtRjHIS6diSKailCqOZJrS6RJfcO0JmQbCaaztn2PCs4eRlW0MLX/D4PIOht37GN84gXM/ip0zIMSN
+        AkxMG42Rj0LEwaSYT/QohhPSTGNY4xIKzZRMRLhHFK8tSFDVh6fnWNvcxuSKB7ZFN8xTq2h3LOHT2Bra
+        xn346HCjzq5R++QG7GvH8B4TPM8WTmKaFIUDeSMZ5gfbtGHghDrH8E/NhzI+k4s2Eo1jZ/8I0ytu9I3N
+        odM+g1bbHJrsy/g0vYVPcwF8nPKj2r6JCqsXlQNraHFsYnDlGKt7cRzybNGOMo0ImTwnmAsOcEIB0sAY
+        7vs/wUhkCF66DEI0/PZRCM4dglo/gGV+Ex9HnKgecqLS6kaFbQMVDgKaOEDlyC7eDm+iwb6B/oUAVv1h
+        nPJMdUiaRyrNCBilM90Cl7GUCyb9ox0FtWylTDggOBe9dtgbQvPUDt6ObqHSsYvXjj2U2PdQZvMrQG8G
+        3KgdWKZf+XHIzcIjHidv8ZksfzFSiIyKX4rwmoNLaEuu0D09Jyx1MCG2e5xYpE+Y1kKo+bqNUusGSmxs
+        Rw9QagugdHgXJX0evOldRtfUlnJqcWilBwntREIBk2g1Ql2cXSgHjKAykp4BJpO0BD1JwtnPyYlAGk3T
+        fhT3u/BqwIcyaqbYGkDh4A4Ke70oMS2jzurE4FIA69wke+XAENUgucrIT2c84JRIJSHmgJGP78FkkhY7
+        Ic4zchEkuWg3szOI6mE3NeGkhrZQNLSLl/3f8MqygWKLG68tK2ga9WLiWwRHAkQXRnISvQeHkRTcu4dw
+        7RxgN3iuNJUxk3wYqjM0I84sOUfGz2NJSOIzzDUTSKqoetO/jJLeFRQNbuJFH0H1b6GM/TILzcUI61kJ
+        YoWbtinMOoVwHyWwtBPEyLwLX2wTGJ5Zgns7kAvGyJ6aG+smk8hK8c4iqbtJN5cAWqfu+1f36awLKOya
+        QXGfDy/7NlA4sIWSoS1+r6O034v6CT/MnjB6lo7RSfCtIzShyYHqNgsaugcwtuzFUVjzoYxmwkRupHQD
+        jIAwMrMYUa4IUbH4wA4X2117aLDOo6x7Spnmea8P/zF58MzsVf1X/QREE1bat1DYvYCizkm8bLHiRb0J
+        5c1mdDF3eQ5CmQT5AxgBZAS5ZjqCoHNLAgvS8w7lfuIaHxENuoKos7lQTv8o6nMrIAWdq3jY4cSTHi+e
+        0WTPLD783b2KF6ZVFJsXUdI9jbIOO+otk7AtbWCTTEW4HM3IYepO0c1xLklPAOiX4Q4nfFwwTw8e3Eyh
+        ae4Ur+1aBL0c2sFTMzXCg5/SgR+bL+mvbg/utC0S5DKedM7hads4iju/ont6E94TLSBO6QM5YNRtK5eb
+        DkoSnZ+2W9o+xciaH52Tm3hvdaGwZxHPzS6Gsh9FI8co6PPjdrsHj754UdDjgRx+r92JOx1ruNflVu0f
+        LXN42L6M+80TeNRoR5VlASOeE4iA4n8/aMbIKQYYyQHe/RMM8nKs7bahxjSONz1TKOmZxyvTCl5avNTC
+        Fh5+2cD9TgHiU2Dud7rwZ9sybn1aUUDufl7F7ZZZ3G+dxa1aK5402ZQju3WtiNA/Jj0VRVpBZVwDgVAE
+        064t9DgWUfPFgbemSVSYZumMc3jSPo8HbXO417qIuzz4AUEIEDn8Vsuiojsc/7N1AbcaxnGnwYE7Nf0U
+        aAbT22EQi8pbkgjFKjlJT4qfBOsOo5YRTcm9Ib5zQHVa59bRNEggzVYU1A3iSctXPO+Yx+PPC7jbPIub
+        DTP4vWkevzXO4Qb71+unOTaFG7V2XK3sw+/VFvzdOERzr6tIFG2wREI4IqJnF1962alyMHOLgJL7Q7Qk
+        gMSpjxlFzr0IzNMbqKa5njcN41GdFQ/qR3Cv4Suu144pAELXPowruvl+FFerh3CltBP33plR2z+P+e0z
+        5SeqXGXNpOodyWxUzeVFmaksEqrai0bDuIiEtcKb2VcAiaP5KdK45wgfemdQUGPC3Ypu3K7qUwffqJ/E
+        9boJXK2x49o7G27WjuC3ql5cK21Hedc4RpwBlRrU5ch6WQGRaoGUlpxm3NpS6UmCy63WtQJdwk5eBgYg
+        CUcP/wwt+fHePIunjTz43RCu8fArVUP412sLfi034XpFD26Ud+JmUSM6xlzq0jRK0lCI+olLjRNGOnKa
+        C8ZAmNsmldkEsYASQCfkdkY/UjUOzT2zHsTnMR8eNzsUgH+++IzrlRb8UWXGvwubFZCntV2Y9B3BT9WK
+        uKqciJBDXKo/Ian+NN+RH+uZS5V9D0irdaTaT7H6S+Cc+4zkGGR/k/z61k5RNeTGgzpqqLgVv9yvwC93
+        i1FQ/Rldo4vYZgYVM6synMGSiunlp4CJM66ywWgaIPEyEMoASklfK7xEQwIozFg0zGZUggGumD0AOqZ4
+        e3/sw6+PynHlryJ86LLCdxjR7j2SymdS+SWkJtUpJkGe9YjT3gSXgHLAEJA4mKEhUbO8jXjZ4oInnLGV
+        vMGqAr6TNBzOXTSaR/Ghox9jC25IApUCSpWgFCbG4NDACE8dWDYYrUq/LB1+AMPnq3i/hKD6yZWvNUwB
+        BEOeUjiJKaT/7fAMnm8B7B6dqaR2TvQCREyUTFJoEc540OlukPEZ48kgUquKTxYIajGTMpU8xggmzsee
+        epjpSHRQ2Xeb9CUCBaTKrAI4ztpIOlk/mVMV5nfjed+/8zQwpGwwChCzNMEIybs6IVqWzYKNPmUU3SJ9
+        9s/IIZkqUnfm7Ooyo5lsMGIuFc5ZYFJRGkCeG6xvNLrUjDBR2jIcPeNfoj7qWZmEawhQTKU0It8kOffy
+        fyU0OP8FMtzLpdwJuLQAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;nmvendedorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;bsEntrega.Name" xml:space="preserve">
+    <value>bsEntrega</value>
+  </data>
+  <data name="tipofreteDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;prazoentregaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="siglaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Sigla</value>
+  </data>
+  <data name="&gt;&gt;tpNegociacoes.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitanteLabel.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="lblConciliacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 20</value>
+  </data>
+  <data name="scNegociacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1004, 267</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem2.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitanteLabel.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="scNegociacao.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="emailvendedorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="ds_produto.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel2.Name" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="&gt;&gt;ds_observacao.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="bindingNavigator2.Text" xml:space="preserve">
+    <value>bindingNavigator2</value>
+  </data>
+  <data name="&gt;&gt;sigla_unidade.Name" xml:space="preserve">
+    <value>sigla_unidade</value>
+  </data>
+  <data name="cdfornecedorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Cd. Fornecedor</value>
+  </data>
+  <data name="&gt;&gt;panelDados1.Parent" xml:space="preserve">
+    <value>tlpCentral</value>
+  </data>
+  <data name="St_processar.Width" type="System.Int32, mscorlib">
+    <value>50</value>
+  </data>
+  <data name="pDados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1020, 107</value>
+  </data>
+  <data name="&gt;&gt;cd_empresaLabel.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="scNegociacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="stdepositarpagtoboolDataGridViewCheckBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>104</value>
+  </data>
+  <data name="cdportadorDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Cd. Portador</value>
+  </data>
+  <data name="&gt;&gt;nmfornecedorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nm_empresa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;emailvendedorDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="nrdiasvigenciaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>89</value>
+  </data>
+  <data name="&gt;&gt;editDefault3.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="emailvendedorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="bindingNavigatorCountItem1.ToolTipText" xml:space="preserve">
+    <value>Total de Registros</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel2.Parent" xml:space="preserve">
+    <value>scNegociacao</value>
+  </data>
+  <data name="bindingNavigatorMoveFirstItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>23, 22</value>
+  </data>
+  <data name="&gt;&gt;dtcotacaostrDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pAprovar.Name" xml:space="preserve">
+    <value>pAprovar</value>
+  </data>
+  <data name="cd_produto.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="bindingNavigatorCountItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="&gt;&gt;gCotacao.Name" xml:space="preserve">
+    <value>gCotacao</value>
+  </data>
+  <data name="gCotacao.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;dsobservacaoDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tpCotacoes.Name" xml:space="preserve">
+    <value>tpCotacoes</value>
+  </data>
+  <data name="ds_motivorenegociar.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;bb_renegociar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bb_renegociar.ToolTipText" xml:space="preserve">
+    <value>Renegociar Cotação com Fornecedor</value>
+  </data>
+  <data name="dscondpgtoDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;cdcondpgtoDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cdcondpgtoDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Cd. CondPgto</value>
+  </data>
+  <data name="dt_requisicaostrLabel.Text" xml:space="preserve">
+    <value>Dt. Requisição:</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Aprovar Compra</value>
+  </data>
+  <data name="&gt;&gt;tpCotacoes.Parent" xml:space="preserve">
+    <value>tcDetalhes</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATBJREFUOE9jYBhU
+        oHDW8/+4HASSa1rw/H/mxMc41TDkznz2P6H7HlYFILlVR97/D29/gNuAjClP/8/b//t/QtcdDEUguYX7
+        PvwPbriG24CEnif/Z+/79b9z69//bqWXURSC5KZtef/fv/oCbgMiux79n7Lt1/+SpX//J0z/+98m9yxc
+        MUiud/WH/16lJ3AbENj88H/r2vdgzcYlX/5LR1/7bxy5DKwBJFc3/91/l/wDuA3wqLr/v2TuO7hmRZce
+        uGKQXP60N//tM7bjNsC+9O7/wJZnYJuRNYNcAJLLnvz6v0XCetwGWOTd+W9TcAVDM8gAkFxq/2u4l7Cm
+        F8Os21g1gxSD5MJaXv7XDZ6H2wU6aTdwSoLk/Kof/tfwnYbbAHz5yin3yn8VjwlgPKjyHwMAvtG/s0Vm
+        x8MAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="cdmoedaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;cd_empresaLabel.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;vlunitariocotadoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>vlunitariocotadoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="nm_empresa.Location" type="System.Drawing.Point, System.Drawing">
+    <value>192, 3</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem2.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveNextItem2</value>
+  </data>
+  <data name="&gt;&gt;sigla_unidade.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="&gt;&gt;cd_produto.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;siglaDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;qtd_aprovada.Parent" xml:space="preserve">
+    <value>pAprovar</value>
+  </data>
+  <data name="qtdatendidaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Qtd. Atentida</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="qtdmincompraDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Qtd. Minima Compra</value>
+  </data>
+  <data name="cd_produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>100, 20</value>
+  </data>
+  <data name="&gt;&gt;tcDetalhes.Parent" xml:space="preserve">
+    <value>panelDados1</value>
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigatorPositionItem1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>50, 21</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicaostrLabel.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="bindingNavigatorPositionItem2.AccessibleName" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="BB_Cancelar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="&gt;&gt;dscondpgtoDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAATBJREFUOE9jYBhU
+        oHDW8/+4HASSa1rw/H/mxMc41TDkznz2P6H7HlYFILlVR97/D29/gNuAjClP/8/b//t/QtcdDEUguYX7
+        PvwPbriG24CEnif/Z+/79b9z69//bqWXURSC5KZtef/fv/oCbgMiux79n7Lt1/+SpX//J0z/+98m9yxc
+        MUiud/WH/16lJ3AbENj88H/r2vdgzcYlX/5LR1/7bxy5DKwBJFc3/91/l/wDuA3wqLr/v2TuO7hmRZce
+        uGKQXP60N//tM7bjNsC+9O7/wJZnYJuRNYNcAJLLnvz6v0XCetwGWOTd+W9TcAVDM8gAkFxq/2u4l7Cm
+        F8Os21g1gxSD5MJaXv7XDZ6H2wU6aTdwSoLk/Kof/tfwnYbbAHz5yin3yn8VjwlgPKjyHwMAvtG/s0Vm
+        x8MAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;vlunitarionegociadoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolStripSeparator1.Name" xml:space="preserve">
+    <value>toolStripSeparator1</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorMoveNextItem1</value>
+  </data>
+  <data name="tcDetalhes.Appearance" type="System.Windows.Forms.TabAppearance, System.Windows.Forms">
+    <value>FlatButtons</value>
+  </data>
+  <data name="&gt;&gt;barraMenu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStrip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;ds_observacao.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="bindingNavigatorMoveLastItem1.RightToLeftAutoMirrorImage" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="editFloat1.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="bb_reprovar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 40</value>
+  </data>
+  <data name="&gt;&gt;cdmoedaDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="ds_observacaoLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="bb_renegociar.ImageScaling" type="System.Windows.Forms.ToolStripItemImageScaling, System.Windows.Forms">
+    <value>None</value>
+  </data>
+  <data name="tlpCentral.RowCount" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="gCotacao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1060, 242</value>
+  </data>
+  <data name="quantidade.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="ds_produto.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 20</value>
+  </data>
+  <data name="prazoentregaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Prazo Entrega</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveNextItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cd_empresaLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblConciliacao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 10pt, style=Bold, Italic</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="nmvendedorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>74, 13</value>
+  </data>
+  <data name="&gt;&gt;tpNegociacoes.Parent" xml:space="preserve">
+    <value>tcDetalhes</value>
+  </data>
+  <data name="tpNegociacoes.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 25</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Name" xml:space="preserve">
+    <value>bindingNavigator1</value>
+  </data>
+  <data name="bb_reprovar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="bindingNavigatorCountItem1.Text" xml:space="preserve">
+    <value>de {0}</value>
+  </data>
+  <data name="editFloat1.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Frete Pago</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorMoveFirstItem2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolStripButton, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pAprovar.Type" xml:space="preserve">
+    <value>Componentes.PanelDados, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>dias.</value>
+  </data>
+  <data name="bindingNavigator1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="lblConciliacao.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="&gt;&gt;nrdiaspagamentoDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="dsportadorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="fonefaxDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="gCotacao.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="gNegociacoes.RowHeadersWidth" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="lblMotivoRepRen.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="bb_aprovar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>105, 40</value>
+  </data>
+  <data name="&gt;&gt;ds_observacaoLabel.Parent" xml:space="preserve">
+    <value>pDados</value>
+  </data>
+  <data name="cd_empresa.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="bb_reprovar.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>TopCenter</value>
+  </data>
+  <data name="&gt;&gt;cd_empresa.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="dscondpgtoDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>123</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>29, 13</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorSeparator4.Name" xml:space="preserve">
+    <value>bindingNavigatorSeparator4</value>
+  </data>
+  <data name="dt_requisicaostrLabel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;qtdporcompraDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>qtdporcompraDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="qtdatendidaDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>87</value>
+  </data>
+  <data name="sigla_unidade.Enabled" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="nmfornecedorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>86</value>
+  </data>
+  <data name="&gt;&gt;cd_empresaLabel.Name" xml:space="preserve">
+    <value>cd_empresaLabel</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigatorCountItem1.Name" xml:space="preserve">
+    <value>bindingNavigatorCountItem1</value>
+  </data>
+  <data name="cdfornecedorDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>97</value>
+  </data>
+  <data name="&gt;&gt;cdfornecedorDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>cdfornecedorDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="&gt;&gt;tipofreteDataGridViewTextBoxColumn.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gNegociacoes.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel1</value>
+  </data>
+  <data name="editFloat1.ThousandsSeparator" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;ds_observacao.Name" xml:space="preserve">
+    <value>ds_observacao</value>
+  </data>
+  <data name="bindingNavigatorPositionItem1.ToolTipText" xml:space="preserve">
+    <value>Registro Corrente</value>
+  </data>
+  <data name="&gt;&gt;dsportadorDataGridViewTextBoxColumn1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="cd_clifor_requisitante.Location" type="System.Drawing.Point, System.Drawing">
+    <value>91, 29</value>
+  </data>
+  <data name="&gt;&gt;tlpCentral.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TableLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtdmincompraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>116</value>
+  </data>
+  <data name="dsportadorDataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Portador</value>
+  </data>
+  <data name="bindingNavigatorMovePreviousItem2.Text" xml:space="preserve">
+    <value>Registro Anterior</value>
+  </data>
+  <data name="&gt;&gt;editDefault2.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="pDados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 5</value>
+  </data>
+  <data name="&gt;&gt;nm_clifor_requisitante.Name" xml:space="preserve">
+    <value>nm_clifor_requisitante</value>
+  </data>
+  <data name="&gt;&gt;nrdiaspagamentoDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>nrdiaspagamentoDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="barraMenu.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="foneFaxDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Telefone</value>
+  </data>
+  <data name="bindingNavigatorSeparator5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>6, 25</value>
+  </data>
+  <data name="bindingNavigator1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>747, 25</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicao.Type" xml:space="preserve">
+    <value>Componentes.EditData, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;lblConciliacao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtdporcompraDataGridViewTextBoxColumn.Width" type="System.Int32, mscorlib">
+    <value>101</value>
+  </data>
+  <data name="&gt;&gt;editFloat1.Parent" xml:space="preserve">
+    <value>scNegociacao.Panel2</value>
+  </data>
+  <data name="cdportadorDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>84</value>
+  </data>
+  <data name="ds_observacao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>684, 19</value>
+  </data>
+  <data name="&gt;&gt;cd_clifor_requisitante.Type" xml:space="preserve">
+    <value>Componentes.EditDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;dsmoedaDataGridViewTextBoxColumn.Name" xml:space="preserve">
+    <value>dsmoedaDataGridViewTextBoxColumn</value>
+  </data>
+  <data name="bindingNavigatorPositionItem1.AutoSize" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="dsmoedaDataGridViewTextBoxColumn.HeaderText" xml:space="preserve">
+    <value>Moeda</value>
+  </data>
+  <data name="&gt;&gt;dt_requisicaostrLabel.Name" xml:space="preserve">
+    <value>dt_requisicaostrLabel</value>
+  </data>
+  <data name="bindingNavigatorCountItem2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>38, 22</value>
+  </data>
+  <data name="BB_Cancelar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAA85JREFUWEell71r
+        VFEQxTcRTJfKVNkqIKiQwkRBJS5YiFqIX9gkmEqCiDaiKBaWItY2a5HW/8E/QiytrLRKIaygYPRd5zfv
+        zc3cu+9jHwkMb/fte/ecmTln7s3coOffZHU++Fd+7s8lKyx/+Zfe6Ll+7eN/1+aDRfH6QSh235Tx7sVB
+        vH0Sfj/fCp+HR2IcGjuCyuIKyPXVdigebZRx/0wZW6tl7IxC8ex2gOSvx7cOR6Q4vxCKl5slMFk/vVxG
+        E/id46Egbg7L2FzT9/dunFYivaqh4JQXcDLKwMPOepp5Dn5lKRQWUpXJvYuzk4jglNuAfeYQog1UhWsV
+        +w+vlm0w4NFiKAiSEYKQ+Lh0tL0SreAAQ0qAv20Ma4O+a8WoiIELAbRUXF9pJ6EP8TJlb8pcCHw/0dxP
+        ev3p1LGg1dg+p9lHIVMJ0cXX0Ur4sJBaWfWhBLp6LsSwWhsJ1oII4lNXAExQEdoj96ZaoeBVeTsFJwuY
+        39uUDcjetZOlLgxc2sB37idViNl7tdMOwvvc1C4kzOddJCZ3z2r/NXgfe0pMEzDVm8+xod0ji9xq0uNZ
+        SKAJ1YOB89kTYLZHSxl4ZTV6Tbm1l37ImNWEWJe9yFRbQeaAs5YETno/L2JUAqZ8IaBDRrzNA5Q3IcGE
+        y30+g8fRg4GrQ0hQWpIS8LO98rr1F1Wrx8kAAn7IoHA8Lr1uGjRKQCoQwRnxUwT8xuIqMEXCVF3ZCwGH
+        9UErCSOgmQPO9JRqagUosc59r/YaAuZvzQJFV0NGwc3n0g78nw+aSMDAGeNSyZSAbamIrYEAJFgM4UEi
+        Aac1DT6PBGwPwV0JAW44q5GlibDO50rC/O2HjLOaHzZKAPWTOVgSfy4sHlRgymoimC6PRxKA+iHjrPbj
+        0rKCcNX+A067pRW0XltgvdUH7DBBOeU7Q6Rr0unMp3rO56Z2rgoOQQPH8lKNCB4JUB7vc8mMBbr28Dho
+        qswTq0nP9Tvis/MjBKz/UxYjC+9zWZQMZyZhZ0Kvdp854Hn5PQllagRsG5VFEVQXCeu1ZuzVbkc7O0mL
+        aJPyewL5Hq67JESY+aJ6NFF7mKgW4Td6riQsc09AKsxUrSWQD5o44WzIICTXEiqSRxSc9bzKOozHsfRt
+        CWgeftAkJ5ncatW+bvt7/J+g8nn856U6ZSW26zqjRxImyhqf52qPQybvuVSNHbex7E1kIMEBUjNr8Hnc
+        WGzCeXDaIIJr7XlXJehXPNtZyZusRukB5XcB7lXyWYhAhmCPiGc8dzhhthto73J3EfC/s/h4MNDgcx59
+        1uLZ/zJUjmGrwAOmAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;cd_produtoLabel.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;bindingNavigator1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.BindingNavigator, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="siglaDataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;scNegociacao.Panel1.Name" xml:space="preserve">
+    <value>scNegociacao.Panel1</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="cd_produtoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="cd_empresaLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="label1.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="barraMenu.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 0</value>
+  </metadata>
+  <metadata name="bsRequisicao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>238, 17</value>
+  </metadata>
+  <metadata name="St_processar.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>Spanish</value>
+  </metadata>
+  <metadata name="Dt_validadecotacao.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="St_integrar.UserAddedColumn" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="bsEntrega.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>980, 17</value>
+  </metadata>
+  <metadata name="dt_requisicaostrLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="ds_observacaoLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>39</value>
+  </metadata>
+  <metadata name="bindingNavigator2.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>3, 245</value>
+  </metadata>
+  <metadata name="cd_clifor_requisitanteLabel.GenerateMember" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>False</value>
+  </metadata>
+  <metadata name="bsCotacao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 54</value>
+  </metadata>
+  <metadata name="bindingNavigator1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>0, 242</value>
+  </metadata>
+  <metadata name="bsNegociacao.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>860, 17</value>
+  </metadata>
+</root>

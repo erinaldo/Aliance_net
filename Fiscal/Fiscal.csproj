@@ -1,0 +1,584 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{35FC49F9-4E65-4D10-9DB3-5ED052D9DB34}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Fiscal</RootNamespace>
+    <AssemblyName>Fiscal</AssemblyName>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FAliquotaSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FAliquotaSimples.Designer.cs">
+      <DependentUpon>FAliquotaSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadAjusteICMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadAjusteICMS.Designer.cs">
+      <DependentUpon>FCadAjusteICMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadAjusteIPI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadAjusteIPI.Designer.cs">
+      <DependentUpon>FCadAjusteIPI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFOP.Designer.cs">
+      <DependentUpon>FCadCFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCMI.Designer.cs">
+      <DependentUpon>FCadCMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCmiSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCmiSimples.Designer.cs">
+      <DependentUpon>FCadCmiSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondFiscalClifor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondFiscalClifor.Designer.cs">
+      <DependentUpon>FCadCondFiscalClifor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondFiscalProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondFiscalProduto.Designer.cs">
+      <DependentUpon>FCadCondFiscalProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadDetRecIsentaPisCofins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadDetRecIsentaPisCofins.Designer.cs">
+      <DependentUpon>FCadDetRecIsentaPisCofins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadImposto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadImposto.Designer.cs">
+      <DependentUpon>FCadImposto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovimentacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovimentacao.Designer.cs">
+      <DependentUpon>FCadMovimentacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovimentacaoComercial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovimentacaoComercial.Designer.cs">
+      <DependentUpon>FCadMovimentacaoComercial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovXCmi.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMovXCmi.Designer.cs">
+      <DependentUpon>FCadMovXCmi.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMov_X_CFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMov_X_CFOP.Designer.cs">
+      <DependentUpon>FCadMov_X_CFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMov_X_CMI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMov_X_CMI.Designer.cs">
+      <DependentUpon>FCadMov_X_CMI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadNCM.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadNCM.Designer.cs">
+      <DependentUpon>FCadNCM.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadObsFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadObsFiscal.Designer.cs">
+      <DependentUpon>FCadObsFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadReceitaPisCofins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadReceitaPisCofins.Designer.cs">
+      <DependentUpon>FCadReceitaPisCofins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadSitTribut.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadSitTribut.Designer.cs">
+      <DependentUpon>FCadSitTribut.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTabelaSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTabelaSimples.Designer.cs">
+      <DependentUpon>FCadTabelaSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpBaseCalcCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpBaseCalcCredito.Designer.cs">
+      <DependentUpon>FCadTpBaseCalcCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpContribuicaoPisCofins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpContribuicaoPisCofins.Designer.cs">
+      <DependentUpon>FCadTpContribuicaoPisCofins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpCreditoPisCofins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpCreditoPisCofins.Designer.cs">
+      <DependentUpon>FCadTpCreditoPisCofins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpImposto_x_SitTrib.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpImposto_x_SitTrib.Designer.cs">
+      <DependentUpon>FCadTpImposto_x_SitTrib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondFiscalICMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondFiscalICMS.Designer.cs">
+      <DependentUpon>FCad_CondFiscalICMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondFiscalImpostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondFiscalImpostos.Designer.cs">
+      <DependentUpon>FCad_CondFiscalImpostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCFOP.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCFOP.Designer.cs">
+      <DependentUpon>FCFOP.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FTabSimples.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FTabSimples.Designer.cs">
+      <DependentUpon>FTabSimples.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FImportDominio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImportDominio.Designer.cs">
+      <DependentUpon>FImportDominio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanctoImposto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanctoImposto.Designer.cs">
+      <DependentUpon>FLanctoImposto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLivroLMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLivroLMC.Designer.cs">
+      <DependentUpon>FLanLivroLMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanProcessarImpostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanProcessarImpostos.Designer.cs">
+      <DependentUpon>FLanProcessarImpostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanSpedFiscal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanSpedFiscal.Designer.cs">
+      <DependentUpon>FLanSpedFiscal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanSpedPisCofins.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanSpedPisCofins.Designer.cs">
+      <DependentUpon>FLanSpedPisCofins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Impostos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Impostos.designer.cs">
+      <DependentUpon>FLan_Impostos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProcessarImposto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProcessarImposto.Designer.cs">
+      <DependentUpon>FProcessarImposto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTermoLMC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTermoLMC.Designer.cs">
+      <DependentUpon>FTermoLMC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastros\FAliquotaSimples.resx">
+      <DependentUpon>FAliquotaSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadAjusteICMS.resx">
+      <DependentUpon>FCadAjusteICMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadAjusteIPI.resx">
+      <DependentUpon>FCadAjusteIPI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFOP.es.resx">
+      <DependentUpon>FCadCFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFOP.resx">
+      <DependentUpon>FCadCFOP.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCMI.es.resx">
+      <DependentUpon>FCadCMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCMI.resx">
+      <DependentUpon>FCadCMI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCmiSimples.resx">
+      <DependentUpon>FCadCmiSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCondFiscalClifor.es.resx">
+      <DependentUpon>FCadCondFiscalClifor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCondFiscalClifor.resx">
+      <DependentUpon>FCadCondFiscalClifor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCondFiscalProduto.es.resx">
+      <DependentUpon>FCadCondFiscalProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCondFiscalProduto.resx">
+      <DependentUpon>FCadCondFiscalProduto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadDetRecIsentaPisCofins.resx">
+      <DependentUpon>FCadDetRecIsentaPisCofins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadImposto.es.resx">
+      <DependentUpon>FCadImposto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadImposto.resx">
+      <DependentUpon>FCadImposto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMovimentacao.es.resx">
+      <DependentUpon>FCadMovimentacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMovimentacao.resx">
+      <DependentUpon>FCadMovimentacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMovimentacaoComercial.resx">
+      <DependentUpon>FCadMovimentacaoComercial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMovXCmi.resx">
+      <DependentUpon>FCadMovXCmi.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMov_X_CFOP.resx">
+      <DependentUpon>FCadMov_X_CFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMov_X_CMI.es.resx">
+      <DependentUpon>FCadMov_X_CMI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMov_X_CMI.resx">
+      <DependentUpon>FCadMov_X_CMI.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadNCM.es.resx">
+      <DependentUpon>FCadNCM.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadNCM.resx">
+      <DependentUpon>FCadNCM.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadObsFiscal.es.resx">
+      <DependentUpon>FCadObsFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadObsFiscal.resx">
+      <DependentUpon>FCadObsFiscal.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadReceitaPisCofins.resx">
+      <DependentUpon>FCadReceitaPisCofins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadSitTribut.es.resx">
+      <DependentUpon>FCadSitTribut.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadSitTribut.resx">
+      <DependentUpon>FCadSitTribut.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTabelaSimples.resx">
+      <DependentUpon>FCadTabelaSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpBaseCalcCredito.resx">
+      <DependentUpon>FCadTpBaseCalcCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpContribuicaoPisCofins.resx">
+      <DependentUpon>FCadTpContribuicaoPisCofins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpCreditoPisCofins.resx">
+      <DependentUpon>FCadTpCreditoPisCofins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpImposto_x_SitTrib.es.resx">
+      <DependentUpon>FCadTpImposto_x_SitTrib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpImposto_x_SitTrib.resx">
+      <DependentUpon>FCadTpImposto_x_SitTrib.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_CondFiscalICMS.resx">
+      <DependentUpon>FCad_CondFiscalICMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_CondFiscalImpostos.resx">
+      <DependentUpon>FCad_CondFiscalImpostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCFOP.resx">
+      <DependentUpon>FCFOP.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FTabSimples.resx">
+      <DependentUpon>FTabSimples.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImportDominio.resx">
+      <DependentUpon>FImportDominio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanctoImposto.resx">
+      <DependentUpon>FLanctoImposto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLivroLMC.resx">
+      <DependentUpon>FLanLivroLMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanProcessarImpostos.resx">
+      <DependentUpon>FLanProcessarImpostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanSpedFiscal.resx">
+      <DependentUpon>FLanSpedFiscal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanSpedPisCofins.resx">
+      <DependentUpon>FLanSpedPisCofins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Impostos.es.resx">
+      <DependentUpon>FLan_Impostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Impostos.resx">
+      <DependentUpon>FLan_Impostos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProcessarImposto.resx">
+      <DependentUpon>FProcessarImposto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTermoLMC.resx">
+      <DependentUpon>FTermoLMC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.NotaFiscal.TList_ImpostosNF.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadUf.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.GIA_ICMS.TList_GIAICMS.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.LMC.TList_AfericaoTanque.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.LMC.TList_FechamentoFisico.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.LMC.TList_VolumeRecebido.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.LMC.TList_VolumeVendido.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_AjusteICMS.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_AjusteIPI.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_AliquotaSimples.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_ApuracaoFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadCMI.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadCondFiscalICMS.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadCondFiscalProduto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadMovimentacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadMov_x_CMI.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CadNCM.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_CondicaoFiscalImposto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_DetRecIsentaPisCofins.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_LanctoImposto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_LivroFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_LoteImposto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_Mov_X_CFOP.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_ProdutoSimular.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_ReceitaPisCofins.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_ResumoFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_ResumoImposto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_TabSimples.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_TpBaseCalcCredito.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_TpContribuicaoPisCofins.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TList_TpCreditoPisCofins.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Fiscal.TRegistro_CadCondFiscalClifor.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{ff45d0e0-e347-438f-8daa-4587f3cf0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976a508-894e-45a8-8055-abe829c1bfa3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostoCombustivel\PostoCombustivel.csproj">
+      <Project>{6A5A70D0-8258-42DE-9B25-8D6FB7F0E497}</Project>
+      <Name>PostoCombustivel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Relatorio\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

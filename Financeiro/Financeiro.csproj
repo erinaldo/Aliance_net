@@ -1,0 +1,2074 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Financeiro</RootNamespace>
+    <AssemblyName>Financeiro</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Design" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FCadBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadBanco.Designer.cs">
+      <DependentUpon>FCadBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadBandeiraCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadBandeiraCartao.Designer.cs">
+      <DependentUpon>FCadBandeiraCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCartaoCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCartaoCredito.Designer.cs">
+      <DependentUpon>FCadCartaoCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCategoriaCliFor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCategoriaCliFor.Designer.cs">
+      <DependentUpon>FCadCategoriaCliFor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCentroResultado.Designer.cs">
+      <DependentUpon>FCadCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGBanco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGBanco.Designer.cs">
+      <DependentUpon>FCadCFGBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGContratoFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGContratoFin.Designer.cs">
+      <DependentUpon>FCadCFGContratoFin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGDescCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGDescCheque.Designer.cs">
+      <DependentUpon>FCadCFGDescCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCfgEmprestimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCfgEmprestimos.Designer.cs">
+      <DependentUpon>FCadCfgEmprestimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGFaturaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGFaturaCartao.Designer.cs">
+      <DependentUpon>FCadCFGFaturaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCfgFolhaPagamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCfgFolhaPagamento.Designer.cs">
+      <DependentUpon>FCadCfgFolhaPagamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGImpCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGImpCheque.Designer.cs">
+      <DependentUpon>FCadCFGImpCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCFGVendedor.Designer.cs">
+      <DependentUpon>FCadCFGVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCidade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCidade.Designer.cs">
+      <DependentUpon>FCadCidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadClifor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadClifor.Designer.cs">
+      <DependentUpon>FCadClifor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCliforResumido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCliforResumido.designer.cs">
+      <DependentUpon>FCadCliforResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondPGTO_X_Parcelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCondPGTO_X_Parcelas.Designer.cs">
+      <DependentUpon>FCadCondPGTO_X_Parcelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadConfigAdto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadConfigAdto.Designer.cs">
+      <DependentUpon>FCadConfigAdto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadContaGer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadContaGer.Designer.cs">
+      <DependentUpon>FCadContaGer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadContaGer_X_Empresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadContaGer_X_Empresa.Designer.cs">
+      <DependentUpon>FCadContaGer_X_Empresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadCotacaoMoeda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadCotacaoMoeda.Designer.cs">
+      <DependentUpon>FCadCotacaoMoeda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadDRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadDRE.Designer.cs">
+      <DependentUpon>FCadDRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadGrupoCF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadGrupoCF.Designer.cs">
+      <DependentUpon>FCadGrupoCF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadJuro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadJuro.Designer.cs">
+      <DependentUpon>FCadJuro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMaquinaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMaquinaCartao.Designer.cs">
+      <DependentUpon>FCadMaquinaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMoeda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMoeda.Designer.cs">
+      <DependentUpon>FCadMoeda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadPais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadPais.Designer.cs">
+      <DependentUpon>FCadPais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadPortador.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadPortador.Designer.cs">
+      <DependentUpon>FCadPortador.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadPortadorXJuro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadPortadorXJuro.Designer.cs">
+      <DependentUpon>FCadPortadorXJuro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTpData.Designer.cs">
+      <DependentUpon>FCadTpData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTPDocto_Dup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTPDocto_Dup.Designer.cs">
+      <DependentUpon>FCadTPDocto_Dup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadTPDuplicata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadTPDuplicata.Designer.cs">
+      <DependentUpon>FCadTPDuplicata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadUF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadUF.Designer.cs">
+      <DependentUpon>FCadUF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadVendedorCondPgto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadVendedorCondPgto.Designer.cs">
+      <DependentUpon>FCadVendedorCondPgto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondPGTO.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_CondPGTO.Designer.cs">
+      <DependentUpon>FCad_CondPGTO.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_Historico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_Historico.Designer.cs">
+      <DependentUpon>FCad_Historico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_RamoAtividade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_RamoAtividade.Designer.cs">
+      <DependentUpon>FCad_RamoAtividade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadMotivoInativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadMotivoInativo.Designer.cs">
+      <DependentUpon>FCadMotivoInativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCad_TaxaBandeira.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCad_TaxaBandeira.Designer.cs">
+      <DependentUpon>FCad_TaxaBandeira.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCfgImpCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCfgImpCheque.Designer.cs">
+      <DependentUpon>FCfgImpCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FClifor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FClifor.Designer.cs">
+      <DependentUpon>FClifor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FComissao_X_Desconto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FComissao_X_Desconto.Designer.cs">
+      <DependentUpon>FComissao_X_Desconto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FContatoPF.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FContatoPF.Designer.cs">
+      <DependentUpon>FContatoPF.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FContatos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FContatos.Designer.cs">
+      <DependentUpon>FContatos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCopiarConfigVend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCopiarConfigVend.Designer.cs">
+      <DependentUpon>FCopiarConfigVend.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FDadosBanc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FDadosBanc.Designer.cs">
+      <DependentUpon>FDadosBanc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FDescontoVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FDescontoVendedor.Designer.cs">
+      <DependentUpon>FDescontoVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FEndereco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FEndereco.Designer.cs">
+      <DependentUpon>FEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FGerenteVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FGerenteVendedor.Designer.cs">
+      <DependentUpon>FGerenteVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FHistorico.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FHistorico.Designer.cs">
+      <DependentUpon>FHistorico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FListaHistoricos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FListaHistoricos.Designer.cs">
+      <DependentUpon>FListaHistoricos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FListVendedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FListVendedor.Designer.cs">
+      <DependentUpon>FListVendedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FParamDRE.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FParamDRE.Designer.cs">
+      <DependentUpon>FParamDRE.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FPessoasAutorizadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FPessoasAutorizadas.Designer.cs">
+      <DependentUpon>FPessoasAutorizadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FPracaCobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FPracaCobranca.Designer.cs">
+      <DependentUpon>FPracaCobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FReferencia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FReferencia.Designer.cs">
+      <DependentUpon>FReferencia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorEmpresa.Designer.cs">
+      <DependentUpon>FVendedorEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorGrupoProd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorGrupoProd.Designer.cs">
+      <DependentUpon>FVendedorGrupoProd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorRegVenda.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorRegVenda.Designer.cs">
+      <DependentUpon>FVendedorRegVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorTabPreco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FVendedorTabPreco.Designer.cs">
+      <DependentUpon>FVendedorTabPreco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAcertoViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAcertoViagem.Designer.cs">
+      <DependentUpon>FAcertoViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAddCResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAddCResultado.Designer.cs">
+      <DependentUpon>FAddCResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAgruparDuplicata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgruparDuplicata.Designer.cs">
+      <DependentUpon>FAgruparDuplicata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAgruparFinPosto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAgruparFinPosto.Designer.cs">
+      <DependentUpon>FAgruparFinPosto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAlterarCResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlterarCResultado.Designer.cs">
+      <DependentUpon>FAlterarCResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAlterarPgto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlterarPgto.Designer.cs">
+      <DependentUpon>FAlterarPgto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAnaliseCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAnaliseCredito.Designer.cs">
+      <DependentUpon>FAnaliseCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAplicarResgatar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAplicarResgatar.Designer.cs">
+      <DependentUpon>FAplicarResgatar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAtualizaBoleto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAtualizaBoleto.Designer.cs">
+      <DependentUpon>FAtualizaBoleto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAtualizaSeqRemessa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAtualizaSeqRemessa.Designer.cs">
+      <DependentUpon>FAtualizaSeqRemessa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FAuditFinanc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAuditFinanc.Designer.cs">
+      <DependentUpon>FAuditFinanc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FBuscarCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FBuscarCheque.Designer.cs">
+      <DependentUpon>FBuscarCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCarregarCartaoPrePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCarregarCartaoPrePago.Designer.cs">
+      <DependentUpon>FCarregarCartaoPrePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCCustoLancto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCCustoLancto.Designer.cs">
+      <DependentUpon>FCCustoLancto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FChequeTroco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FChequeTroco.Designer.cs">
+      <DependentUpon>FChequeTroco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCobrancaEmail.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCobrancaEmail.Designer.cs">
+      <DependentUpon>FCobrancaEmail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaBloquetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaBloquetos.Designer.cs">
+      <DependentUpon>FConsultaBloquetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaCentroResultado.Designer.cs">
+      <DependentUpon>FConsultaCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaEmprestimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaEmprestimos.Designer.cs">
+      <DependentUpon>FConsultaEmprestimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaFaturaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaFaturaCartao.Designer.cs">
+      <DependentUpon>FConsultaFaturaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaFinCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaFinCentroResultado.Designer.cs">
+      <DependentUpon>FConsultaFinCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaFolhaPgto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaFolhaPgto.Designer.cs">
+      <DependentUpon>FConsultaFolhaPgto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaCaixa.Designer.cs">
+      <DependentUpon>FConsultaCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaLiberarCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaLiberarCredito.Designer.cs">
+      <DependentUpon>FConsultaLiberarCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaTitulo.Designer.cs">
+      <DependentUpon>FConsultaTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsultaTitulosRecebidos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsultaTitulosRecebidos.Designer.cs">
+      <DependentUpon>FConsultaTitulosRecebidos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsulta_Adiantamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsulta_Adiantamento.Designer.cs">
+      <DependentUpon>FConsulta_Adiantamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FConsutaDuplicata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FConsutaDuplicata.Designer.cs">
+      <DependentUpon>FConsutaDuplicata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FContratoFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FContratoFin.Designer.cs">
+      <DependentUpon>FContratoFin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCorrigirTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCorrigirTitulo.Designer.cs">
+      <DependentUpon>FCorrigirTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDadosDuplicata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDadosDuplicata.Designer.cs">
+      <DependentUpon>FDadosDuplicata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FData.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FData.Designer.cs">
+      <DependentUpon>FData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDataAdicionais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDataAdicionais.Designer.cs">
+      <DependentUpon>FDataAdicionais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDescontarBloqueto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDescontarBloqueto.Designer.cs">
+      <DependentUpon>FDescontarBloqueto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDescontarCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDescontarCartao.Designer.cs">
+      <DependentUpon>FDescontarCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDespesasViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDespesasViagem.Designer.cs">
+      <DependentUpon>FDespesasViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDevEmprestimo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDevEmprestimo.Designer.cs">
+      <DependentUpon>FDevEmprestimo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDuplicataAgrup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDuplicataAgrup.Designer.cs">
+      <DependentUpon>FDuplicataAgrup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FDuplicatasPerdidas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FDuplicatasPerdidas.Designer.cs">
+      <DependentUpon>FDuplicatasPerdidas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmpreendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmpreendimento.Designer.cs">
+      <DependentUpon>FEmpreendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmprestimos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmprestimos.Designer.cs">
+      <DependentUpon>FEmprestimos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEnviarLote.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEnviarLote.Designer.cs">
+      <DependentUpon>FEnviarLote.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FExcluirPrevisaoDRG.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FExcluirPrevisaoDRG.Designer.cs">
+      <DependentUpon>FExcluirPrevisaoDRG.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFaturaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFaturaCartao.Designer.cs">
+      <DependentUpon>FFaturaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFolha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFolha.Designer.cs">
+      <DependentUpon>FFolha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FFolhaPgto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FFolhaPgto.Designer.cs">
+      <DependentUpon>FFolhaPgto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FImpCarne.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FImpCarne.Designer.cs">
+      <DependentUpon>FImpCarne.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCaixa.Designer.cs">
+      <DependentUpon>FLanCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCartaoPrePago.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCartaoPrePago.Designer.cs">
+      <DependentUpon>FLanCartaoPrePago.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCCustoEmpreendimento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCCustoEmpreendimento.Designer.cs">
+      <DependentUpon>FLanCCustoEmpreendimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCliforInativo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCliforInativo.Designer.cs">
+      <DependentUpon>FLanCliforInativo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanContaDescCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanContaDescCheque.Designer.cs">
+      <DependentUpon>FLanContaDescCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanContratoFin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanContratoFin.Designer.cs">
+      <DependentUpon>FLanContratoFin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanCustodiaCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanCustodiaCH.Designer.cs">
+      <DependentUpon>FLanCustodiaCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanDevolucaoCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanDevolucaoCheque.Designer.cs">
+      <DependentUpon>FLanDevolucaoCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanDuplicata.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanDuplicata.Designer.cs">
+      <DependentUpon>FLanDuplicata.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanEmpreendimentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanEmpreendimentos.Designer.cs">
+      <DependentUpon>FLanEmpreendimentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanFaturaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanFaturaCartao.Designer.cs">
+      <DependentUpon>FLanFaturaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLiquidacao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLiquidacao.designer.cs">
+      <DependentUpon>FLanLiquidacao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanListaCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanListaCheques.Designer.cs">
+      <DependentUpon>FLanListaCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanLoteCH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanLoteCH.Designer.cs">
+      <DependentUpon>FLanLoteCH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanProcessarLoteCheque.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanProcessarLoteCheque.Designer.cs">
+      <DependentUpon>FLanProcessarLoteCheque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanTitulo.Designer.cs">
+      <DependentUpon>FLanTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanViagem.Designer.cs">
+      <DependentUpon>FLanViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Adiantamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Adiantamento.Designer.cs">
+      <DependentUpon>FLan_Adiantamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_BloqueioCredito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_BloqueioCredito.Designer.cs">
+      <DependentUpon>FLan_BloqueioCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Bloqueto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Bloqueto.Designer.cs">
+      <DependentUpon>FLan_Bloqueto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Cobranca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Cobranca.Designer.cs">
+      <DependentUpon>FLan_Cobranca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_COB_Retorno.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_COB_Retorno.Designer.cs">
+      <DependentUpon>FLan_COB_Retorno.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_FechamentoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_FechamentoCaixa.Designer.cs">
+      <DependentUpon>FLan_FechamentoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_GerarCreditoTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_GerarCreditoTitulo.Designer.cs">
+      <DependentUpon>FLan_GerarCreditoTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_LiquidaTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_LiquidaTitulo.Designer.cs">
+      <DependentUpon>FLan_LiquidaTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_PrevisaoCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_PrevisaoCentroResultado.Designer.cs">
+      <DependentUpon>FLan_PrevisaoCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_ReciboAvulso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_ReciboAvulso.Designer.cs">
+      <DependentUpon>FLan_ReciboAvulso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Remessa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Remessa.Designer.cs">
+      <DependentUpon>FLan_Remessa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLan_Transfere_Caixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLan_Transfere_Caixa.Designer.cs">
+      <DependentUpon>FLan_Transfere_Caixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLiquidarContasPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLiquidarContasPagar.Designer.cs">
+      <DependentUpon>FLiquidarContasPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLiquidarDupTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLiquidarDupTitulo.Designer.cs">
+      <DependentUpon>FLiquidarDupTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaChCustodiaDeposito.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaChCustodiaDeposito.designer.cs">
+      <DependentUpon>FListaChCustodiaDeposito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaChPreDatados.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaChPreDatados.Designer.cs">
+      <DependentUpon>FListaChPreDatados.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaChTroco.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaChTroco.designer.cs">
+      <DependentUpon>FListaChTroco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaCliforInadimplente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaCliforInadimplente.designer.cs">
+      <DependentUpon>FListaCliforInadimplente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaParcelas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaParcelas.Designer.cs">
+      <DependentUpon>FListaParcelas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaParcelasAgrupadas.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaParcelasAgrupadas.Designer.cs">
+      <DependentUpon>FListaParcelasAgrupadas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FListaParcPagar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FListaParcPagar.Designer.cs">
+      <DependentUpon>FListaParcPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocalizarBloquetos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocalizarBloquetos.Designer.cs">
+      <DependentUpon>FLocalizarBloquetos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLocalizarChequesDescontar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLocalizarChequesDescontar.Designer.cs">
+      <DependentUpon>FLocalizarChequesDescontar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoginDesconto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoginDesconto.Designer.cs">
+      <DependentUpon>FLoginDesconto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoteBoletoDescontar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoteBoletoDescontar.Designer.cs">
+      <DependentUpon>FLoteBoletoDescontar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoteCartaoDescontar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoteCartaoDescontar.Designer.cs">
+      <DependentUpon>FLoteCartaoDescontar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoteCustodia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoteCustodia.Designer.cs">
+      <DependentUpon>FLoteCustodia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLoteRemessa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLoteRemessa.Designer.cs">
+      <DependentUpon>FLoteRemessa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FProcessarLoteBloqueto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FProcessarLoteBloqueto.Designer.cs">
+      <DependentUpon>FProcessarLoteBloqueto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQuitarAdiantamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuitarAdiantamentos.Designer.cs">
+      <DependentUpon>FQuitarAdiantamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FQuitarFaturaCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FQuitarFaturaCartao.Designer.cs">
+      <DependentUpon>FQuitarFaturaCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRastrearLancamentos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRastrearLancamentos.Designer.cs">
+      <DependentUpon>FRastrearLancamentos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRateioCentro.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRateioCentro.Designer.cs">
+      <DependentUpon>FRateioCentro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRateioCResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRateioCResultado.Designer.cs">
+      <DependentUpon>FRateioCResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FReimprimirCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FReimprimirCheques.Designer.cs">
+      <DependentUpon>FReimprimirCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FSaldoCreditos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FSaldoCreditos.designer.cs">
+      <DependentUpon>FSaldoCreditos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTitulosCustodia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTitulosCustodia.Designer.cs">
+      <DependentUpon>FTitulosCustodia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTransfTitulo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTransfTitulo.Designer.cs">
+      <DependentUpon>FTransfTitulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FTrocoPDV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FTrocoPDV.designer.cs">
+      <DependentUpon>FTrocoPDV.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FValidaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FValidaLogin.designer.cs">
+      <DependentUpon>FValidaLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FViagem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FViagem.Designer.cs">
+      <DependentUpon>FViagem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVisualizaCheques.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVisualizaCheques.Designer.cs">
+      <DependentUpon>FVisualizaCheques.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVisualizarCartao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVisualizarCartao.Designer.cs">
+      <DependentUpon>FVisualizarCartao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVisualizarCFReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVisualizarCFReceber.Designer.cs">
+      <DependentUpon>FVisualizarCFReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FVisualizarConvenio.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FVisualizarConvenio.designer.cs">
+      <DependentUpon>FVisualizarConvenio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRelCentroResultado.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRelCentroResultado.Designer.cs">
+      <DependentUpon>FRelCentroResultado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRelExtratoIR.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRelExtratoIR.Designer.cs">
+      <DependentUpon>FRelExtratoIR.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRelMovimentoCaixa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRelMovimentoCaixa.Designer.cs">
+      <DependentUpon>FRelMovimentoCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRelPortadoresReceber.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRelPortadoresReceber.Designer.cs">
+      <DependentUpon>FRelPortadoresReceber.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRel_DupLiquidada.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRel_DupLiquidada.Designer.cs">
+      <DependentUpon>FRel_DupLiquidada.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRel_SaldoContasGerenciais.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRel_SaldoContasGerenciais.Designer.cs">
+      <DependentUpon>FRel_SaldoContasGerenciais.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Relatorio\FRel_SaldoSinteticoContaGer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Relatorio\FRel_SaldoSinteticoContaGer.Designer.cs">
+      <DependentUpon>FRel_SaldoSinteticoContaGer.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Cadastros\FCadBanco.es.resx">
+      <DependentUpon>FCadBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadBanco.resx">
+      <DependentUpon>FCadBanco.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadBandeiraCartao.resx">
+      <DependentUpon>FCadBandeiraCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCartaoCredito.resx">
+      <DependentUpon>FCadCartaoCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCategoriaCliFor.es.resx">
+      <DependentUpon>FCadCategoriaCliFor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCategoriaCliFor.resx">
+      <DependentUpon>FCadCategoriaCliFor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCentroResultado.resx">
+      <DependentUpon>FCadCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGBanco.es.resx">
+      <DependentUpon>FCadCFGBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGBanco.resx">
+      <DependentUpon>FCadCFGBanco.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGContratoFin.resx">
+      <DependentUpon>FCadCFGContratoFin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGDescCheque.es.resx">
+      <DependentUpon>FCadCFGDescCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGDescCheque.resx">
+      <DependentUpon>FCadCFGDescCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCfgEmprestimos.resx">
+      <DependentUpon>FCadCfgEmprestimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGFaturaCartao.resx">
+      <DependentUpon>FCadCFGFaturaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCfgFolhaPagamento.resx">
+      <DependentUpon>FCadCfgFolhaPagamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGImpCheque.resx">
+      <DependentUpon>FCadCFGImpCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCFGVendedor.resx">
+      <DependentUpon>FCadCFGVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCidade.es.resx">
+      <DependentUpon>FCadCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCidade.resx">
+      <DependentUpon>FCadCidade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadClifor.resx">
+      <DependentUpon>FCadClifor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCliforResumido.resx">
+      <DependentUpon>FCadCliforResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCondPGTO_X_Parcelas.resx">
+      <DependentUpon>FCadCondPGTO_X_Parcelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadConfigAdto.es.resx">
+      <DependentUpon>FCadConfigAdto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadConfigAdto.resx">
+      <DependentUpon>FCadConfigAdto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadContaGer.es.resx">
+      <DependentUpon>FCadContaGer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadContaGer.resx">
+      <DependentUpon>FCadContaGer.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadContaGer_X_Empresa.es.resx">
+      <DependentUpon>FCadContaGer_X_Empresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadContaGer_X_Empresa.resx">
+      <DependentUpon>FCadContaGer_X_Empresa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCotacaoMoeda.es.resx">
+      <DependentUpon>FCadCotacaoMoeda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadCotacaoMoeda.resx">
+      <DependentUpon>FCadCotacaoMoeda.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadDRE.resx">
+      <DependentUpon>FCadDRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadGrupoCF.es.resx">
+      <DependentUpon>FCadGrupoCF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadGrupoCF.resx">
+      <DependentUpon>FCadGrupoCF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadJuro.es.resx">
+      <DependentUpon>FCadJuro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadJuro.resx">
+      <DependentUpon>FCadJuro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMaquinaCartao.resx">
+      <DependentUpon>FCadMaquinaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMoeda.resx">
+      <DependentUpon>FCadMoeda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPais.es.resx">
+      <DependentUpon>FCadPais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPais.resx">
+      <DependentUpon>FCadPais.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPortador.es.resx">
+      <DependentUpon>FCadPortador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPortador.resx">
+      <DependentUpon>FCadPortador.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPortadorXJuro.es.resx">
+      <DependentUpon>FCadPortadorXJuro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadPortadorXJuro.resx">
+      <DependentUpon>FCadPortadorXJuro.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTpData.resx">
+      <DependentUpon>FCadTpData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTPDocto_Dup.es.resx">
+      <DependentUpon>FCadTPDocto_Dup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTPDocto_Dup.resx">
+      <DependentUpon>FCadTPDocto_Dup.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTPDuplicata.es.resx">
+      <DependentUpon>FCadTPDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadTPDuplicata.resx">
+      <DependentUpon>FCadTPDuplicata.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadUF.es.resx">
+      <DependentUpon>FCadUF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadUF.resx">
+      <DependentUpon>FCadUF.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadVendedorCondPgto.resx">
+      <DependentUpon>FCadVendedorCondPgto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_CondPGTO.es.resx">
+      <DependentUpon>FCad_CondPGTO.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_CondPGTO.resx">
+      <DependentUpon>FCad_CondPGTO.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_Historico.resx">
+      <DependentUpon>FCad_Historico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_RamoAtividade.es.resx">
+      <DependentUpon>FCad_RamoAtividade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_RamoAtividade.resx">
+      <DependentUpon>FCad_RamoAtividade.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadMotivoInativo.resx">
+      <DependentUpon>FCadMotivoInativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCad_TaxaBandeira.resx">
+      <DependentUpon>FCad_TaxaBandeira.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCfgImpCheque.resx">
+      <DependentUpon>FCfgImpCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FClifor.resx">
+      <DependentUpon>FClifor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FComissao_X_Desconto.resx">
+      <DependentUpon>FComissao_X_Desconto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FContatoPF.resx">
+      <DependentUpon>FContatoPF.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FContatos.resx">
+      <DependentUpon>FContatos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCopiarConfigVend.resx">
+      <DependentUpon>FCopiarConfigVend.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FDadosBanc.resx">
+      <DependentUpon>FDadosBanc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FDescontoVendedor.resx">
+      <DependentUpon>FDescontoVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FEndereco.resx">
+      <DependentUpon>FEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FGerenteVendedor.resx">
+      <DependentUpon>FGerenteVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FHistorico.resx">
+      <DependentUpon>FHistorico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FListaHistoricos.resx">
+      <DependentUpon>FListaHistoricos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FListVendedor.resx">
+      <DependentUpon>FListVendedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FParamDRE.resx">
+      <DependentUpon>FParamDRE.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FPessoasAutorizadas.resx">
+      <DependentUpon>FPessoasAutorizadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FPracaCobranca.resx">
+      <DependentUpon>FPracaCobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FReferencia.resx">
+      <DependentUpon>FReferencia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FVendedorEmpresa.resx">
+      <DependentUpon>FVendedorEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FVendedorGrupoProd.resx">
+      <DependentUpon>FVendedorGrupoProd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FVendedorRegVenda.resx">
+      <DependentUpon>FVendedorRegVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FVendedorTabPreco.resx">
+      <DependentUpon>FVendedorTabPreco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAcertoViagem.resx">
+      <DependentUpon>FAcertoViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAddCResultado.resx">
+      <DependentUpon>FAddCResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAgruparDuplicata.resx">
+      <DependentUpon>FAgruparDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAgruparFinPosto.resx">
+      <DependentUpon>FAgruparFinPosto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarCResultado.es.resx">
+      <DependentUpon>FAlterarCResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarCResultado.resx">
+      <DependentUpon>FAlterarCResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarPgto.resx">
+      <DependentUpon>FAlterarPgto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAnaliseCredito.resx">
+      <DependentUpon>FAnaliseCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAplicarResgatar.resx">
+      <DependentUpon>FAplicarResgatar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAtualizaBoleto.resx">
+      <DependentUpon>FAtualizaBoleto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAtualizaSeqRemessa.resx">
+      <DependentUpon>FAtualizaSeqRemessa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAuditFinanc.resx">
+      <DependentUpon>FAuditFinanc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FBuscarCheque.resx">
+      <DependentUpon>FBuscarCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCarregarCartaoPrePago.resx">
+      <DependentUpon>FCarregarCartaoPrePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCCustoLancto.resx">
+      <DependentUpon>FCCustoLancto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FChequeTroco.resx">
+      <DependentUpon>FChequeTroco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCobrancaEmail.resx">
+      <DependentUpon>FCobrancaEmail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaBloquetos.es.resx">
+      <DependentUpon>FConsultaBloquetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaBloquetos.resx">
+      <DependentUpon>FConsultaBloquetos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaCaixa.es.resx">
+      <DependentUpon>FConsultaCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaCentroResultado.resx">
+      <DependentUpon>FConsultaCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaEmprestimos.resx">
+      <DependentUpon>FConsultaEmprestimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaFaturaCartao.resx">
+      <DependentUpon>FConsultaFaturaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaFinCentroResultado.resx">
+      <DependentUpon>FConsultaFinCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaFolhaPgto.resx">
+      <DependentUpon>FConsultaFolhaPgto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaCaixa.resx">
+      <DependentUpon>FConsultaCaixa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaLiberarCredito.resx">
+      <DependentUpon>FConsultaLiberarCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaTitulo.es.resx">
+      <DependentUpon>FConsultaTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaTitulo.resx">
+      <DependentUpon>FConsultaTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaTitulosRecebidos.es.resx">
+      <DependentUpon>FConsultaTitulosRecebidos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsultaTitulosRecebidos.resx">
+      <DependentUpon>FConsultaTitulosRecebidos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsulta_Adiantamento.es.resx">
+      <DependentUpon>FConsulta_Adiantamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsulta_Adiantamento.resx">
+      <DependentUpon>FConsulta_Adiantamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsutaDuplicata.es.resx">
+      <DependentUpon>FConsutaDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FConsutaDuplicata.resx">
+      <DependentUpon>FConsutaDuplicata.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FContratoFin.resx">
+      <DependentUpon>FContratoFin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCorrigirTitulo.resx">
+      <DependentUpon>FCorrigirTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDadosDuplicata.resx">
+      <DependentUpon>FDadosDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FData.resx">
+      <DependentUpon>FData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDataAdicionais.resx">
+      <DependentUpon>FDataAdicionais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDescontarBloqueto.es.resx">
+      <DependentUpon>FDescontarBloqueto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDescontarBloqueto.resx">
+      <DependentUpon>FDescontarBloqueto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDescontarCartao.resx">
+      <DependentUpon>FDescontarCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDespesasViagem.resx">
+      <DependentUpon>FDespesasViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDevEmprestimo.resx">
+      <DependentUpon>FDevEmprestimo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDuplicataAgrup.resx">
+      <DependentUpon>FDuplicataAgrup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FDuplicatasPerdidas.resx">
+      <DependentUpon>FDuplicatasPerdidas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmpreendimento.es.resx">
+      <DependentUpon>FEmpreendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmpreendimento.resx">
+      <DependentUpon>FEmpreendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmprestimos.resx">
+      <DependentUpon>FEmprestimos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEnviarLote.resx">
+      <DependentUpon>FEnviarLote.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FExcluirPrevisaoDRG.resx">
+      <DependentUpon>FExcluirPrevisaoDRG.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFaturaCartao.resx">
+      <DependentUpon>FFaturaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFolha.resx">
+      <DependentUpon>FFolha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FFolhaPgto.resx">
+      <DependentUpon>FFolhaPgto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FImpCarne.resx">
+      <DependentUpon>FImpCarne.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCaixa.es.resx">
+      <DependentUpon>FLanCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCaixa.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FLanCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCartaoPrePago.resx">
+      <DependentUpon>FLanCartaoPrePago.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCCustoEmpreendimento.resx">
+      <DependentUpon>FLanCCustoEmpreendimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCliforInativo.resx">
+      <DependentUpon>FLanCliforInativo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanContaDescCheque.es.resx">
+      <DependentUpon>FLanContaDescCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanContaDescCheque.resx">
+      <DependentUpon>FLanContaDescCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanContratoFin.resx">
+      <DependentUpon>FLanContratoFin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanCustodiaCH.resx">
+      <DependentUpon>FLanCustodiaCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanDevolucaoCheque.es.resx">
+      <DependentUpon>FLanDevolucaoCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanDevolucaoCheque.resx">
+      <DependentUpon>FLanDevolucaoCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanDuplicata.es.resx">
+      <DependentUpon>FLanDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanDuplicata.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FLanDuplicata.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanEmpreendimentos.es.resx">
+      <DependentUpon>FLanEmpreendimentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanEmpreendimentos.resx">
+      <DependentUpon>FLanEmpreendimentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanFaturaCartao.resx">
+      <DependentUpon>FLanFaturaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLiquidacao.es.resx">
+      <DependentUpon>FLanLiquidacao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLiquidacao.resx">
+      <DependentUpon>FLanLiquidacao.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanListaCheques.es.resx">
+      <DependentUpon>FLanListaCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanListaCheques.resx">
+      <DependentUpon>FLanListaCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLoteCH.es.resx">
+      <DependentUpon>FLanLoteCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanLoteCH.resx">
+      <DependentUpon>FLanLoteCH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanProcessarLoteCheque.es.resx">
+      <DependentUpon>FLanProcessarLoteCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanProcessarLoteCheque.resx">
+      <DependentUpon>FLanProcessarLoteCheque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanTitulo.es.resx">
+      <DependentUpon>FLanTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanTitulo.resx">
+      <SubType>Designer</SubType>
+      <DependentUpon>FLanTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanViagem.resx">
+      <DependentUpon>FLanViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Adiantamento.es.resx">
+      <DependentUpon>FLan_Adiantamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Adiantamento.resx">
+      <DependentUpon>FLan_Adiantamento.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_BloqueioCredito.es.resx">
+      <DependentUpon>FLan_BloqueioCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_BloqueioCredito.resx">
+      <DependentUpon>FLan_BloqueioCredito.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Bloqueto.es.resx">
+      <DependentUpon>FLan_Bloqueto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Bloqueto.resx">
+      <DependentUpon>FLan_Bloqueto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Cobranca.es.resx">
+      <DependentUpon>FLan_Cobranca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Cobranca.resx">
+      <DependentUpon>FLan_Cobranca.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_COB_Retorno.es.resx">
+      <DependentUpon>FLan_COB_Retorno.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_COB_Retorno.resx">
+      <DependentUpon>FLan_COB_Retorno.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_FechamentoCaixa.es.resx">
+      <DependentUpon>FLan_FechamentoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_FechamentoCaixa.resx">
+      <DependentUpon>FLan_FechamentoCaixa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_GerarCreditoTitulo.es.resx">
+      <DependentUpon>FLan_GerarCreditoTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_GerarCreditoTitulo.resx">
+      <DependentUpon>FLan_GerarCreditoTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_LiquidaTitulo.es.resx">
+      <DependentUpon>FLan_LiquidaTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_LiquidaTitulo.resx">
+      <DependentUpon>FLan_LiquidaTitulo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_PrevisaoCentroResultado.es.resx">
+      <DependentUpon>FLan_PrevisaoCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_PrevisaoCentroResultado.resx">
+      <DependentUpon>FLan_PrevisaoCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_ReciboAvulso.es.resx">
+      <DependentUpon>FLan_ReciboAvulso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_ReciboAvulso.resx">
+      <DependentUpon>FLan_ReciboAvulso.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Remessa.es.resx">
+      <DependentUpon>FLan_Remessa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Remessa.resx">
+      <DependentUpon>FLan_Remessa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Transfere_Caixa.es.resx">
+      <DependentUpon>FLan_Transfere_Caixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLan_Transfere_Caixa.resx">
+      <DependentUpon>FLan_Transfere_Caixa.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLiquidarContasPagar.resx">
+      <DependentUpon>FLiquidarContasPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLiquidarDupTitulo.resx">
+      <DependentUpon>FLiquidarDupTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaChCustodiaDeposito.resx">
+      <DependentUpon>FListaChCustodiaDeposito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaChPreDatados.resx">
+      <DependentUpon>FListaChPreDatados.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaChTroco.resx">
+      <DependentUpon>FListaChTroco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaCliforInadimplente.resx">
+      <DependentUpon>FListaCliforInadimplente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaParcelas.resx">
+      <DependentUpon>FListaParcelas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaParcelasAgrupadas.resx">
+      <DependentUpon>FListaParcelasAgrupadas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FListaParcPagar.resx">
+      <DependentUpon>FListaParcPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocalizarBloquetos.es.resx">
+      <DependentUpon>FLocalizarBloquetos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocalizarBloquetos.resx">
+      <DependentUpon>FLocalizarBloquetos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocalizarChequesDescontar.es.resx">
+      <DependentUpon>FLocalizarChequesDescontar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLocalizarChequesDescontar.resx">
+      <DependentUpon>FLocalizarChequesDescontar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoginDesconto.resx">
+      <DependentUpon>FLoginDesconto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteBoletoDescontar.resx">
+      <DependentUpon>FLoteBoletoDescontar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteCartaoDescontar.resx">
+      <DependentUpon>FLoteCartaoDescontar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteCustodia.resx">
+      <DependentUpon>FLoteCustodia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLoteRemessa.resx">
+      <DependentUpon>FLoteRemessa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProcessarLoteBloqueto.es.resx">
+      <DependentUpon>FProcessarLoteBloqueto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FProcessarLoteBloqueto.resx">
+      <DependentUpon>FProcessarLoteBloqueto.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuitarAdiantamentos.resx">
+      <DependentUpon>FQuitarAdiantamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FQuitarFaturaCartao.resx">
+      <DependentUpon>FQuitarFaturaCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRastrearLancamentos.es.resx">
+      <DependentUpon>FRastrearLancamentos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRastrearLancamentos.resx">
+      <DependentUpon>FRastrearLancamentos.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRateioCentro.resx">
+      <DependentUpon>FRateioCentro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRateioCResultado.resx">
+      <DependentUpon>FRateioCResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FReimprimirCheques.resx">
+      <DependentUpon>FReimprimirCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FSaldoCreditos.resx">
+      <DependentUpon>FSaldoCreditos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTitulosCustodia.resx">
+      <DependentUpon>FTitulosCustodia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTransfTitulo.es.resx">
+      <DependentUpon>FTransfTitulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTransfTitulo.resx">
+      <DependentUpon>FTransfTitulo.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FTrocoPDV.resx">
+      <DependentUpon>FTrocoPDV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FValidaLogin.resx">
+      <DependentUpon>FValidaLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FViagem.resx">
+      <DependentUpon>FViagem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVisualizaCheques.resx">
+      <DependentUpon>FVisualizaCheques.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVisualizarCartao.resx">
+      <DependentUpon>FVisualizarCartao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVisualizarCFReceber.resx">
+      <DependentUpon>FVisualizarCFReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FVisualizarConvenio.resx">
+      <DependentUpon>FVisualizarConvenio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRelCentroResultado.resx">
+      <DependentUpon>FRelCentroResultado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRelExtratoIR.resx">
+      <DependentUpon>FRelExtratoIR.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRelMovimentoCaixa.resx">
+      <DependentUpon>FRelMovimentoCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRelPortadoresReceber.resx">
+      <DependentUpon>FRelPortadoresReceber.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRel_DupLiquidada.resx">
+      <DependentUpon>FRel_DupLiquidada.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRel_SaldoContasGerenciais.resx">
+      <DependentUpon>FRel_SaldoContasGerenciais.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Relatorio\FRel_SaldoSinteticoContaGer.resx">
+      <DependentUpon>FRel_SaldoSinteticoContaGer.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{ff45d0e0-e347-438f-8daa-4587f3cf0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{B765028D-8B44-4002-9B45-C69FCB083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976a508-894e-45a8-8055-abe829c1bfa3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCamLibrary\WebCamLibrary.csproj">
+      <Project>{172F13F8-7B9F-4CC2-ADB4-27C8B1E966DC}</Project>
+      <Name>WebCamLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\DataSources\CamadaDados.Contabil.TList_LanContabil.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Diversos.TList_CadRegiaoVenda.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Diversos.TList_CadTbPreco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_DescontoVendedor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Gerente_X_Vendedor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Vendedor_X_CondPgto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Vendedor_X_Empresa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Vendedor_X_GrupoProd.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Vendedor_X_RegiaoVenda.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.Cadastros.TList_Vendedor_X_TabelaPreco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.NotaFiscal.TList_RegLanFaturamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Faturamento.PDV.TList_CupomFiscal.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Adiantamento.TList_LanAdiantamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Adiantamento.TList_LanAdiantamento1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Adiantamento.TList_SaldoAdto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Bloqueto.blListaTitulo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Bloqueto.blTitulo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Bloqueto.TList_LoteBloqueto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Bloqueto.TList_LoteRemessa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TCD_CadClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TCD_CadCliforInativo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadBanco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCartaoCredito.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCategoriaCliFor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCFGBanco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCidade.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCliforInativo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCondPgto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadCondPgto_X_Parcelas.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadContatoCliFor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadContatoCliFor1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadDados_Bancarios_Clifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadEndereco.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadGrupoCF.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadHistorico.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadJuro.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadMaquinaCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadPortador.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadReferenciaCliFor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadTpDoctoDup.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CadTpDuplicata.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_Cad_BandeiraCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_Cad_TaxaBandeiraCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CentroResultado.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CFGContratoFin.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CfgEmprestimos.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CFGFaturaCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CfgFolhaPagamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CFGImpCheque.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_CotacaoMoeda.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_DataClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_DataContato.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_Moeda.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_PessoasAutorizadas.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_Portador_X_Juros.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_PracaCobranca.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TList_TpData.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TRegistro_CadClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cadastros.TRegistro_CadMotivoInativo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Caixa.TList_LanCaixa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Caixa.TList_LanFechamentoCaixa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Caixa.TList_Lan_Transfere_Caixa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Caixa.TRegistro_SaldoContaGer.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_CarregaCartaoPre.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_FaturaCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_LanLoteCartao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_MovCartaoPre.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_Quitarfatura.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cartao.TList_SaldoCartaoPre.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.CCustoLan.TList_LanCCustoLancto1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Cobranca.TList_CobrancaClifor.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Contrato.TList_ContratoFin.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.DRE.TList_DRE.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.DRE.TList_paramDRE.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_AtVenctoParcela.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_DadosBloqueio.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_DuplicataXCcusto.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_LiberarCredito.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_RegLanDuplicata.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_RegLanLiquidacao.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TList_RegLanParcela.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TRegistro_CliforAgrupar.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Duplicata.TRegistro_FluxoCaixa.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Empreendimento.TList_Empreendimento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Empreendimento.TList_ResultadoEmpreendimento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Emprestimos.TList_Emprestimos.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Folha_Pagamento.TList_FolhaPagamento.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Folha_Pagamento.TList_Folha_X_Funcionarios.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Folha_Pagamento.TList_PagamentoFolha.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.ProvisaoDRG.TList_LanProvisaoDRG.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.ProvisaoDRG.TList_ProvisaoMes.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_CreditoTitulo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_DevolucaoCheque.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_LoteCH.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_LoteCustodia.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Titulo.TList_RegLanTitulo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Financeiro.Viagem.TList_DespesasViagem1.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.Cadastros.TList_ManutencaoVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_AbastVeiculo.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Frota.TList_DespesasViagem.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.PostoCombustivel.TList_CartaFrete.datasource" />
+    <None Include="Properties\DataSources\CamadaNegocio.Financeiro.Cadastros.TCN_CadCliforInativo.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

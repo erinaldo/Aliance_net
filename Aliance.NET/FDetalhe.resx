@@ -1,0 +1,1631 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="BB_Detalhe_Est.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="qtd_estoque_minimo.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="BB_DetalhePedFechado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="BB_DetalhePedFechado.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BB_DetalheCRAtraso.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Contas Pagar Hoje</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="tot_pagar_atraso.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;pFinanceiro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_Refresh.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_Refresh.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="tot_ch_rec_compensar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="pDetalhe_Est.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>113, 13</value>
+  </data>
+  <data name="BB_Detalhe_Est.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="Ck_Altera_Rel.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 2</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;flpDetalhe.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="BB_DetalheCHPHoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 206</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh_Fat.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_rec_compensar.Name" xml:space="preserve">
+    <value>tot_ch_rec_compensar</value>
+  </data>
+  <data name="&gt;&gt;BB_Detalhe_Est.Parent" xml:space="preserve">
+    <value>pDetalhe_Est</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="&gt;&gt;BB_PedidoECommerce.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="qtd_estoque_minimo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Em Atraso</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>pDetalhe_Est</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh_Fat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_DetalheCHRHoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 260</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRAtraso.Name" xml:space="preserve">
+    <value>BB_DetalheCRAtraso</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;tot_receberhoje.Name" xml:space="preserve">
+    <value>tot_receberhoje</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 95</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="tot_receberhoje.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPAtraso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tot_receberhoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="BB_Refresh_Fat.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="pDetalhe_Fat.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPHoje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pFinanceiro.Parent" xml:space="preserve">
+    <value>flpDetalhe</value>
+  </data>
+  <data name="BB_PedidoECommerce.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="&gt;&gt;qtd_ped_fechado.Name" xml:space="preserve">
+    <value>qtd_ped_fechado</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="pDetalhe_Est.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="qtd_estoque_minimo.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>TFDetalhe</value>
+  </data>
+  <data name="BB_Refresh.Text" xml:space="preserve">
+    <value>ATUALIZAR</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHPHoje.Name" xml:space="preserve">
+    <value>BB_DetalheCHPHoje</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheOrc.Name" xml:space="preserve">
+    <value>BB_DetalheOrc</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_emit_compensar.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pFinanceiro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 354</value>
+  </data>
+  <data name="qtd_cobrancas.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 299</value>
+  </data>
+  <data name="tot_rec_atraso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 72</value>
+  </data>
+  <data name="label7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;qtd_pedecommerce.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="BB_DetalhePedFechado.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BB_DetalheCHPHoje.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="flpDetalhe.FlowDirection" type="System.Windows.Forms.FlowDirection, System.Windows.Forms">
+    <value>TopDown</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_hoje.Name" xml:space="preserve">
+    <value>tot_pagar_hoje</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheProdMin.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>166, 616</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 30</value>
+  </data>
+  <data name="BB_DetalheCPAtraso.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 42</value>
+  </data>
+  <data name="BB_DetalheProdMin.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 31</value>
+  </data>
+  <data name="BB_Detalhe_Est.Text" xml:space="preserve">
+    <value>ATUALIZAR</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRHoje.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="tot_pagar_atraso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="&gt;&gt;flpDetalhe.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ToolTip, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPHoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;label7.Name" xml:space="preserve">
+    <value>label7</value>
+  </data>
+  <data name="BB_DetalheCobHoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_ch_emit_compensar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRHoje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtd_ped_fechado.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="BB_DetalheCPHoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheProdMin.Name" xml:space="preserve">
+    <value>BB_DetalheProdMin</value>
+  </data>
+  <data name="label10.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_receberhoje.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_DetalheCPAtraso.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="BB_DetalheCRAtraso.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="BB_DetalheCPHoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 111</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_atraso.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="BB_Refresh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="tot_ch_emit_compensar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="tot_rec_atraso.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHPHoje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtd_pedecommerce.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="Ck_Altera_Rel.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 17</value>
+  </data>
+  <data name="BB_DetalheCPHoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;flpDetalhe.Name" xml:space="preserve">
+    <value>flpDetalhe</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 13</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Est.Parent" xml:space="preserve">
+    <value>flpDetalhe</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;qtd_orcamento.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;qtd_pedecommerce.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="BB_DetalheOrc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_rec_compensar.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="BB_DetalheCPAtraso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 22</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheProdMin.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCobHoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="pDetalhe_Est.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tot_ch_rec_compensar.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="flpDetalhe.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Est.Name" xml:space="preserve">
+    <value>pDetalhe_Est</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tot_pagar_hoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCobHoje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_DetalheCRHoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 38</value>
+  </data>
+  <data name="flpDetalhe.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="&gt;&gt;tot_rec_atraso.Name" xml:space="preserve">
+    <value>tot_rec_atraso</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRHoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="BB_Refresh_Fat.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAp5JREFUOE9tk0tPWkEUx8V00W/Qj9N1N101beOii6arpumytS6qAja0IiqPC4IgyMN3
+        NSoKAuIFr6i1qYaFgDwFlCuibZOa2Hr5d+5QQGMn+Wdmzpz7m3PPOSMB0DI5M/ZQImnRo4p7aCGD2Ohc
+        W/+RtLYGBeFK1fbkmb9ubswiYGLKeXR2XiHL2+Py9yV4voTZ+ekL5/hoh+h/XXTjHLOhWq2ifMrjmC+i
+        WMojf5RDrpDGYTGDeCIGQRAQWF25sLus7bcAxAihKtCPQ9wa2HAQwVAAq2s++IMr8HjdNLQr4QqT0+O/
+        RmzD9+sQGsGow0JvKIi35tPIHKawuc2hW9Z1Qw6nHfGDGGwO88INgHV0mAKy+SS90Wa3QNYjhYfdQnhz
+        A8H1NbgDLLF1Y9G9APPI0KXJYrgjQmgEFpuJApLZBLhICPIPMuzs7qHHsYEXvT48V3jRYQrBzwYoRK3t
+        F4zDzN0GgBBrgEychuxZ30OHJQxm7huy/E/k+B9w+fbx1shibtlHfQxGXRNgMuspIEUiEA/3kyk86lqE
+        eyuJg+J3JItniGbKaJMtgeXC1IcZ0jQBQybmXw5S9DCRzuHx+8+wzofh3YyB2yO52TnAU+kSuO0I9dHp
+        B5sAvVFLAWLtxcPAlwQUzg1oZ7Ywtx7DfCQGuSNC8sDCy9aqo9ENNAGMQV3rg1IBE1MumsRsoYhOk59E
+        Mos26SI6rRx2o1FanfZ3bzCoUTUBWmaQdKIA/uQYpZMjjFjNFBL8SnKQyyOeTiMSTVKb3WGnevX6ZbxR
+        BbWun7byaeWEqnJWxviE61Yj9amU8HiWGxC5XFp7GIxBUzitlMljrJJtXf99W7gOaQAG1H0PyG8cqgZ6
+        UVdf/yfU9BFKVV0Kcq7MixBRIuAvxZP8tbQslK0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;Ck_Altera_Rel.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_DetalhePedFechado.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;tot_receberhoje.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BB_DetalheProdMin.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tot_ch_emit_compensar.Name" xml:space="preserve">
+    <value>tot_ch_emit_compensar</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Fat.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh.Name" xml:space="preserve">
+    <value>BB_Refresh</value>
+  </data>
+  <data name="BB_Refresh.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAp5JREFUOE9tk0tPWkEUx8V00W/Qj9N1N101beOii6arpumytS6qAja0IiqPC4IgyMN3
+        NSoKAuIFr6i1qYaFgDwFlCuibZOa2Hr5d+5QQGMn+Wdmzpz7m3PPOSMB0DI5M/ZQImnRo4p7aCGD2Ohc
+        W/+RtLYGBeFK1fbkmb9ubswiYGLKeXR2XiHL2+Py9yV4voTZ+ekL5/hoh+h/XXTjHLOhWq2ifMrjmC+i
+        WMojf5RDrpDGYTGDeCIGQRAQWF25sLus7bcAxAihKtCPQ9wa2HAQwVAAq2s++IMr8HjdNLQr4QqT0+O/
+        RmzD9+sQGsGow0JvKIi35tPIHKawuc2hW9Z1Qw6nHfGDGGwO88INgHV0mAKy+SS90Wa3QNYjhYfdQnhz
+        A8H1NbgDLLF1Y9G9APPI0KXJYrgjQmgEFpuJApLZBLhICPIPMuzs7qHHsYEXvT48V3jRYQrBzwYoRK3t
+        F4zDzN0GgBBrgEychuxZ30OHJQxm7huy/E/k+B9w+fbx1shibtlHfQxGXRNgMuspIEUiEA/3kyk86lqE
+        eyuJg+J3JItniGbKaJMtgeXC1IcZ0jQBQybmXw5S9DCRzuHx+8+wzofh3YyB2yO52TnAU+kSuO0I9dHp
+        B5sAvVFLAWLtxcPAlwQUzg1oZ7Ywtx7DfCQGuSNC8sDCy9aqo9ENNAGMQV3rg1IBE1MumsRsoYhOk59E
+        Mos26SI6rRx2o1FanfZ3bzCoUTUBWmaQdKIA/uQYpZMjjFjNFBL8SnKQyyOeTiMSTVKb3WGnevX6ZbxR
+        BbWun7byaeWEqnJWxviE61Yj9amU8HiWGxC5XFp7GIxBUzitlMljrJJtXf99W7gOaQAG1H0PyG8cqgZ6
+        UVdf/yfU9BFKVV0Kcq7MixBRIuAvxZP8tbQslK0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="&gt;&gt;qtd_ped_fechado.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPHoje.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="tot_ch_emit_compensar.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;label7.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHRHoje.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_emit_compensar.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="BB_DetalheCobHoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="&gt;&gt;qtd_estoque_minimo.Parent" xml:space="preserve">
+    <value>pDetalhe_Est</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BB_DetalheCHRHoje.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="BB_Detalhe_Est.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 57</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRAtraso.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="pDetalhe_Fat.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;qtd_cobrancas.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 134</value>
+  </data>
+  <data name="&gt;&gt;tot_receberhoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_emit_compensar.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="&gt;&gt;qtd_orcamento.Name" xml:space="preserve">
+    <value>qtd_orcamento</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCobHoje.Name" xml:space="preserve">
+    <value>BB_DetalheCobHoje</value>
+  </data>
+  <data name="tot_rec_atraso.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="BB_DetalheOrc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 60</value>
+  </data>
+  <data name="label3.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BB_DetalheCobHoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 299</value>
+  </data>
+  <data name="&gt;&gt;BB_PedidoECommerce.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_DetalheCRHoje.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="&gt;&gt;label4.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheOrc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tot_ch_emit_compensar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 206</value>
+  </data>
+  <data name="BB_PedidoECommerce.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BB_DetalheProdMin.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_Detalhe_Est.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRAtraso.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 59</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_DetalheCRHoje.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRAtraso.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="Ck_Altera_Rel.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtd_estoque_minimo.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHPHoje.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;qtd_cobrancas.Name" xml:space="preserve">
+    <value>qtd_cobrancas</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="qtd_ped_fechado.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="BB_DetalheCobHoje.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="qtd_orcamento.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="Ck_Altera_Rel.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheOrc.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="BB_Detalhe_Est.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAp5JREFUOE9tk0tPWkEUx8V00W/Qj9N1N101beOii6arpumytS6qAja0IiqPC4IgyMN3
+        NSoKAuIFr6i1qYaFgDwFlCuibZOa2Hr5d+5QQGMn+Wdmzpz7m3PPOSMB0DI5M/ZQImnRo4p7aCGD2Ohc
+        W/+RtLYGBeFK1fbkmb9ubswiYGLKeXR2XiHL2+Py9yV4voTZ+ekL5/hoh+h/XXTjHLOhWq2ifMrjmC+i
+        WMojf5RDrpDGYTGDeCIGQRAQWF25sLus7bcAxAihKtCPQ9wa2HAQwVAAq2s++IMr8HjdNLQr4QqT0+O/
+        RmzD9+sQGsGow0JvKIi35tPIHKawuc2hW9Z1Qw6nHfGDGGwO88INgHV0mAKy+SS90Wa3QNYjhYfdQnhz
+        A8H1NbgDLLF1Y9G9APPI0KXJYrgjQmgEFpuJApLZBLhICPIPMuzs7qHHsYEXvT48V3jRYQrBzwYoRK3t
+        F4zDzN0GgBBrgEychuxZ30OHJQxm7huy/E/k+B9w+fbx1shibtlHfQxGXRNgMuspIEUiEA/3kyk86lqE
+        eyuJg+J3JItniGbKaJMtgeXC1IcZ0jQBQybmXw5S9DCRzuHx+8+wzofh3YyB2yO52TnAU+kSuO0I9dHp
+        B5sAvVFLAWLtxcPAlwQUzg1oZ7Ywtx7DfCQGuSNC8sDCy9aqo9ENNAGMQV3rg1IBE1MumsRsoYhOk59E
+        Mos26SI6rRx2o1FanfZ3bzCoUTUBWmaQdKIA/uQYpZMjjFjNFBL8SnKQyyOeTiMSTVKb3WGnevX6ZbxR
+        BbWun7byaeWEqnJWxviE61Yj9amU8HiWGxC5XFp7GIxBUzitlMljrJJtXf99W7gOaQAG1H0PyG8cqgZ6
+        UVdf/yfU9BFKVV0Kcq7MixBRIuAvxZP8tbQslK0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BB_DetalheCHPHoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="BB_DetalheOrc.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="qtd_ped_fechado.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="qtd_orcamento.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="qtd_cobrancas.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="BB_DetalheCobHoje.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_DetalhePedFechado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 102</value>
+  </data>
+  <data name="label9.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Cobranças Hoje</value>
+  </data>
+  <data name="&gt;&gt;qtd_cobrancas.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="pDetalhe_Fat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 363</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="BB_PedidoECommerce.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHRHoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Fat.Parent" xml:space="preserve">
+    <value>flpDetalhe</value>
+  </data>
+  <data name="BB_DetalheCRAtraso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="tot_pagar_hoje.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Em Atraso</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_rec_compensar.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BB_DetalheCPAtraso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 150</value>
+  </data>
+  <data name="pFinanceiro.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="tot_ch_rec_compensar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 260</value>
+  </data>
+  <data name="BB_DetalheProdMin.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPAtraso.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPAtraso.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="qtd_estoque_minimo.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="BB_DetalheCRAtraso.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_DetalhePedFechado.Name" xml:space="preserve">
+    <value>BB_DetalhePedFechado</value>
+  </data>
+  <data name="BB_DetalheCRAtraso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 72</value>
+  </data>
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 229</value>
+  </data>
+  <data name="qtd_orcamento.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="pDetalhe_Fat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 156</value>
+  </data>
+  <data name="tot_ch_emit_compensar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="BB_Refresh.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="BB_PedidoECommerce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="BB_DetalheCRHoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="tot_pagar_hoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 111</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheProdMin.Parent" xml:space="preserve">
+    <value>pDetalhe_Est</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_hoje.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_hoje.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_atraso.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label7.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPAtraso.Name" xml:space="preserve">
+    <value>BB_DetalheCPAtraso</value>
+  </data>
+  <data name="&gt;&gt;toolTip1.Name" xml:space="preserve">
+    <value>toolTip1</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="qtd_estoque_minimo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 31</value>
+  </data>
+  <data name="&gt;&gt;tot_rec_atraso.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 283</value>
+  </data>
+  <data name="pDetalhe_Est.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 525</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>97, 13</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label7.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_pagar_atraso.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="Ck_Altera_Rel.Text" xml:space="preserve">
+    <value>Alterar Relatório</value>
+  </data>
+  <data name="&gt;&gt;BB_Detalhe_Est.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHRHoje.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="qtd_pedecommerce.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="BB_DetalheCHPHoje.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;pFinanceiro.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="tot_ch_rec_compensar.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="qtd_pedecommerce.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 173</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHPHoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh_Fat.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="BB_Detalhe_Est.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalhePedFechado.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCRHoje.Name" xml:space="preserve">
+    <value>BB_DetalheCRHoje</value>
+  </data>
+  <data name="tot_receberhoje.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="tot_pagar_hoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 0</value>
+  </data>
+  <data name="qtd_ped_fechado.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_pagar_hoje.TabIndex" type="System.Int32, mscorlib">
+    <value>17</value>
+  </data>
+  <data name="label12.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label5.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_DetalheOrc.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="BB_DetalheOrc.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="qtd_orcamento.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="BB_DetalheCHRHoje.Size" type="System.Drawing.Size, System.Drawing">
+    <value>25, 20</value>
+  </data>
+  <data name="qtd_cobrancas.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="pFinanceiro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 3</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>Pedidos E-Commerce</value>
+  </data>
+  <data name="qtd_cobrancas.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;qtd_estoque_minimo.Name" xml:space="preserve">
+    <value>qtd_estoque_minimo</value>
+  </data>
+  <data name="tot_receberhoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_ch_emit_compensar.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 44</value>
+  </data>
+  <data name="BB_DetalheOrc.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;qtd_orcamento.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="tot_pagar_hoje.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="Ck_Altera_Rel.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;BB_PedidoECommerce.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label7.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;tot_ch_rec_compensar.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Fat.Name" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="BB_DetalheProdMin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label4.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 86</value>
+  </data>
+  <data name="qtd_cobrancas.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="BB_DetalheCHPHoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_Refresh_Fat.Name" xml:space="preserve">
+    <value>BB_Refresh_Fat</value>
+  </data>
+  <data name="BB_Refresh.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 324</value>
+  </data>
+  <data name="pDetalhe_Fat.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;qtd_estoque_minimo.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>102, 13</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="flpDetalhe.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Left</value>
+  </data>
+  <data name="&gt;&gt;Ck_Altera_Rel.Name" xml:space="preserve">
+    <value>Ck_Altera_Rel</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="flpDetalhe.Size" type="System.Drawing.Size, System.Drawing">
+    <value>166, 616</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;qtd_ped_fechado.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;tot_rec_atraso.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="BB_Refresh_Fat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>3, 128</value>
+  </data>
+  <data name="label2.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_DetalhePedFechado.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="BB_Refresh.ImageAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
+  <data name="qtd_orcamento.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 60</value>
+  </data>
+  <data name="BB_Refresh_Fat.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Fat.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="BB_PedidoECommerce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>131, 19</value>
+  </data>
+  <data name="BB_Detalhe_Est.Size" type="System.Drawing.Size, System.Drawing">
+    <value>153, 23</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>126, 13</value>
+  </data>
+  <data name="label4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;qtd_ped_fechado.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="tot_receberhoje.Location" type="System.Drawing.Point, System.Drawing">
+    <value>4, 38</value>
+  </data>
+  <data name="BB_DetalheCPHoje.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="BB_DetalheCRHoje.ToolTip" xml:space="preserve">
+    <value>Visualizar detalhes contas a receber hoje</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;qtd_estoque_minimo.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_hoje.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="tot_rec_atraso.RightToLeft" type="System.Windows.Forms.RightToLeft, System.Windows.Forms">
+    <value>Yes</value>
+  </data>
+  <data name="tot_pagar_atraso.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 28</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>FDetalhe</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Cheques Pagar Compensar</value>
+  </data>
+  <data name="label1.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>Pedidos Fechados</value>
+  </data>
+  <data name="qtd_orcamento.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="&gt;&gt;pFinanceiro.Name" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="qtd_pedecommerce.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="$this.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;tot_receberhoje.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="BB_DetalheCPAtraso.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label4.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pFinanceiro.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="BB_DetalheCHRHoje.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>111, 13</value>
+  </data>
+  <data name="qtd_cobrancas.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Est.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pFinanceiro.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_PedidoECommerce.Name" xml:space="preserve">
+    <value>BB_PedidoECommerce</value>
+  </data>
+  <data name="tot_pagar_atraso.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 150</value>
+  </data>
+  <data name="tot_ch_rec_compensar.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;Ck_Altera_Rel.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="&gt;&gt;qtd_orcamento.Parent" xml:space="preserve">
+    <value>pDetalhe_Fat</value>
+  </data>
+  <data name="BB_Refresh_Fat.Text" xml:space="preserve">
+    <value>ATUALIZAR</value>
+  </data>
+  <data name="BB_Refresh_Fat.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="&gt;&gt;label4.Name" xml:space="preserve">
+    <value>label4</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 13</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="&gt;&gt;flpDetalhe.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Contas Receber Hoje</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCobHoje.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Em Atraso</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_atraso.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;qtd_cobrancas.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="qtd_ped_fechado.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 102</value>
+  </data>
+  <data name="&gt;&gt;pDetalhe_Est.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="tot_pagar_atraso.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="tot_ch_rec_compensar.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="&gt;&gt;BB_Detalhe_Est.Name" xml:space="preserve">
+    <value>BB_Detalhe_Est</value>
+  </data>
+  <data name="label6.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;BB_DetalheCHRHoje.Name" xml:space="preserve">
+    <value>BB_DetalheCHRHoje</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalhePedFechado.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Produtos Quantidade Abaixo do Minimo</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>pFinanceiro</value>
+  </data>
+  <data name="Ck_Altera_Rel.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="&gt;&gt;BB_DetalheCPHoje.Name" xml:space="preserve">
+    <value>BB_DetalheCPHoje</value>
+  </data>
+  <data name="tot_rec_atraso.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 8.25pt, style=Bold</value>
+  </data>
+  <data name="label8.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="tot_rec_atraso.Size" type="System.Drawing.Size, System.Drawing">
+    <value>128, 20</value>
+  </data>
+  <data name="&gt;&gt;qtd_pedecommerce.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="pDetalhe_Est.Size" type="System.Drawing.Size, System.Drawing">
+    <value>162, 88</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Qtd. Orçamentos</value>
+  </data>
+  <data name="BB_DetalheCPHoje.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAN0gAA
+        DdIBb5L+jgAAAt5JREFUOE9lU1lME1EUHWT59Vc/pLSWGMBgDIkfakiRuEBbWZpKIAYjxoiytGDcYogF
+        C+nGDgoICQoSNlHWIC4JChKJAcSKopHVBQilLLYUaDm+NwhSnOTMnDn33Pu2+xyYTc/+qDJm9ueYt5OL
+        czTj4Ci02VZ20PA2R+cJBmiEbalg+85d+p7iyM1pa9xLqnBxD9aVeEgyzBd0bVZN7XsUtn5lQTnVaIwf
+        rC2mXrsKAoHCiR+keSNMfGjOaRhAao0eV0t7ILv3jgXlaUTLJjFhQoWZH6TtZKTVjmyRPVElDBk5K0Be
+        btbW6SEr6oaq9gP6h42YnF3EhHERvd8MUFT0kWLd0NV9xAl5uck9WJvpJc1nGI74NtdTkmlUVvbh0p0u
+        nMvuwNDEAmy2VcyblzFHsArgy485NkY9yspeeEoyjNxAJYfhn1TnhiXVWxOL3iJS185iioxsmLfgDOFn
+        M15hZsHC/q/HqVea9MTKF6szGbKesbgcYkxvR4TqJYuuT5PoHpxiuaqqD8tWG8amFjbi1BtPcnYHaUcY
+        nki1JL/bibDU55Aqn9khJq+DTVxasaK0bXAjRr0JJIcrVFkY+orJbkdo8lOEKFrt0D80TVYPvOj9bqdT
+        L81hC/DE6tGIlGaE3GqB6GaTHcbJ6L8MJkhTWu30UOINT24GT6wZITPQ5PjFllklihYcv1Zvh4AbDQgk
+        2KpTryDmgZUnJJtIj4I00WxoUhOOXXkM/8t1LCgfGDVAPzyNo1v0kKRGkM038sQqV7aZyEZm7YvINwmv
+        18NPXgvf+Br4Jz7C4LgRn8dmWE41GqMe7/D83zyROv1fO5O2JEKnV1ieyU9WBYGsBodjyTe+Gr5xVWuc
+        aEfk1dh7KtdEvK83Wnm9Cr0gXKG6mEzL7H26wHrg/H0ciq7AwYsVoJxqJNFEPT4+hc7/X8e/imtAmidX
+        pM4lGHEjx+QWqLJwRZoRDtlsjlDtsTXxD+66LZd3Veo0AAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>129, 28</value>
+  </data>
+  <data name="qtd_pedecommerce.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 19</value>
+  </data>
+  <data name="&gt;&gt;tot_rec_atraso.Type" xml:space="preserve">
+    <value>Componentes.EditFloat, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="&gt;&gt;tot_pagar_atraso.Name" xml:space="preserve">
+    <value>tot_pagar_atraso</value>
+  </data>
+  <data name="label11.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="qtd_ped_fechado.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>2, 3</value>
+  </data>
+  <data name="&gt;&gt;BB_Refresh.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;qtd_pedecommerce.Name" xml:space="preserve">
+    <value>qtd_pedecommerce</value>
+  </data>
+  <data name="&gt;&gt;Ck_Altera_Rel.Type" xml:space="preserve">
+    <value>Componentes.CheckBoxDefault, Componentes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null</value>
+  </data>
+  <data name="BB_Refresh_Fat.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Cheques Recebidos Compensar</value>
+  </data>
+  <data name="qtd_pedecommerce.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="BB_DetalheCHRHoje.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="flpDetalhe.ToolTip" xml:space="preserve">
+    <value />
+  </data>
+  <metadata name="toolTip1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+</root>

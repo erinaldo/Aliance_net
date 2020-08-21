@@ -1,0 +1,1 @@
+﻿<%@ WebService Language="C#" CodeBehind="WS_HelpDesk.asmx.cs" Class="WS_BI.WS_HelpDesk" %>

@@ -1,0 +1,733 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="14.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CamadaNegocio</RootNamespace>
+    <AssemblyName>CamadaNegocio</AssemblyName>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.2.0\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="ImprimeTexto, Version=1.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\ImprimeTexto.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Outlook, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Outlook.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Outlook.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.SQLite, Version=1.0.109.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Data.SQLite.Core.1.0.109.2\lib\net46\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Net.Http.Extensions, Version=2.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Http.Primitives, Version=4.2.29.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Net.Http.2.2.29\lib\net45\System.Net.Http.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.1\lib\net461\System.Security.Cryptography.Algorithms.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.2, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.2\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Http, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.5.2.7\lib\net45\System.Web.Http.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.5.2.7\lib\net45\System.Web.Http.WebHost.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Almoxarifado\CadAlmox_X_Empresa.cs" />
+    <Compile Include="Almoxarifado\CadCelulaArm.cs" />
+    <Compile Include="Almoxarifado\CadItens.cs" />
+    <Compile Include="Almoxarifado\CadRua.cs" />
+    <Compile Include="Almoxarifado\CadAlmoxarifado.cs" />
+    <Compile Include="Almoxarifado\CadSecao.cs" />
+    <Compile Include="Almoxarifado\LanAlocacaoItem.cs" />
+    <Compile Include="Almoxarifado\LanMovimentacao.cs" />
+    <Compile Include="Balanca\Cadastros\CadCFGFinPsAvulsa.cs" />
+    <Compile Include="Balanca\Cadastros\CadCFGSeqPesagem.cs" />
+    <Compile Include="Balanca\Cadastros\CadTpDesdobroEspecial.cs" />
+    <Compile Include="Balanca\Cadastros\CadTpPesagem.cs" />
+    <Compile Include="Balanca\LanDesdobroPesagem.cs" />
+    <Compile Include="Balanca\LanFotosPesagem.cs" />
+    <Compile Include="Balanca\LanPesagemAvulsa.cs" />
+    <Compile Include="Balanca\LanPesagemDiversas.cs" />
+    <Compile Include="Balanca\LanPsAvulsa_X_Duplicata.cs" />
+    <Compile Include="Balanca\LanTransbordo.cs" />
+    <Compile Include="Compra\CadCFGCompra.cs" />
+    <Compile Include="Compra\CadTpRequisicao.cs" />
+    <Compile Include="Compra\Lancamento\LanCotacao.cs" />
+    <Compile Include="Compra\Lancamento\LanNegociacao.cs" />
+    <Compile Include="Compra\Lancamento\LanNegociacaoItem.cs" />
+    <Compile Include="Compra\Lancamento\LanOrdemCompra.cs" />
+    <Compile Include="Compra\Lancamento\LanOrdemCompra_X_PedItem.cs" />
+    <Compile Include="Compra\Lancamento\LanPrazoEntrega.cs" />
+    <Compile Include="Compra\Lancamento\LanRequisicao.cs" />
+    <Compile Include="Compra\Lancamento\LanRequisicao_X_Negociacao.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_AcessoVisao.cs" />
+    <Compile Include="Consulta\SqlEditor.cs" />
+    <Compile Include="Contabil\Cadastro\Cad_CTB_DRE.cs" />
+    <Compile Include="Contabil\Cadastro\Cad_CTB_ParamZeramento.cs" />
+    <Compile Include="Contabil\Cadastro\LanPlanoReferencial.cs" />
+    <Compile Include="Contabil\LanLote.cs" />
+    <Compile Include="Contabil\LanZeramento.cs" />
+    <Compile Include="Contabil\Lan_AtualizaEstFixar.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGAdiantamento.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGCartao_DC.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGCMV.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGCompFixar.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGImpostoFaturamento.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGNFCe.cs" />
+    <Compile Include="Contabil\Lan_CTB_LanctoAvulso.cs" />
+    <Compile Include="Contabil\Lan_CTB_LanMultiplo.cs" />
+    <Compile Include="Contabil\SPED_CONTABIL\SpedContabil.cs" />
+    <Compile Include="Diversos\CadCargoFuncionario.cs" />
+    <Compile Include="Diversos\CadCfgECommerce.cs" />
+    <Compile Include="Diversos\CadCfgEmpresa.cs" />
+    <Compile Include="Diversos\CadLayoutEtiqueta.cs" />
+    <Compile Include="Diversos\CadLojaVirtual.cs" />
+    <Compile Include="Diversos\CadRota.cs" />
+    <Compile Include="Diversos\CadTrigger.cs" />
+    <Compile Include="Diversos\CadUsuario_EtapaPed.cs" />
+    <Compile Include="Diversos\CadUsuario_TpDuplicata.cs" />
+    <Compile Include="Diversos\CadUsuario_TpRequisicao.cs" />
+    <Compile Include="Diversos\LanAuditoria.cs" />
+    <Compile Include="Diversos\LanCompromisso.cs" />
+    <Compile Include="Diversos\CadLicenca.cs" />
+    <Compile Include="Diversos\CadLogEmail.cs" />
+    <Compile Include="Diversos\CadTerminal_X_Protocolo.cs" />
+    <Compile Include="Diversos\CadUsuario_ContaGer.cs" />
+    <Compile Include="Diversos\CadUsuario_RegraEspecial.cs" />
+    <Compile Include="Diversos\LanStatusTicket_BI.cs" />
+    <Compile Include="Diversos\ValidaInscEstadual.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadAtividade.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadCFGEmpreendimento.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadDespesa.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadEncargosFolha.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadFatDireto.cs" />
+    <Compile Include="Empreendimento\Cadastro\cadMaoObra.cs" />
+    <Compile Include="Empreendimento\Cadastro\CadRequisitos.cs" />
+    <Compile Include="Empreendimento\Cadastro\OrcamentoEncargo.cs" />
+    <Compile Include="Empreendimento\CompraEmpreendimento.cs" />
+    <Compile Include="Empreendimento\ExecDespesas.cs" />
+    <Compile Include="Empreendimento\FatOrcamento.cs" />
+    <Compile Include="Empreendimento\FichaItens.cs" />
+    <Compile Include="Empreendimento\LanOrcamento.cs" />
+    <Compile Include="Estoque\Cadastros\CadAssistenteVenda.cs" />
+    <Compile Include="Estoque\Cadastros\CadCaracteristica.cs" />
+    <Compile Include="Estoque\Cadastros\CadCodANP.cs" />
+    <Compile Include="Estoque\Cadastros\CadMarkup.cs" />
+    <Compile Include="Estoque\Cadastros\CadPatrimonio.cs" />
+    <Compile Include="Estoque\Cadastros\CadTipoServico.cs" />
+    <Compile Include="Estoque\Cadastros\Cad_Genero.cs" />
+    <Compile Include="Estoque\Cadastros\CadVariedade.cs" />
+    <Compile Include="Estoque\ConsultaProdutos.cs" />
+    <Compile Include="Estoque\LanEstFornecedor.cs" />
+    <Compile Include="Faturamento\AgendaVendedor\LanAgendaVendedor.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGComissao.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCfgCompraAvulsa.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGCupomFiscal.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGImpNF.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCfgNfe.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGOrcamento.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGVendedor.cs" />
+    <Compile Include="Faturamento\Cadastros\CadEspecificacao.cs" />
+    <Compile Include="Faturamento\Cadastros\CadEtapa.cs" />
+    <Compile Include="Faturamento\Cadastros\CadEvento.cs" />
+    <Compile Include="Faturamento\Cadastros\CadIntervencaoTec.cs" />
+    <Compile Include="Faturamento\Cadastros\CadPontoVenda.cs" />
+    <Compile Include="Faturamento\Cadastros\CadQuestionario.cs" />
+    <Compile Include="Faturamento\Cadastros\CadSeqInutNFe.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGVendasExterna.cs" />
+    <Compile Include="Faturamento\Cadastros\CFGTLocacao.cs" />
+    <Compile Include="Faturamento\Comissao\LanFechamento_Comissao.cs" />
+    <Compile Include="Faturamento\CompraAvulsa\LanCompraAvulsa.cs" />
+    <Compile Include="Faturamento\CTRC\LanConhecimentoFrete.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTRCompValorFrete.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTRDuplicata.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTREstoque.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTRNotaFiscal.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTROrdemColeta.cs" />
+    <Compile Include="Faturamento\CTRC\LanCTRQtdeCarga.cs" />
+    <Compile Include="Faturamento\CTRC\LanEventoCTe.cs" />
+    <Compile Include="Faturamento\CTRC\LanLoteCTe.cs" />
+    <Compile Include="Faturamento\Entrega\CargaAvulsa.cs" />
+    <Compile Include="Faturamento\Entrega\LanCargaEntrega.cs" />
+    <Compile Include="Faturamento\Entrega\LanRomaneioEntrega.cs" />
+    <Compile Include="Faturamento\Fidelizacao\LanFidelizacao.cs" />
+    <Compile Include="Faturamento\Locacao\LanLocacao.cs" />
+    <Compile Include="Faturamento\LoteAnvisa\LanLoteAnvisa.cs" />
+    <Compile Include="Faturamento\NFCe\LanLoteNFCe.cs" />
+    <Compile Include="Faturamento\NFCe\LanLote_X_NFCe.cs" />
+    <Compile Include="Faturamento\NFES\LanLoteRPS.cs" />
+    <Compile Include="Faturamento\NFE\LanConsultaDest.cs" />
+    <Compile Include="Faturamento\NFE\LanEventoNFe.cs" />
+    <Compile Include="Faturamento\NFE\LanLoteNFE.cs" />
+    <Compile Include="Faturamento\NFE\LanLoteNFE_X_NotaFiscal.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanCTBImpostosNF.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanDeclaracaoImport.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanDevolucaoFIN.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanECFVinculadoNF.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamentoCCusto.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamento_Item_X_Estoque.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanImpostosNF.cs" />
+    <Compile Include="Faturamento\Orcamento\LanOrcamento.cs" />
+    <Compile Include="Faturamento\PDV\LanCaixaPDV.cs" />
+    <Compile Include="Faturamento\PDV\LanCondicional.cs" />
+    <Compile Include="Faturamento\PDV\LanContingenciaNFCeOFF.cs" />
+    <Compile Include="Faturamento\PDV\LanCupomFiscal.cs" />
+    <Compile Include="Faturamento\PDV\LanDevolucao.cs" />
+    <Compile Include="Faturamento\PDV\LanDevolucaoCF.cs" />
+    <Compile Include="Faturamento\PDV\LanDevolucaoFIN.cs" />
+    <Compile Include="Faturamento\PDV\LanEmprestimoConcedido.cs" />
+    <Compile Include="Faturamento\PDV\LanEventoNFCe.cs" />
+    <Compile Include="Faturamento\PDV\LanPreVenda.cs" />
+    <Compile Include="Faturamento\PDV\LanSessao.cs" />
+    <Compile Include="Faturamento\PDV\LanTrocaEspecie.cs" />
+    <Compile Include="Faturamento\PDV\LanTrocaItem.cs" />
+    <Compile Include="Faturamento\Pedido\LanExpedicao.cs" />
+    <Compile Include="Faturamento\Pedido\LanOrdemCarregamento.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_Etapa.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_X_Duplicata.cs" />
+    <Compile Include="Faturamento\Pedido\LanReservaPedido.cs" />
+    <Compile Include="Faturamento\Pedido\PedidoGrade.cs" />
+    <Compile Include="Faturamento\PosVenda\TCN_PosVenda.cs" />
+    <Compile Include="Faturamento\ProgEspecialVenda\LanProgEspecialVenda.cs" />
+    <Compile Include="Faturamento\Promocao\LanPromocaoVenda.cs" />
+    <Compile Include="Fazenda\Cadastros\CadCultura.cs" />
+    <Compile Include="Fazenda\Cadastros\CadPlantio.cs" />
+    <Compile Include="Fazenda\Lancamento\LanAtividade_Item.cs" />
+    <Compile Include="Fazenda\Lancamento\LanInsumos.cs" />
+    <Compile Include="Fazenda\Lancamento\LanInsumos_X_Estoque.cs" />
+    <Compile Include="Compra\Cad_Fornecedor_X_GrupoItem.cs" />
+    <Compile Include="ConfigGer\CadParamGer_X_Terminal.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Amarracoes.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Campo.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Campo_Amarracao.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Consulta.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Filtro.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Operador.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Ordenacao.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_ParamClasse.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Report.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Report_X_Consulta.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Tabela.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_Usuario_X_Tabela.cs" />
+    <Compile Include="Consulta\Cadastro\Cad_TipoAmarracao.cs" />
+    <Compile Include="Contabil\Cadastro\CadGrupoPatrimonio.cs" />
+    <Compile Include="Contabil\Cadastro\CadPatrimonio.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGCaixa.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGChequeCompensado.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGFaturamento.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGFinanceiro.cs" />
+    <Compile Include="Contabil\Lan_CTB_CFGProvisao_Estoque.cs" />
+    <Compile Include="Contabil\Lan_ProcContabil.cs" />
+    <Compile Include="Contabil\Lan_Patrimonio.cs" />
+    <Compile Include="Estoque\Cadastros\CadAcessoriosProduto.cs" />
+    <Compile Include="Estoque\Cadastros\CadMarca.cs" />
+    <Compile Include="Estoque\Cadastros\CadTpProduto_X_Clifor.cs" />
+    <Compile Include="Estoque\LanTransfLocal.cs" />
+    <Compile Include="Estoque\LanTransfLocal_X_Estoque.cs" />
+    <Compile Include="Faturamento\Cadastros\CadSequenciaNF.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamento.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Fazenda\Cadastros\CadArea.cs" />
+    <Compile Include="Fazenda\Cadastros\CadAtividade.cs" />
+    <Compile Include="Fazenda\Cadastros\CadAtividadeCCusto.cs" />
+    <Compile Include="Fazenda\Cadastros\CadEquipamento.cs" />
+    <Compile Include="Fazenda\Cadastros\CadFazenda.cs" />
+    <Compile Include="Fazenda\Cadastros\CadTalhoes.cs" />
+    <Compile Include="Fazenda\Lancamento\LanAtividade.cs" />
+    <Compile Include="Financeiro\Bloqueto\LoteBloqueto.cs" />
+    <Compile Include="Financeiro\Bloqueto\LoteRemessa.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCartaoCredito.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCategoriaCliFor.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCentroResultado.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCFGCheque.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCFGContratoFin.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCfgEmprestimos.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCFGFaturaCartao.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCfgFolhaPagamento.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCFGImpCheque.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCliforInativo.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCondPgto.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Financeiro\Cadastros\CadCotacaoMoeda.cs" />
+    <Compile Include="Financeiro\Cadastros\CadDados_Bancarios_Clifor.cs" />
+    <Compile Include="Financeiro\Cadastros\CadGrupoCF.cs" />
+    <Compile Include="Financeiro\Cadastros\CadHistorico.cs" />
+    <Compile Include="Financeiro\Cadastros\CadJuro.cs" />
+    <Compile Include="Financeiro\Cadastros\CadMaquinaCartao.cs" />
+    <Compile Include="Financeiro\Cadastros\CadMoeda.cs" />
+    <Compile Include="Financeiro\Cadastros\CadMotivoInativo.cs" />
+    <Compile Include="Financeiro\Cadastros\CadPais.cs" />
+    <Compile Include="Financeiro\Cadastros\CadPortador.cs" />
+    <Compile Include="Financeiro\Cadastros\CadPortador_X_Juros.cs" />
+    <Compile Include="Financeiro\Cadastros\CadReferenciaClifor.cs" />
+    <Compile Include="Financeiro\Cadastros\CadTpData.cs" />
+    <Compile Include="Financeiro\Cadastros\Cad_BandeiraCartao.cs" />
+    <Compile Include="Financeiro\Cadastros\Cad_RamoAtividade.cs" />
+    <Compile Include="Financeiro\Cadastros\CadContatoCliFor.cs" />
+    <Compile Include="Financeiro\Cadastros\Cad_TaxaBandeiraCartao.cs" />
+    <Compile Include="Financeiro\Caixa\LanFechamentoCaixa.cs" />
+    <Compile Include="Financeiro\Cartao\CarregarCartaoPre.cs" />
+    <Compile Include="Financeiro\Cartao\LanFaturaCartao.cs" />
+    <Compile Include="Financeiro\Cartao\LanLoteCartao.cs" />
+    <Compile Include="Financeiro\CCustoLan\LanCCustoLancto.cs" />
+    <Compile Include="Balanca\LanAplicacaoPedido.cs" />
+    <Compile Include="Balanca\LanClassificacao.cs" />
+    <Compile Include="Balanca\LanPesagemGraos.cs" />
+    <Compile Include="Compra\CadUsuarioCompra.cs" />
+    <Compile Include="ConfigGer\CadParamGer.cs" />
+    <Compile Include="ConfigGer\CadParamGer_X_Empresa.cs" />
+    <Compile Include="Contabil\Cadastro\CadPlanoContas.cs" />
+    <Compile Include="Contabil\LanContabil.cs" />
+    <Compile Include="Diversos\CadAcesso.cs" />
+    <Compile Include="Diversos\CadEmpresa.cs" />
+    <Compile Include="Diversos\CadFeriado.cs" />
+    <Compile Include="Diversos\CadMenu.cs" />
+    <Compile Include="Diversos\CadParamSys.cs" />
+    <Compile Include="Diversos\CadProtocolo.cs" />
+    <Compile Include="Diversos\CadRegiaoVenda.cs" />
+    <Compile Include="Diversos\CadTbPreco.cs" />
+    <Compile Include="Diversos\CadTerminal.cs" />
+    <Compile Include="Diversos\CadTipoTransporte.cs" />
+    <Compile Include="Diversos\CadTpVeiculo.cs" />
+    <Compile Include="Diversos\CadUsuario.cs" />
+    <Compile Include="Diversos\CadUsuarioxTerminal.cs" />
+    <Compile Include="Diversos\CadUsuario_CFGPedido.cs" />
+    <Compile Include="Diversos\CadUsuario_Empresa.cs" />
+    <Compile Include="Diversos\CadUsuario_Grupo.cs" />
+    <Compile Include="Diversos\CadUsuario_TipoPesagem.cs" />
+    <Compile Include="Estoque\Cadastros\CadConvUnidade.cs" />
+    <Compile Include="Estoque\Cadastros\CadEmpresa_X_Moega.cs" />
+    <Compile Include="Estoque\Cadastros\CadGrupoProduto.cs" />
+    <Compile Include="Estoque\Cadastros\CadLocalArm.cs" />
+    <Compile Include="Estoque\Cadastros\CadLocalArm_X_Empresa.cs" />
+    <Compile Include="Estoque\Cadastros\CadLocalArm_X_Produto.cs" />
+    <Compile Include="Estoque\Cadastros\CadMoega.cs" />
+    <Compile Include="Estoque\Cadastros\CadMoega_X_TabDesc.cs" />
+    <Compile Include="Estoque\Cadastros\CadProduto.cs" />
+    <Compile Include="Estoque\Cadastros\CadTpProduto.cs" />
+    <Compile Include="Estoque\Cadastros\CadUnidade.cs" />
+    <Compile Include="Estoque\LanEstoque.cs" />
+    <Compile Include="Estoque\LanPrecoItem.cs" />
+    <Compile Include="Estoque\LanProvisao_Estoque.cs" />
+    <Compile Include="Estoque\LanInventario.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGPedido.cs" />
+    <Compile Include="Faturamento\Cadastros\CadCFGPedidoFiscal.cs" />
+    <Compile Include="Faturamento\Cadastros\CadModeloNF.cs" />
+    <Compile Include="Faturamento\Cadastros\CadSerieNF.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanAplicacao_NotaFiscal.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamentoMovFiscal_Pedido.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamento_CMI.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFaturamento_Item.cs" />
+    <Compile Include="Faturamento\NotaFiscal\LanFat_ComplementoDevolucao.cs" />
+    <Compile Include="Faturamento\Pedido\LanEntregaPedido.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedidoItem_X_Estoque.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_DT_Vencto.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_GRO.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_Item.cs" />
+    <Compile Include="Faturamento\Pedido\LanPedido_Venda.cs" />
+    <Compile Include="Faturamento\Pedido\Lan_Pedido.cs" />
+    <Compile Include="Financeiro\Adiantamento\LanAdiantamento.cs" />
+    <Compile Include="Financeiro\Bloqueto\Cobranca.cs" />
+    <Compile Include="Financeiro\Cadastros\CadBanco.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCFGBanco.cs" />
+    <Compile Include="Financeiro\Cadastros\CadCidade.cs" />
+    <Compile Include="Financeiro\Cadastros\CadClifor.cs" />
+    <Compile Include="Financeiro\Cadastros\CadConfigAdto.cs" />
+    <Compile Include="Financeiro\Cadastros\CadContaGer.cs" />
+    <Compile Include="Financeiro\Cadastros\CadContaGer_X_Empresa.cs" />
+    <Compile Include="Financeiro\Cadastros\CadEndereco.cs" />
+    <Compile Include="Financeiro\Cadastros\CadTpDoct?Dup.cs" />
+    <Compile Include="Financeiro\Cadastros\CadTpDuplicata.cs" />
+    <Compile Include="Financeiro\Cadastros\CadUf.cs" />
+    <Compile Include="Financeiro\Caixa\LanCaixa.cs" />
+    <Compile Include="Financeiro\Caixa\Lan_Transfere_Caixa.cs" />
+    <Compile Include="Financeiro\Cobranca\LanCobranca.cs" />
+    <Compile Include="Financeiro\Contrato\ContratoFin.cs" />
+    <Compile Include="Financeiro\DRE\CadDRE.cs" />
+    <Compile Include="Financeiro\Duplicata\LanCalcParcelas.cs" />
+    <Compile Include="Financeiro\Duplicata\LanDuplicata.cs" />
+    <Compile Include="Financeiro\Duplicata\LanLiquidacao_X_DescDup.cs" />
+    <Compile Include="Financeiro\Duplicata\LanVincularDup.cs" />
+    <Compile Include="Financeiro\Duplicata\LanLiberarCredito.cs" />
+    <Compile Include="Financeiro\Empreendimento\LanEmpreendimento.cs" />
+    <Compile Include="Financeiro\Emprestimos\LanEmprestimos.cs" />
+    <Compile Include="Financeiro\Folha_Pagamento\LanFolhaPagamento.cs" />
+    <Compile Include="Financeiro\ProvisaoDRG\LanProvisaoDRG.cs" />
+    <Compile Include="Financeiro\Rastrear\RastrearLancto.cs" />
+    <Compile Include="Financeiro\Titulo\LanDevolucaoCheque.cs" />
+    <Compile Include="Financeiro\Titulo\LanLoteCH.cs" />
+    <Compile Include="Financeiro\Titulo\LanLoteCustodia.cs" />
+    <Compile Include="Financeiro\Titulo\LanTitulo.cs" />
+    <Compile Include="Financeiro\Viagem\LanViagem.cs" />
+    <Compile Include="Fiscal\CadAjusteICMS.cs" />
+    <Compile Include="Fiscal\CadAjusteIPI.cs" />
+    <Compile Include="Fiscal\CadCFOP.cs" />
+    <Compile Include="Fiscal\CadCMI.cs" />
+    <Compile Include="Fiscal\CadCondFiscalClifor.cs" />
+    <Compile Include="Fiscal\CadCondFiscalICMS.cs" />
+    <Compile Include="Fiscal\CadCondFiscalProduto.cs" />
+    <Compile Include="Fiscal\CadDetRecIsentaPisCofins.cs" />
+    <Compile Include="Fiscal\CadImposto.cs" />
+    <Compile Include="Fiscal\CadMovimentacao.cs" />
+    <Compile Include="Fiscal\CadMov_X_CFOP.cs" />
+    <Compile Include="Fiscal\CadMov_x_CMI.cs" />
+    <Compile Include="Fiscal\CadNCM.cs" />
+    <Compile Include="Fiscal\CadObservacaoFiscal.cs" />
+    <Compile Include="Fiscal\CadReceitaPisCofins.cs" />
+    <Compile Include="Fiscal\CadSitTribut.cs" />
+    <Compile Include="Fiscal\CadTabSimples.cs" />
+    <Compile Include="Fiscal\CadTpBaseCalcCredito.cs" />
+    <Compile Include="Fiscal\CadTpContribuicaoPisCofins.cs" />
+    <Compile Include="Fiscal\CadTpCreditoPisCofins.cs" />
+    <Compile Include="Fiscal\CadTpImposto_x_SitTrib.cs" />
+    <Compile Include="Fiscal\CondicaoFiscalImposto.cs" />
+    <Compile Include="Fiscal\IDominio\LanIDominioClifor.cs" />
+    <Compile Include="Fiscal\IDominio\LanImportDominio.cs" />
+    <Compile Include="Fiscal\LanctoImposto.cs" />
+    <Compile Include="Fiscal\LanLoteImposto.cs" />
+    <Compile Include="Fiscal\SPED_FISCAL\SpedFiscal.cs" />
+    <Compile Include="Fiscal\SPED_PISCOFINS\SpedPisCofins.cs" />
+    <Compile Include="Frota\Cadastros\CadCfgFrota.cs" />
+    <Compile Include="Frota\Cadastros\CadCfgMDFe.cs" />
+    <Compile Include="Frota\Cadastros\CadDesenhoPneu.cs" />
+    <Compile Include="Frota\Cadastros\CadDespesa.cs" />
+    <Compile Include="Frota\Cadastros\CadDevOutrasReceitas.cs" />
+    <Compile Include="Frota\Cadastros\CadMarcaVeiculo.cs" />
+    <Compile Include="Frota\Cadastros\CadRodado.cs" />
+    <Compile Include="Frota\Cadastros\CadRotaFrete.cs" />
+    <Compile Include="Frota\Cadastros\CadVeiculo.cs" />
+    <Compile Include="Frota\LanAbastecidas.cs" />
+    <Compile Include="Frota\LanAbastVeiculo.cs" />
+    <Compile Include="Frota\Cadastros\LanPneu.cs" />
+    <Compile Include="Frota\LanAcertoMotorista.cs" />
+    <Compile Include="Frota\LanCartaFrete.cs" />
+    <Compile Include="Frota\LanLoteMDFe.cs" />
+    <Compile Include="Frota\LanManutencao_X_Almox.cs" />
+    <Compile Include="Frota\LanMDFe.cs" />
+    <Compile Include="Frota\LanMovPneu.cs" />
+    <Compile Include="Frota\LanOutrasReceitas.cs" />
+    <Compile Include="Frota\LanViagem.cs" />
+    <Compile Include="Graos\CadCFGTaxa.cs" />
+    <Compile Include="Graos\CadContrato.cs" />
+    <Compile Include="Graos\CadContratoItem_X_DesdEspecial.cs" />
+    <Compile Include="Graos\CadContrato_X_Headge.cs" />
+    <Compile Include="Graos\CadContratoTaxaDeposito.cs" />
+    <Compile Include="Graos\CadDesconto.cs" />
+    <Compile Include="Graos\CadAmostra.cs" />
+    <Compile Include="Graos\CadDescontoXAmostra.cs" />
+    <Compile Include="Graos\CadHeadge.cs" />
+    <Compile Include="Graos\CadMetodoAnalise.cs" />
+    <Compile Include="Graos\CadPercDesconto.cs" />
+    <Compile Include="Graos\CadDescontoxProdutos.cs" />
+    <Compile Include="Graos\CadPrecoCommodities.cs" />
+    <Compile Include="Graos\CadSafra.cs" />
+    <Compile Include="Graos\CadTabelaDesconto.cs" />
+    <Compile Include="Graos\CadTaxaDeposito.cs" />
+    <Compile Include="Graos\Cad_Adto_Contrato.cs" />
+    <Compile Include="Graos\Cad_OriginacaoCustoHeadge.cs" />
+    <Compile Include="Graos\Cad_ParamGMO.cs" />
+    <Compile Include="Graos\LanAutorizRetDeposito.cs" />
+    <Compile Include="Graos\LanContrato_X_EstoqueEmbalagem.cs" />
+    <Compile Include="Graos\LanDevAquisicao.cs" />
+    <Compile Include="Graos\LanFatQuebraTec.cs" />
+    <Compile Include="Graos\LanFixacao.cs" />
+    <Compile Include="Graos\LanMov_Deposito.cs" />
+    <Compile Include="Graos\LanOriginacao.cs" />
+    <Compile Include="Graos\LanTaxas_Deposito.cs" />
+    <Compile Include="Graos\LanTaxa_X_PedidoItem.cs" />
+    <Compile Include="Graos\Lan_FechamentoOperacao.cs" />
+    <Compile Include="Graos\Lan_NFHeadge.cs" />
+    <Compile Include="Graos\Lan_NotaFiscalGMO.cs" />
+    <Compile Include="Graos\Lan_PesagemGMO.cs" />
+    <Compile Include="Graos\Lan_RetencaoFinanceiraGMO.cs" />
+    <Compile Include="Graos\Lan_RoyaltiesGMO.cs" />
+    <Compile Include="Graos\Lan_Transferencia.cs" />
+    <Compile Include="Graos\Lan_Transf_X_Pedido.cs" />
+    <Compile Include="Locacao\Cadastros\CadCFGLocacao.cs" />
+    <Compile Include="Locacao\Cadastros\CadPrecoItens.cs" />
+    <Compile Include="Locacao\Cadastros\CadTabPreco.cs" />
+    <Compile Include="Locacao\LanAcessorios.cs" />
+    <Compile Include="Locacao\LanItens_X_PreVenda.cs" />
+    <Compile Include="Locacao\LanLocacao.cs" />
+    <Compile Include="Locacao\LanMedicaoProdutoItens.cs" />
+    <Compile Include="Locacao\LanVistoria.cs" />
+    <Compile Include="Locacao\LocTerceiro.cs" />
+    <Compile Include="Locacao\Retirada.cs" />
+    <Compile Include="Mudanca\Cadastros\CadItens.cs" />
+    <Compile Include="Mudanca\Cadastros\CadServico.cs" />
+    <Compile Include="Mudanca\Cadastros\CFGMudanca.cs" />
+    <Compile Include="Mudanca\LanGuardaVolume.cs" />
+    <Compile Include="Mudanca\LanItensMud.cs" />
+    <Compile Include="Mudanca\LanMudanca.cs" />
+    <Compile Include="Mudanca\LanOrcamento.cs" />
+    <Compile Include="Mudanca\LanServicosMud.cs" />
+    <Compile Include="Mudanca\Mudanca_X_CTe.cs" />
+    <Compile Include="Mudanca\Mudanca_X_NFSe.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadBicoBomba.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadBombaAbastecimento.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadCfgPainelVendaConv.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadCfgPosto.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadLacreBomba.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadPrecoANP.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadProgCombustivel.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadTanque.cs" />
+    <Compile Include="PostoCombustivel\Cadastros\CadTrans_X_UnidPag.cs" />
+    <Compile Include="PostoCombustivel\LanCartaFrete.cs" />
+    <Compile Include="PostoCombustivel\LanConvenio.cs" />
+    <Compile Include="PostoCombustivel\LanEncerranteBico.cs" />
+    <Compile Include="PostoCombustivel\LanEncerranteCaixa.cs" />
+    <Compile Include="PostoCombustivel\LanIntervencaoTecnica.cs" />
+    <Compile Include="PostoCombustivel\LanLMC.cs" />
+    <Compile Include="PostoCombustivel\LanMedicaoTanque.cs" />
+    <Compile Include="PostoCombustivel\LanOrdemServico.cs" />
+    <Compile Include="PostoCombustivel\LanVendaCombustivel.cs" />
+    <Compile Include="PostoCombustivel\LanVendaMesaConv.cs" />
+    <Compile Include="Producao\Cadastros\CadTurno.cs" />
+    <Compile Include="Producao\Cadastros\Cad_Lote.cs" />
+    <Compile Include="Producao\Cadastros\Cad_PRD_Custos.cs" />
+    <Compile Include="Producao\Dashboard\DashProduto.cs" />
+    <Compile Include="Producao\Producao\LanApontamentoProducao.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Producao\Producao\LanApontamento_CustoFixo.cs" />
+    <Compile Include="Producao\Producao\LanApontamento_Estoque.cs" />
+    <Compile Include="Producao\Producao\LanApontamento_MPrima.cs" />
+    <Compile Include="Producao\Producao\LanCustoFixo_Direto.cs" />
+    <Compile Include="Producao\Producao\LanFichaTec_MPrima.cs" />
+    <Compile Include="Producao\Producao\LanFormulaApontamento.cs" />
+    <Compile Include="Producao\Producao\LanOrdemProducao.cs" />
+    <Compile Include="Producao\Producao\LanRastreabilidade.cs" />
+    <Compile Include="Producao\Producao\LanSerieDevolvida.cs" />
+    <Compile Include="Producao\Producao\LanSerieProduto.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="Restaurante\Cadastro\Adicional.cs" />
+    <Compile Include="Restaurante\Cadastro\Barril.cs" />
+    <Compile Include="Restaurante\Cadastro\Chopeira.cs" />
+    <Compile Include="Restaurante\Cadastro\CliFor.cs" />
+    <Compile Include="Restaurante\Cadastro\Configuracao.cs" />
+    <Compile Include="Restaurante\Cadastro\KitExtrator.cs" />
+    <Compile Include="Restaurante\Cadastro\Local.cs" />
+    <Compile Include="Restaurante\Cadastro\LocalImp.cs" />
+    <Compile Include="Restaurante\Cadastro\Mesa.cs" />
+    <Compile Include="Restaurante\Cadastro\PistaBoliche.cs" />
+    <Compile Include="Restaurante\Cadastro\Produto.cs" />
+    <Compile Include="Restaurante\Cadastro\Sabores.cs" />
+    <Compile Include="Restaurante\Cartao.cs" />
+    <Compile Include="Restaurante\HoraBoliche.cs" />
+    <Compile Include="Restaurante\ItensCupom.cs" />
+    <Compile Include="Restaurante\ItensPreVenda_X_ItensCupom.cs" />
+    <Compile Include="Restaurante\LanMovBarril.cs" />
+    <Compile Include="Restaurante\LanReservaChopp.cs" />
+    <Compile Include="Restaurante\MovBoliche.cs" />
+    <Compile Include="Restaurante\PreVenda.cs" />
+    <Compile Include="Sementes\Cadastros\LanCadTipoAnalise.cs" />
+    <Compile Include="Sementes\LanLoteSemente.cs" />
+    <Compile Include="Servicos\Cadas?ros\CadOseEtapaOrdem.cs" />
+    <Compile Include="Servicos\Cadastros\CadCfgAgendamento.cs" />
+    <Compile Include="Servicos\Cadastros\CadCfgContrato.cs" />
+    <Compile Include="Servicos\Cadastros\CadOseProximaEtapa.cs" />
+    <Compile Include="Servicos\Cadastros\CadOseTpOrdem.cs" />
+    <Compile Include="Servicos\Cadastros\CadOseTpOrdemxEtapa.cs" />
+    <Compile Include="Servicos\Cadastros\CadParamOS.cs" />
+    <Compile Include="Servicos\Cadastros\CadSerialClifor.cs" />
+    <Compile Include="Servicos\Cadastros\CadVeiculoCliente.cs" />
+    <Compile Include="Servicos\Cadastros\Cad_Imagem.cs" />
+    <Compile Include="Servicos\LanAcessorios.cs" />
+    <Compile Include="Servicos\LanAgendamento.cs" />
+    <Compile Include="Servicos\LanAlmoxarifado.cs" />
+    <Compile Include="Servicos\LanAtividades.cs" />
+    <Compile Include="Servicos\LanContrato.cs" />
+    <Compile Include="Servicos\LanDuplicata.cs" />
+    <Compile Include="Servicos\LanHistorico.cs" />
+    <Compile Include="Servicos\LanLote.cs" />
+    <Compile Include="Servicos\LanLote_X_Servicos.cs" />
+    <Compile Include="Servicos\LanPecasEnvTerceiro.cs" />
+    <Compile Include="Servicos\LanServico.cs" />
+    <Compile Include="Servicos\LanServicoEvolucao.cs" />
+    <Compile Include="Servicos\LanServicoPecas.cs" />
+    <Compile Include="Servicos\LanServico_X_PedidoItem.cs" />
+    <Compile Include="WS_RDC\Cad_DataSource.cs" />
+    <Compile Include="WS_RDC\Cad_ParamClasse.cs" />
+    <Compile Include="WS_RDC\Cad_RDC.cs" />
+    <Compile Include="WS_RDC\Cad_RDC_X_DataSource.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Properties\DataSources\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>Este projeto faz referência a pacotes do NuGet que não estão presentes neste computador. Use a Restauração de Pacotes do NuGet para baixá-los.  Para obter mais informações, consulte http://go.microsoft.com/fwlink/?LinkID=322105. O arquivo ausente é {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+    <Error Condition="!Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets'))" />
+  </Target>
+  <Import Project="..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets" Condition="Exists('..\packages\System.Data.SQLite.Core.1.0.109.2\build\net46\System.Data.SQLite.Core.targets')" />
+  <Import Project="..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.21\build\Microsoft.Bcl.Build.targets')" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

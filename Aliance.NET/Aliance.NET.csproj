@@ -1,0 +1,458 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{69E1B482-E44B-4084-8D39-482DDA48A90E}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Aliance.NET</RootNamespace>
+    <AssemblyName>Aliance.NET</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <ApplicationIcon>site-32x32.ico</ApplicationIcon>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>C:\Work\Publicar\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>http://192.168.1.254/Bekcer/</InstallUrl>
+    <UpdateUrl>http://192.168.1.254/Becker/</UpdateUrl>
+    <SuiteName>Aliance.NET</SuiteName>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>2</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <BootstrapperComponentsUrl>http://192.168.1.254/Becker</BootstrapperComponentsUrl>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>2637B700557A9B2E351D71193F0983FAD31D5F5C</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>AlianceNET.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>false</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados">
+      <HintPath>.\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="Ionic.Utils.Zip, Version=1.3.0.0, Culture=neutral, PublicKeyToken=c551e179877da246, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>.\Ionic.Utils.Zip.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Runtime.Serialization">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.ServiceModel">
+      <RequiredTargetFramework>3.0</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FAlterarSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FAlterarSenha.designer.cs">
+      <DependentUpon>FAlterarSenha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCalcChaveAcesso.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCalcChaveAcesso.designer.cs">
+      <DependentUpon>FCalcChaveAcesso.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FEmpresa.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FEmpresa.designer.cs">
+      <DependentUpon>FEmpresa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGerarArqCont.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGerarArqCont.Designer.cs">
+      <DependentUpon>FGerarArqCont.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLogin.designer.cs">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMenuPrin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMenuPrin.designer.cs">
+      <DependentUpon>FMenuPrin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMsgComp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMsgComp.designer.cs">
+      <DependentUpon>FMsgComp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMsgTicket.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMsgTicket.designer.cs">
+      <DependentUpon>FMsgTicket.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FAlterarSenha.es.resx">
+      <DependentUpon>FAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FAlterarSenha.resx">
+      <DependentUpon>FAlterarSenha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCalcChaveAcesso.resx">
+      <DependentUpon>FCalcChaveAcesso.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FEmpresa.resx">
+      <DependentUpon>FEmpresa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGerarArqCont.resx">
+      <DependentUpon>FGerarArqCont.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.es.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLogin.resx">
+      <DependentUpon>FLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenuPrin.es.resx">
+      <DependentUpon>FMenuPrin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMenuPrin.resx">
+      <DependentUpon>FMenuPrin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMsgComp.resx">
+      <DependentUpon>FMsgComp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMsgTicket.resx">
+      <DependentUpon>FMsgTicket.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\DataSources\CamadaDados.Graos.TList_PrecoCommodities.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almoxarifado\Almoxarifado.csproj">
+      <Project>{1E43B375-FBA8-4428-9E3F-40CD27E476A9}</Project>
+      <Name>Almoxarifado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Balanca\Balanca.csproj">
+      <Project>{5C892CB9-08E4-4311-80D3-FE43ABBC76D0}</Project>
+      <Name>Balanca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Commoditties\Commoditties.csproj">
+      <Project>{292D6426-61F4-4271-8C8F-B20730482F44}</Project>
+      <Name>Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Compra\Compra.csproj">
+      <Project>{630AB6D7-7118-48F1-BCD8-805D72A07563}</Project>
+      <Name>Compra</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Consulta\Consulta.csproj">
+      <Project>{A5BC81C1-BE21-4D67-A42E-A051640E36D4}</Project>
+      <Name>Consulta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Contabil\Contabil.csproj">
+      <Project>{88088D25-4986-4989-B497-CA1E1C8DC6C6}</Project>
+      <Name>Contabil</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CTe\CTe.csproj">
+      <Project>{D554AFE6-DD57-42F4-A454-C9B863935A9A}</Project>
+      <Name>CTe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Empreendimento\Empreendimento.csproj">
+      <Project>{D245452E-7F0C-4F87-B937-98BB4CC99353}</Project>
+      <Name>Empreendimento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Estoque\Estoque.csproj">
+      <Project>{5AF3EB6F-12D2-468F-B238-FAE3EB806B16}</Project>
+      <Name>Estoque</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Faturamento\Faturamento.csproj">
+      <Project>{927B706F-5E1A-4722-B260-32E4D2217DD4}</Project>
+      <Name>Faturamento</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fazenda\Fazenda.csproj">
+      <Project>{53CE82CC-14FA-45CA-9C1B-5E255597AEED}</Project>
+      <Name>Fazenda</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Fiscal\Fiscal.csproj">
+      <Project>{35FC49F9-4E65-4D10-9DB3-5ED052D9DB34}</Project>
+      <Name>Fiscal</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPesagemPadrao\FormPesagemPadrao.csproj">
+      <Project>{9D5CC72C-59BA-470E-B1AB-33CE161CDE3B}</Project>
+      <Name>FormPesagemPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Frota\Frota.csproj">
+      <Project>{6737E793-A3AC-41FB-9838-1243C8907E30}</Project>
+      <Name>Frota</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Gerencia\Gerencia.csproj">
+      <Project>{C1A65443-527C-4100-A828-E1B072EB35C2}</Project>
+      <Name>Gerencia</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{FF45D0E0-E347-438F-8DAA-4587F3CF0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Idioma\Idioma.csproj">
+      <Project>{DC1320CB-A574-4204-9E14-7DBB8D56F350}</Project>
+      <Name>Idioma</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\LeituraSerial\LeituraSerial.csproj">
+      <Project>{50AD47FE-3798-4179-B438-456F4E8D78E1}</Project>
+      <Name>LeituraSerial</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Locacao\Locacao.csproj">
+      <Project>{a0abe48b-be9c-4ded-a152-9f6b31374675}</Project>
+      <Name>Locacao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MDFe\MDFe.csproj">
+      <Project>{A3A04509-5C11-4768-B07D-631897C5C6EB}</Project>
+      <Name>MDFe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Mudanca\Mudanca.csproj">
+      <Project>{D63BA79C-C958-46D2-A33F-2D702C6D0550}</Project>
+      <Name>Mudanca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFCe\NFCe.csproj">
+      <Project>{6348E819-72DA-4E58-97D1-0191E1F63B7A}</Project>
+      <Name>NFCe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFES\NFES.csproj">
+      <Project>{BD5BA315-8530-4777-B749-D3822A4F8BE9}</Project>
+      <Name>NFES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{B765028D-8B44-4002-9B45-C69FCB083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NumeroNota\NumeroNota.csproj">
+      <Project>{1EDD0F31-4762-4314-9F2E-0AC184E60DFC}</Project>
+      <Name>NumeroNota</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976A508-894E-45A8-8055-ABE829C1BFA3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PDV\PDV.csproj">
+      <Project>{3C1B964B-1218-4A1F-96A3-65AE3BCBDE62}</Project>
+      <Name>PDV</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PostoCombustivel\PostoCombustivel.csproj">
+      <Project>{6A5A70D0-8258-42DE-9B25-8D6FB7F0E497}</Project>
+      <Name>PostoCombustivel</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Producao\Producao.csproj">
+      <Project>{9DAFEB62-3000-4D0F-8921-AD09A0B3014F}</Project>
+      <Name>Producao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Restaurante\Restaurante.csproj">
+      <Project>{f80533d8-8040-4464-b712-87fe77f7fafa}</Project>
+      <Name>Restaurante</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Sementes\Sementes.csproj">
+      <Project>{e0813916-6e26-4f63-81ac-34bdcec25bb9}</Project>
+      <Name>Sementes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Servicos\Servicos.csproj">
+      <Project>{44263636-f90d-4e97-ba87-b4fc301ec944}</Project>
+      <Name>Servicos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4d197519-bcf0-4f61-bd23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WebCamLibrary\WebCamLibrary.csproj">
+      <Project>{172F13F8-7B9F-4CC2-ADB4-27C8B1E966DC}</Project>
+      <Name>WebCamLibrary</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="site-32x32.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.6">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.6 %28x86 e x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

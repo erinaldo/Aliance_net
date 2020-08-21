@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>162, 136</value>
+  </data>
+  <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>70, 13</value>
+  </data>
+  <data name="label7.Text" xml:space="preserve">
+    <value>Observación:</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>160, 110</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Responsable:</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>173, 84</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>59, 13</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Indicación:</value>
+  </data>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>187, 58</value>
+  </data>
+  <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>45, 13</value>
+  </data>
+  <data name="label4.Text" xml:space="preserve">
+    <value>Versión:</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>185, 32</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>181, 6</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn8.HeaderText" xml:space="preserve">
+    <value>Cd. Producto</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="dataGridViewTextBoxColumn8.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn9.HeaderText" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn9.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn11.HeaderText" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn11.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn13.HeaderText" xml:space="preserve">
+    <value>Cd. Lugar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn13.Width" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn14.HeaderText" xml:space="preserve">
+    <value>Lugar Almacenaje</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn14.Width" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>PRODUCTO ACABADO</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>120, 12</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>Cantidad:</value>
+  </data>
+  <data name="bb_voltarProdAcab.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPHZN7UNRVGIZ/OWNOainJzUsiguhyUVnkssrg
+        ZghyR1LERVHktkgKJiisJgiGDWNexhJHRcSADBDUhZUFFlhYF1rugpiZZk45lTY5XWycMZ7O9Mc7Z858
+        57zfc95vjlTLMTzKbJh0SkKqEGoS+lLotIRdxessODEdp2IrHA5b41Boz7xie+YU22JbOI1ZmimsrVpJ
+        FeeRlpRaY3t6CvaNNkxumorNyFymd8/AY9AF92ZHllc54nPZTciLFZU+eFavwP0LDxaXObGodD5WeVNR
+        lMuRpBIJ2+v2LP5Gjs34IiTDG3j/oWSW3g6vW3KCe4NZ0x6Er+49lmqVuDauQtbkh6vWE7d6d+TXvHCv
+        9hBG5VOYe8uFN03zmNm/ALfHfmLvTPD9YKJHoyjlLPuf5xM2sB2vtlCWdQThbQpC0aXE2+CLc50Lb1+w
+        QZpUNRWrm7OxbndA8UCJrMOVHU+2EGcKp55L9NFN2UQ58QMZrGqOxr8jiqCeaNYa1uArqFy1S7CuthNE
+        FyWc+wVmnzc+PSt5fyiCONG5jSuMC5OGvyopHD1CZGMCioYoAg0biDbHEdWyjoB6OQGdfjhcfUcYVUzG
+        qtUZmVnBanMQyX0J6ITJfXq4h5mjLflk6rLZ0LiTMEMqMb1qVAOpJJpUqNrDCekMQHZFGE3TLsD+pgw3
+        nS+xopOOOh4zxJ98y6dl+zhclk1uTR7peg0JnTnEtqcT15xAUmMcybpoNhmD8W9wR3rr4hz8jYH4VvrS
+        SiNPGOHZPwMw8YRXT++J9Rce/T3OA2FvFjULwwzQS/9EE4Vtaai0wSjrxPhfOzYN19oVrDdsolnwPGKU
+        l+ISE8/g1e/Abzx8MS7yeoBJkFoY+99qlE4+78tH3akioilQENW6MLtBzsJqBQG1MXwtDt7mDj/++z3J
+        uVvJPZdH8oVd7GwtYLtRQ3xnNttbssjr1JDWkES6JZ3I1mgR9tmZ2F1dhtISj/P51URc2UEHg3zHD+KZ
+        P7OnKoctFWrimnYT172XWGMm27o+5FBfEYeHisgY3ENky0akGaWzcKhcjEK/Dt/aULYZMom9lMiNpzqR
+        yCDGl22UDJeILBJRtaWgtuzl4Gghhb0FHDDmkj2ax8aOrUiyS/ORXXbC73oAQfoNLCxezjatmixtlkik
+        V5CNUP+ikl3dapKMiaT3pJM/cpBi80E+sRRwaOwjErtSkKwLJXyqXVBcW8mam+GENm8m5KsYdrVlkFKj
+        QveqkqrnpzgwmsH+sZ1kWdR8PK7h9NgR6n4t4+jtfLK6M5Aci6bjeU4QicmFmdYT2hVLjDGeFJOaHEsm
+        OeY09vWnkdixnt3DiewdVlPysIATt4u4/PgMx+8Wo7HkIMVUhTBXY4vyhpJAUxje+tVEDm0mpjueBHMK
+        qT1qUnuTyLiTxp77H5B1J4MD4/s5ce84J++eQtN3iJM/fYbUiJag8rX41azCU+uNY50b8pYAltb48+71
+        CAKvRhJYF0KIPoTIjggim8NR6ePJbMsmqzWX44/OiA91jf8A2tAoxrdcZ/0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bb_voltarProdAcab.Text" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="bb_avancarProdAcab.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPHZR7UFRVHMevlo4PlJcC6fBUAVFABAyBeCzy
+        XEDkIQkibCK6GwoqMjSJUlrjA9Lx3UgSOsCUZCKyuK67C4KwCPIQkPWBpdSYNhTWaI3/fDo5vzlnzrn3
+        nu/93s/3nCvVo2bfg3IK2kpQ6grIas4ipSmZxOZE4m8kIWuUs0qzhiB1PF4N4fhpI3Fv8set2YfFNZ7E
+        nI7iLn1I+0cPUja8n3LTVxweKefze3soGiygcPhj8u+pyGjbgKJbSdqtbOLbPySqM4lwYwy+uhUEqoPx
+        rfAn7ngc0vY7Kg48/Izap5VUDh/l0FApu7q3UNCjQNWZRVFXPoXt+Wxq28Smno2kdiQg0wYg747Ar3E5
+        /rXBWJXaI6laP+KgaS/nH57mZM8BKkbK+HRwK8UmJUUDSuomqumli21NSra25BJU501qTzS+9UsIaHyf
+        hVVLMD88H0l5TckXA19y5O4R9nV9Rml/MXmdOaQb15KuW8cQD3nMGI+4T+qpRNYZk3CpdkCmjhb8Ylla
+        44PNMTukjIYcSu7sZk9PGaW9eynu24WiU0FadyYZHQqUV3cyKoSe8QvDAmp0rYyAHwIJbZbjczGE5fX+
+        2J6wQUrQpKAa3Eb+bRVFfTvY3KFifbtgYcxirWAUUx+P4rKCJ8LTTzwQvobIuLQOx2898DYEs6jWDdtj
+        c5GitDFsHsxjS1suJbeLydcVotLvZKN2K1nqPHI1eeTUbiCvYgPjwtVz0UZEhasTcG30YemP3tidtEWS
+        X4sk25DJnvbd4p2j/CzqmVgyxkvhYkLMnot+HMQc/ubV6wlx5Xdu0U9IQyw+l1ZgfWoOUsTllaQJ9RL9
+        LgbEzTFRv4pHx8TyJ/whRn++7V/9+4w3r1/wz5uXQmacVoyEqWPwvOKL+dcWSGGaQFLbEshsTqbgpoo8
+        zWbWX80h05BNmjadjfpsci9msa/uE/7iNyHyRGyGDuJFem4GL1yvu2N2bhaSa40T0S2hJOoiSTMkkXIj
+        hTWtKST3J7OmN5F0MS5sUQrIgwL1oHBtJKMrheX9vrgNeeCgd2Bq1VSkJZdcCNT5EqjxY/Vtudg/qSS0
+        yAnVhhKriWW7bodg94inIjOTkJH3ylhqWsiCx45Y9Vli0yJAV7+D5PidHZ5qd5Zd9STcEE5UayTR+igi
+        dKtI0a/ljnBxX4TQL2q1Vo5sPBgz0xTsn9thOWzJnJsi+guTkCxrzMVpdifkuowP1BEEGsII0IUQqY8j
+        /loyJybO0iKYRHXFEjQayHsmO+a9mMf0+zOxvmeDlU5sxnMSkv33DjjVLhBnJwjvupX4a0NYfNmb4KZw
+        wq5EENUYR4g2Ap9+f+YP2OP01AWzu7MwH5mDudEa6wYbJh2djORxxh2Ho844nfHApcoD5wtu+IhInSsd
+        WXbRC696L9yvLMZZu4h5LQ5vmdi022LRZoWlWogds8D5uDNSs/ix+X0TwIwyK2Yemsv0g7OZXT4bi8Nm
+        mFdMY8bxaUw5PZV3K6cz+f90qgSPavEp50U7IeF61hUN1/kPWOspmEpqaT8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="bb_avancarProdAcab.Text" xml:space="preserve">
+    <value>Avanzar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.HeaderText" xml:space="preserve">
+    <value>Cd. Producto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn1.Width" type="System.Int32, mscorlib">
+    <value>94</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.HeaderText" xml:space="preserve">
+    <value>Cantidad</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn3.Width" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.HeaderText" xml:space="preserve">
+    <value>Producto</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn2.Width" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn5.HeaderText" xml:space="preserve">
+    <value>% Quiebra Tecnica</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn5.Width" type="System.Int32, mscorlib">
+    <value>112</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn6.HeaderText" xml:space="preserve">
+    <value>Cd. Lugar</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn6.Width" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn7.HeaderText" xml:space="preserve">
+    <value>Lugar Almacenaje</value>
+  </data>
+  <data name="dataGridViewTextBoxColumn7.Width" type="System.Int32, mscorlib">
+    <value>107</value>
+  </data>
+  <data name="Lbl_PercenualDestino.Location" type="System.Drawing.Point, System.Drawing">
+    <value>119, 12</value>
+  </data>
+  <data name="Lbl_PercenualDestino.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 17</value>
+  </data>
+  <data name="Lbl_PercenualDestino.Text" xml:space="preserve">
+    <value>Cantidad:</value>
+  </data>
+  <data name="BB_Voltar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPHZN7UNRVGIZ/OWNOainJzUsiguhyUVnkssrg
+        ZghyR1LERVHktkgKJiisJgiGDWNexhJHRcSADBDUhZUFFlhYF1rugpiZZk45lTY5XWycMZ7O9Mc7Z858
+        57zfc95vjlTLMTzKbJh0SkKqEGoS+lLotIRdxessODEdp2IrHA5b41Boz7xie+YU22JbOI1ZmimsrVpJ
+        FeeRlpRaY3t6CvaNNkxumorNyFymd8/AY9AF92ZHllc54nPZTciLFZU+eFavwP0LDxaXObGodD5WeVNR
+        lMuRpBIJ2+v2LP5Gjs34IiTDG3j/oWSW3g6vW3KCe4NZ0x6Er+49lmqVuDauQtbkh6vWE7d6d+TXvHCv
+        9hBG5VOYe8uFN03zmNm/ALfHfmLvTPD9YKJHoyjlLPuf5xM2sB2vtlCWdQThbQpC0aXE2+CLc50Lb1+w
+        QZpUNRWrm7OxbndA8UCJrMOVHU+2EGcKp55L9NFN2UQ58QMZrGqOxr8jiqCeaNYa1uArqFy1S7CuthNE
+        FyWc+wVmnzc+PSt5fyiCONG5jSuMC5OGvyopHD1CZGMCioYoAg0biDbHEdWyjoB6OQGdfjhcfUcYVUzG
+        qtUZmVnBanMQyX0J6ITJfXq4h5mjLflk6rLZ0LiTMEMqMb1qVAOpJJpUqNrDCekMQHZFGE3TLsD+pgw3
+        nS+xopOOOh4zxJ98y6dl+zhclk1uTR7peg0JnTnEtqcT15xAUmMcybpoNhmD8W9wR3rr4hz8jYH4VvrS
+        SiNPGOHZPwMw8YRXT++J9Rce/T3OA2FvFjULwwzQS/9EE4Vtaai0wSjrxPhfOzYN19oVrDdsolnwPGKU
+        l+ISE8/g1e/Abzx8MS7yeoBJkFoY+99qlE4+78tH3akioilQENW6MLtBzsJqBQG1MXwtDt7mDj/++z3J
+        uVvJPZdH8oVd7GwtYLtRQ3xnNttbssjr1JDWkES6JZ3I1mgR9tmZ2F1dhtISj/P51URc2UEHg3zHD+KZ
+        P7OnKoctFWrimnYT172XWGMm27o+5FBfEYeHisgY3ENky0akGaWzcKhcjEK/Dt/aULYZMom9lMiNpzqR
+        yCDGl22UDJeILBJRtaWgtuzl4Gghhb0FHDDmkj2ax8aOrUiyS/ORXXbC73oAQfoNLCxezjatmixtlkik
+        V5CNUP+ikl3dapKMiaT3pJM/cpBi80E+sRRwaOwjErtSkKwLJXyqXVBcW8mam+GENm8m5KsYdrVlkFKj
+        QveqkqrnpzgwmsH+sZ1kWdR8PK7h9NgR6n4t4+jtfLK6M5Aci6bjeU4QicmFmdYT2hVLjDGeFJOaHEsm
+        OeY09vWnkdixnt3DiewdVlPysIATt4u4/PgMx+8Wo7HkIMVUhTBXY4vyhpJAUxje+tVEDm0mpjueBHMK
+        qT1qUnuTyLiTxp77H5B1J4MD4/s5ce84J++eQtN3iJM/fYbUiJag8rX41azCU+uNY50b8pYAltb48+71
+        CAKvRhJYF0KIPoTIjggim8NR6ePJbMsmqzWX44/OiA91jf8A2tAoxrdcZ/0AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BB_Voltar.Text" xml:space="preserve">
+    <value>Volver</value>
+  </data>
+  <data name="BB_Avancar.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAR9SURBVDhPHZR7UFRVHMevlo4PlJcC6fBUAVFABAyBeCzy
+        XEDkIQkibCK6GwoqMjSJUlrjA9Lx3UgSOsCUZCKyuK67C4KwCPIQkPWBpdSYNhTWaI3/fDo5vzlnzrn3
+        nu/93s/3nCvVo2bfg3IK2kpQ6grIas4ipSmZxOZE4m8kIWuUs0qzhiB1PF4N4fhpI3Fv8set2YfFNZ7E
+        nI7iLn1I+0cPUja8n3LTVxweKefze3soGiygcPhj8u+pyGjbgKJbSdqtbOLbPySqM4lwYwy+uhUEqoPx
+        rfAn7ngc0vY7Kg48/Izap5VUDh/l0FApu7q3UNCjQNWZRVFXPoXt+Wxq28Smno2kdiQg0wYg747Ar3E5
+        /rXBWJXaI6laP+KgaS/nH57mZM8BKkbK+HRwK8UmJUUDSuomqumli21NSra25BJU501qTzS+9UsIaHyf
+        hVVLMD88H0l5TckXA19y5O4R9nV9Rml/MXmdOaQb15KuW8cQD3nMGI+4T+qpRNYZk3CpdkCmjhb8Ylla
+        44PNMTukjIYcSu7sZk9PGaW9eynu24WiU0FadyYZHQqUV3cyKoSe8QvDAmp0rYyAHwIJbZbjczGE5fX+
+        2J6wQUrQpKAa3Eb+bRVFfTvY3KFifbtgYcxirWAUUx+P4rKCJ8LTTzwQvobIuLQOx2898DYEs6jWDdtj
+        c5GitDFsHsxjS1suJbeLydcVotLvZKN2K1nqPHI1eeTUbiCvYgPjwtVz0UZEhasTcG30YemP3tidtEWS
+        X4sk25DJnvbd4p2j/CzqmVgyxkvhYkLMnot+HMQc/ubV6wlx5Xdu0U9IQyw+l1ZgfWoOUsTllaQJ9RL9
+        LgbEzTFRv4pHx8TyJ/whRn++7V/9+4w3r1/wz5uXQmacVoyEqWPwvOKL+dcWSGGaQFLbEshsTqbgpoo8
+        zWbWX80h05BNmjadjfpsci9msa/uE/7iNyHyRGyGDuJFem4GL1yvu2N2bhaSa40T0S2hJOoiSTMkkXIj
+        hTWtKST3J7OmN5F0MS5sUQrIgwL1oHBtJKMrheX9vrgNeeCgd2Bq1VSkJZdcCNT5EqjxY/Vtudg/qSS0
+        yAnVhhKriWW7bodg94inIjOTkJH3ylhqWsiCx45Y9Vli0yJAV7+D5PidHZ5qd5Zd9STcEE5UayTR+igi
+        dKtI0a/ljnBxX4TQL2q1Vo5sPBgz0xTsn9thOWzJnJsi+guTkCxrzMVpdifkuowP1BEEGsII0IUQqY8j
+        /loyJybO0iKYRHXFEjQayHsmO+a9mMf0+zOxvmeDlU5sxnMSkv33DjjVLhBnJwjvupX4a0NYfNmb4KZw
+        wq5EENUYR4g2Ap9+f+YP2OP01AWzu7MwH5mDudEa6wYbJh2djORxxh2Ho844nfHApcoD5wtu+IhInSsd
+        WXbRC696L9yvLMZZu4h5LQ5vmdi022LRZoWlWogds8D5uDNSs/ix+X0TwIwyK2Yemsv0g7OZXT4bi8Nm
+        mFdMY8bxaUw5PZV3K6cz+f90qgSPavEp50U7IeF61hUN1/kPWOspmEpqaT8AAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="BB_Avancar.Text" xml:space="preserve">
+    <value>Avanzar</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Ajustar Cantidad Formula Producción</value>
+  </data>
+</root>

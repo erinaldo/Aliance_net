@@ -1,0 +1,694 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{6348E819-72DA-4E58-97D1-0191E1F63B7A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>NFCe</RootNamespace>
+    <AssemblyName>NFCe</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="Gma.QrCodeNet.Encoding.Net35, Version=0.4.0.0, Culture=neutral, PublicKeyToken=e8a75d24b142be49, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ConsultaChave\ConsultaChave.cs" />
+    <Compile Include="ConsultaStatusServico\ConsultaStatusServico.cs" />
+    <Compile Include="EnviaArq\EnviaArq.cs" />
+    <Compile Include="EventoNFCe\EventoNFCe.cs" />
+    <Compile Include="FGerenciarNFCe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGerenciarNFCe.designer.cs">
+      <DependentUpon>FGerenciarNFCe.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GerarQRCode.cs" />
+    <Compile Include="GerarXML\GerarXML.cs" />
+    <Compile Include="InutilizaNFCe\InutilizaNFCe.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="RetAutoriza\RetAutoriza.cs" />
+    <Compile Include="Web References\br.gov.am.sefaz.homnfce.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.Autoriza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.ConsultaChave\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Autoriza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.ConsultaChave\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Evento\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Inutiliza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.RetAutoriza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.homologacao.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.Inutiliza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.RetAutoriza\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.fazenda.nfce.StatusServico\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.Autoriza4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.ConsultaChave4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.Evento4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.Autoriza4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.ConsultaChave4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.Evento4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.Inutiliza4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.RetAutorizacao4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.homologacao.StatusServico4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.Inutiliza4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.RetAutoriza4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+    <Compile Include="Web References\br.gov.pr.sefa.nfce.StatusServico4\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.map</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFE\NFE.csproj">
+      <Project>{B765028D-8B44-4002-9B45-C69FCB083188}</Project>
+      <Name>NFE</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Parametros\Parametros.csproj">
+      <Project>{0976A508-894E-45A8-8055-ABE829C1BFA3}</Project>
+      <Name>Parametros</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferences Include="Web References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.am.sefaz.homnfce.StatusServico\NfeStatusServico2.wsdl" />
+    <None Include="Web References\br.gov.am.sefaz.homnfce.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Autoriza\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Autoriza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.ConsultaChave\NFeConsulta3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.ConsultaChave\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Evento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Autoriza\NFeAutorizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Autoriza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.ConsultaChave\NFeConsulta3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.ConsultaChave\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Evento\NFeRecepcaoEvento.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Evento\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Inutiliza\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.Inutiliza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.RetAutoriza\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.RetAutoriza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.StatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.homologacao.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Inutiliza\NFeInutilizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.Inutiliza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.RetAutoriza\NFeRetAutorizacao3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.RetAutoriza\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.fazenda.nfce.StatusServico\NFeStatusServico3.wsdl" />
+    <None Include="Web References\br.gov.pr.fazenda.nfce.StatusServico\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.Autoriza4\NFeAutorizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.Autoriza4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.ConsultaChave4\NFeConsultaProtocolo4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.ConsultaChave4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.Evento4\NFeRecepcaoEvento4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.Evento4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Autoriza4\NFeAutorizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Autoriza4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.ConsultaChave4\NFeConsultaProtocolo4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.ConsultaChave4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Evento4\NFeRecepcaoEvento4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Evento4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Inutiliza4\NFeInutilizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.Inutiliza4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.RetAutorizacao4\NFeRetAutorizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.RetAutorizacao4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.StatusServico4\NFeStatusServico4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.homologacao.StatusServico4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.Inutiliza4\NFeInutilizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.Inutiliza4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.RetAutoriza4\NFeRetAutorizacao4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.RetAutoriza4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Web References\br.gov.pr.sefa.nfce.StatusServico4\NFeStatusServico4.wsdl" />
+    <None Include="Web References\br.gov.pr.sefa.nfce.StatusServico4\Reference.map">
+      <Generator>MSDiscoCodeGenerator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <WebReferenceUrl Include="https://homnfce.sefaz.am.gov.br/nfce-services-nac/services/NfeStatusServico2%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.am.sefaz.homnfce.StatusServico\</RelPath>
+      <UpdateFromURL>https://homnfce.sefaz.am.gov.br/nfce-services-nac/services/NfeStatusServico2%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_am_sefaz_homnfce_StatusServico_NfeStatusServico2</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.Autoriza\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_Autoriza_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.ConsultaChave\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_ConsultaChave_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.Inutiliza\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_Inutiliza_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.Evento\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_Evento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.RetAutoriza\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_RetAutoriza_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.homologacao.StatusServico\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_homologacao_StatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.Autoriza4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_Autoriza4_NFeAutorizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.ConsultaChave4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_ConsultaChave4_NFeConsultaProtocolo4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeInutilizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.Inutiliza4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeInutilizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_Inutiliza4_NFeInutilizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.Evento4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_Evento4_NFeRecepcaoEvento4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.RetAutorizacao4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_RetAutorizacao4_NFeRetAutorizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeStatusServico4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.homologacao.StatusServico4\</RelPath>
+      <UpdateFromURL>https://homologacao.nfce.sefa.pr.gov.br/nfce/NFeStatusServico4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_homologacao_StatusServico4_NFeStatusServico4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.Autoriza\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_Autoriza_NfeAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.ConsultaChave\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeConsulta3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_ConsultaChave_NfeConsulta3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.Inutiliza\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeInutilizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_Inutiliza_NfeInutilizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.Evento\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeRecepcaoEvento%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_Evento_RecepcaoEvento</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.RetAutoriza\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeRetAutorizacao3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_RetAutoriza_NfeRetAutorizacao3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.fazenda.nfce.StatusServico\</RelPath>
+      <UpdateFromURL>https://nfce.fazenda.pr.gov.br/nfce/NFeStatusServico3%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_fazenda_nfce_StatusServico_NfeStatusServico3</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.Autoriza4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeAutorizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_Autoriza4_NFeAutorizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.ConsultaChave4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeConsultaProtocolo4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_ConsultaChave4_NFeConsultaProtocolo4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeInutilizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.Inutiliza4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeInutilizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_Inutiliza4_NFeInutilizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.Evento4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeRecepcaoEvento4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_Evento4_NFeRecepcaoEvento4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.RetAutoriza4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeRetAutorizacao4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_RetAutoriza4_NFeRetAutorizacao4</CachedSettingsPropName>
+    </WebReferenceUrl>
+    <WebReferenceUrl Include="https://nfce.sefa.pr.gov.br/nfce/NFeStatusServico4%3fwsdl">
+      <UrlBehavior>Dynamic</UrlBehavior>
+      <RelPath>Web References\br.gov.pr.sefa.nfce.StatusServico4\</RelPath>
+      <UpdateFromURL>https://nfce.sefa.pr.gov.br/nfce/NFeStatusServico4%3fwsdl</UpdateFromURL>
+      <ServiceLocationURL>
+      </ServiceLocationURL>
+      <CachedDynamicPropName>
+      </CachedDynamicPropName>
+      <CachedAppSettingsObjectName>Settings</CachedAppSettingsObjectName>
+      <CachedSettingsPropName>NFCe_br_gov_pr_sefa_nfce_StatusServico4_NFeStatusServico4</CachedSettingsPropName>
+    </WebReferenceUrl>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FGerenciarNFCe.resx">
+      <DependentUpon>FGerenciarNFCe.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

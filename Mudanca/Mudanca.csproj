@@ -1,0 +1,346 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D63BA79C-C958-46D2-A33F-2D702C6D0550}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Mudanca</RootNamespace>
+    <AssemblyName>Mudanca</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <StartupObject>
+    </StartupObject>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <UpgradeBackupLocation>
+    </UpgradeBackupLocation>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="BancoDados, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Aliance.NET\BancoDados.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Word, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Word.15.0.4797.1003\lib\net20\Microsoft.Office.Interop.Word.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Cadastros\FCadItens.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadItens.Designer.cs">
+      <DependentUpon>FCadItens.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCadServicos.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCadServicos.Designer.cs">
+      <DependentUpon>FCadServicos.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cadastros\FCFGMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cadastros\FCFGMudanca.Designer.cs">
+      <DependentUpon>FCFGMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FCadItensResumido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FCadItensResumido.Designer.cs">
+      <DependentUpon>FCadItensResumido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FGuardaVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FGuardaVolume.Designer.cs">
+      <DependentUpon>FGuardaVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensGuardaVol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensGuardaVol.Designer.cs">
+      <DependentUpon>FItensGuardaVol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensMud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensMud.Designer.cs">
+      <DependentUpon>FItensMud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FItensValores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FItensValores.Designer.cs">
+      <DependentUpon>FItensValores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanGuardaVolume.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanGuardaVolume.Designer.cs">
+      <DependentUpon>FLanGuardaVolume.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanMudanca.Designer.cs">
+      <DependentUpon>FLanMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FLanOrcamento.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FLanOrcamento.Designer.cs">
+      <DependentUpon>FLanOrcamento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMaterialMud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMaterialMud.Designer.cs">
+      <DependentUpon>FMaterialMud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FMudanca.Designer.cs">
+      <DependentUpon>FMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FPainelMudanca.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FPainelMudanca.Designer.cs">
+      <DependentUpon>FPainelMudanca.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FRetGuardaVol.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FRetGuardaVol.Designer.cs">
+      <DependentUpon>FRetGuardaVol.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FServicosMud.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FServicosMud.Designer.cs">
+      <DependentUpon>FServicosMud.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Info.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Cadastros\FCadItens.resx">
+      <DependentUpon>FCadItens.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCadServicos.resx">
+      <DependentUpon>FCadServicos.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cadastros\FCFGMudanca.resx">
+      <DependentUpon>FCFGMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FCadItensResumido.resx">
+      <DependentUpon>FCadItensResumido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FGuardaVolume.resx">
+      <DependentUpon>FGuardaVolume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensGuardaVol.resx">
+      <DependentUpon>FItensGuardaVol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensMud.resx">
+      <DependentUpon>FItensMud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FItensValores.resx">
+      <DependentUpon>FItensValores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanGuardaVolume.resx">
+      <DependentUpon>FLanGuardaVolume.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanMudanca.resx">
+      <DependentUpon>FLanMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FLanOrcamento.resx">
+      <DependentUpon>FLanOrcamento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMaterialMud.resx">
+      <DependentUpon>FMaterialMud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FMudanca.resx">
+      <DependentUpon>FMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FPainelMudanca.resx">
+      <DependentUpon>FPainelMudanca.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FRetGuardaVol.resx">
+      <DependentUpon>FRetGuardaVol.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FServicosMud.resx">
+      <DependentUpon>FServicosMud.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.Cadastros.TList_CadItens.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.Cadastros.TList_CadServico.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.Cadastros.TList_CFGMudanca.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_GuardaVolume.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_ItensGuardaVolume.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_LanItensMud.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_LanMudanca.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_MaterialMud.datasource" />
+    <None Include="Properties\DataSources\CamadaDados.Mudanca.TList_Orcamento.datasource" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Almoxarifado\Almoxarifado.csproj">
+      <Project>{1E43B375-FBA8-4428-9E3F-40CD27E476A9}</Project>
+      <Name>Almoxarifado</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaDados\CamadaDados.csproj">
+      <Project>{DD35B696-7B35-4A9A-B396-2BE0923263C9}</Project>
+      <Name>CamadaDados</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CamadaNegocio\CamadaNegocio.csproj">
+      <Project>{6304BD7F-4924-4BB8-98BE-D87AC31854D5}</Project>
+      <Name>CamadaNegocio</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Componentes\Componentes.csproj">
+      <Project>{904F7739-675D-471D-96B2-563412836DA3}</Project>
+      <Name>Componentes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Consulta\Consulta.csproj">
+      <Project>{A5BC81C1-BE21-4D67-A42E-A051640E36D4}</Project>
+      <Name>Consulta</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CTe\CTe.csproj">
+      <Project>{D554AFE6-DD57-42F4-A454-C9B863935A9A}</Project>
+      <Name>CTe</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Financeiro\Financeiro.csproj">
+      <Project>{1CE51878-365C-4E6E-9BD7-CBB332B18081}</Project>
+      <Name>Financeiro</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormBusca\FormBusca.csproj">
+      <Project>{E15B29D9-C046-43D8-AE41-5950DA981D85}</Project>
+      <Name>FormBusca</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormCadPadrao\FormCadPadrao.csproj">
+      <Project>{A7B14D42-0286-4E4C-BB41-A6A59D25410B}</Project>
+      <Name>FormCadPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormPadrao\FormPadrao.csproj">
+      <Project>{C965E859-D359-4F6E-91FD-F48AD613C864}</Project>
+      <Name>FormPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FormRelPadrao\FormRelPadrao.csproj">
+      <Project>{09C8AB18-BF30-4579-8945-3EEFB3E2C134}</Project>
+      <Name>FormRelPadrao</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Frota\Frota.csproj">
+      <Project>{6737e793-a3ac-41fb-9838-1243c8907e30}</Project>
+      <Name>Frota</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Help\Help.csproj">
+      <Project>{ff45d0e0-e347-438f-8daa-4587f3cf0847}</Project>
+      <Name>Help</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\NFES\NFES.csproj">
+      <Project>{BD5BA315-8530-4777-B749-D3822A4F8BE9}</Project>
+      <Name>NFES</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Proc_Commoditties\Proc_Commoditties.csproj">
+      <Project>{E9D31189-9F38-4114-9C18-C3E1A1331CCA}</Project>
+      <Name>Proc_Commoditties</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\ServiceRest\ServiceRest.csproj">
+      <Project>{7c8fa445-497e-47ea-92bc-0df0d0aa6120}</Project>
+      <Name>ServiceRest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utils\Utils.csproj">
+      <Project>{4D197519-BCF0-4F61-BD23-221071729261}</Project>
+      <Name>Utils</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
